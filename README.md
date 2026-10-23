@@ -28,6 +28,8 @@ pnpm dev
 
 本地开发默认使用 **PGlite**（WASM Postgres），首次启动自动建表并 seed，数据在 `.data/pglite/`。无需安装 Postgres、无需 API key。
 
+默认 `GOLDLENS_MODE=demo`：行情使用内置快照、AI 使用规则解析、Stripe 走 demo 升级，不会调用任何外部计费服务，也不会消耗你的 API key。确认全流程后再切换到 `live`。
+
 ### 演示账号
 
 | 角色 | 邮箱 | 密码 |
@@ -140,6 +142,7 @@ docker-compose.yml           Postgres 18 + app
 复制 `.env.example` 为 `apps/web/.env.local`（Next 从 app 目录加载）：
 
 ```bash
+GOLDLENS_MODE=demo             # demo: 快照 + 规则 + demo 支付；live: 外部行情/AI/Stripe
 DATABASE_URL=                 # 留空则使用 PGlite
 AUTH_SECRET=                  # 生产必须设置
 DEMO_PASSWORD=goldlens
@@ -155,12 +158,22 @@ INNGEST_SIGNING_KEY=
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
+### API Key 安全
+
+- 所有密钥只通过服务端环境变量读取：`AI_GATEWAY_API_KEY`、`STRIPE_SECRET_KEY`、`AUTH_SECRET`、`DATABASE_URL`。没有 `NEXT_PUBLIC_*KEY`，不会进入客户端 bundle。
+- `GOLDLENS_MODE=demo` 时，AI/Stripe/外部行情都不会被调用；默认就是 demo。
+- `.env`、`.env.local`、`.env.*` 已被 `.gitignore` 忽略；仓库只保留空的 `.env.example`。
+- 如果曾经把 key 写进代码、截图、Issue 或提交历史，请立即在对应平台 **rotate/revoke**，再清理历史。GitHub 公共仓库一旦推送就无法假设“没人看到”。
+
+完整规则见 [SECURITY.md](SECURITY.md)。
+
 ---
 
 ## 测试与质量
 
 ```bash
 pnpm test          # core + web unit + legacy smoke
+pnpm test:e2e      # 需要先 pnpm dev（或 pnpm start）；跑完整虚拟数据流程
 pnpm --filter @goldlens/core test
 pnpm --filter @goldlens/web test
 pnpm build

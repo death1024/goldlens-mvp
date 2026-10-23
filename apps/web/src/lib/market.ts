@@ -120,6 +120,16 @@ async function getThai(): Promise<NonNullable<MarketData['thai']>> {
 }
 
 export async function getMarket(): Promise<MarketData> {
+  if (process.env.GOLDLENS_MODE !== 'live') {
+    return {
+      ...FALLBACK,
+      ok: true,
+      demo: true,
+      updatedAt: new Date().toISOString(),
+      fetchedAt: new Date().toISOString(),
+      degraded: []
+    };
+  }
   if (cache && Date.now() - cache.at < 60_000) return cache.data;
   const degraded: string[] = [];
   const [spot, fx, futures, thai] = await Promise.allSettled([getSpot(), getFx(), getFutures(), getThai()]);
@@ -135,6 +145,7 @@ export async function getMarket(): Promise<MarketData> {
     degraded
   };
 
+  data.demo = false;
   cache = { at: Date.now(), data };
   return data;
 }

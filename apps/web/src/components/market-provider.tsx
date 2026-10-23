@@ -20,7 +20,7 @@ export function MarketProvider({ children }: { children: React.ReactNode }) {
       })
       .then((next) => {
         setData(next);
-        setDemo(false);
+        setDemo(Boolean(next.demo));
       })
       .catch(() => setDemo(true));
   };

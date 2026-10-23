@@ -40,5 +40,14 @@ jobs:
       - name: Next.js build
         run: pnpm --filter @goldlens/web build
 
+      - name: Demo E2E (virtual data)
+        run: |
+          pnpm --filter @goldlens/web start > /tmp/goldlens-web.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -sf http://127.0.0.1:3000/api/health > /dev/null; then break; fi
+            sleep 1
+          done
+          node scripts/e2e-demo.mjs
+
       - name: Legacy static demo smoke test
         run: node tests/smoke.mjs

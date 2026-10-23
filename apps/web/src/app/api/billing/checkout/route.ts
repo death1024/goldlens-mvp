@@ -7,7 +7,7 @@ export async function POST(request: Request) {
   const session = await auth();
   if (!session?.user) return NextResponse.json({ error: 'AUTH_REQUIRED' }, { status: 401 });
   const body = await request.json().catch(() => ({}));
-  if (!process.env.STRIPE_SECRET_KEY || !process.env.STRIPE_PRICE_ID) {
+  if (process.env.GOLDLENS_MODE !== 'live' || !process.env.STRIPE_SECRET_KEY || !process.env.STRIPE_PRICE_ID) {
     return NextResponse.json({ mode: 'demo', plan: body.plan ?? 'pro', url: null });
   }
   try {

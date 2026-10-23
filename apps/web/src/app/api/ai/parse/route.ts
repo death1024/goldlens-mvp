@@ -20,7 +20,8 @@ export async function POST(request: Request) {
   let parsed = parseNaturalQuery(input.data.text);
   let source: 'rules' | 'ai' = 'rules';
 
-  if (process.env.AI_GATEWAY_API_KEY || process.env.OPENAI_API_KEY) {
+  const liveMode = process.env.GOLDLENS_MODE === 'live';
+  if (liveMode && (process.env.AI_GATEWAY_API_KEY || process.env.OPENAI_API_KEY)) {
     try {
       const { generateObject } = await import('ai');
       const { createOpenAI } = await import('@ai-sdk/openai');
