@@ -28,6 +28,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const { data: session } = useSession();
   const { locale, setLocale, t } = useI18n();
   const { data, demo } = useMarket();
+  const isPartial = !demo && data.degraded.length > 0;
   const role = (session?.user as any)?.role;
 
   const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.startsWith(href);
@@ -64,7 +65,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </nav>
         <div className="side-foot">
           <div className="row" style={{ marginBottom: 8 }}>
-            <span className={`badge ${demo ? 'warn' : 'green'}`}><span className="user-dot" />{demo ? t('common.demo') : t('common.live')}</span>
+            <span className={`badge ${demo ? 'warn' : isPartial ? 'warn' : 'green'}`}><span className="user-dot" />{demo ? t('common.demo') : isPartial ? t('common.partial') : t('common.live')}</span>
             <span className="tiny">{t('common.refresh')}</span>
           </div>
           <p>{t('common.disclaimer')}</p>
@@ -75,7 +76,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <header className="topbar">
           <div className="topbar-title">
             <span className="gold">XAU</span> / USD · {data.spot.usdOz.toFixed(2)}
-            <span className={`badge ${demo ? 'warn' : 'green'}`} style={{ marginLeft: 10 }}>{demo ? t('common.demo') : t('common.live')}</span>
+            <span className={`badge ${demo ? 'warn' : isPartial ? 'warn' : 'green'}`} style={{ marginLeft: 10 }}>{demo ? t('common.demo') : isPartial ? t('common.partial') : t('common.live')}</span>
           </div>
           <div className="topbar-spacer" />
           <select

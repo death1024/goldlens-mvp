@@ -34,7 +34,7 @@ export default function HomePage() {
         <div className="hero-main">
           <div className="between" style={{ alignItems: 'flex-start' }}>
             <div className="eyebrow"><span className="eyebrow-line" />{t('home.eyebrow')}</div>
-            <span className={`badge ${demo ? 'warn' : 'green'}`}>{demo ? t('common.demo') : t('common.live')}</span>
+            <span className={`badge ${demo ? 'warn' : data.degraded.length ? 'warn' : 'green'}`}>{demo ? t('common.demo') : data.degraded.length ? t('common.partial') : t('common.live')}</span>
           </div>
           <div className="hero-price" dir="ltr">
             ${formatNumber(data.spot.usdOz, 2, intl)}<small>/ oz</small>
@@ -63,7 +63,7 @@ export default function HomePage() {
                 <p className="eyebrow">{t('home.bangkok')}</p>
                 <h2>{t('home.thaiTitle')}</h2>
               </div>
-              <span className="badge gold">{t('home.gta')}</span>
+              <span className="badge gold">{data.degraded.includes('gta') ? t('home.gtaSnapshot') : t('home.gta')}</span>
             </div>
             <div className="price-grid">
               <div className="price-cell"><span>{t('home.barSell')}</span><strong>{formatMoney(data.thai?.barSell ?? 0, 'THB', 0, intl)}</strong><small>{t('home.perBaht')}</small></div>
