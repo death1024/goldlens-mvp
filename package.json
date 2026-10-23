@@ -1,14 +1,20 @@
 {
   "name": "goldlens",
-  "version": "0.2.0",
+  "version": "2.1.0",
   "private": true,
-  "description": "GoldLens 金价透视：Google Trends 研究 + 可运行的黄金购买决策 MVP",
+  "packageManager": "pnpm@11.28.5",
   "scripts": {
-    "start": "node mvp/server.mjs",
-    "test": "node tests/smoke.mjs",
-    "check": "node --check mvp/server.mjs && node --check mvp/public/app.js && node --check mvp/public/sw.js"
+    "dev": "pnpm --filter @goldlens/web dev",
+    "build": "pnpm --filter @goldlens/web build",
+    "start": "pnpm --filter @goldlens/web start",
+    "test": "npm run test --workspaces --if-present && node tests/smoke.mjs",
+    "check": "pnpm --filter @goldlens/core check && pnpm --filter @goldlens/web check",
+    "seed": "pnpm --filter @goldlens/db seed",
+    "legacy:start": "node mvp/server.mjs",
+    "test:web": "pnpm --filter @goldlens/web test"
   },
-  "engines": {
-    "node": ">=24"
-  }
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }

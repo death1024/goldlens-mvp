@@ -1,238 +1,199 @@
 # GoldLens 金价透视
 
 [![CI](https://github.com/death1024/goldlens-mvp/actions/workflows/ci.yml/badge.svg)](https://github.com/death1024/goldlens-mvp/actions/workflows/ci.yml)
-[![Pages](https://github.com/death1024/goldlens-mvp/actions/workflows/pages.yml/badge.svg)](https://github.com/death1024/goldlens-mvp/actions/workflows/pages.yml)
 
 > 买金之前，先看清真实成本。
 
-**在线 Demo：** https://death1024.github.io/goldlens-mvp/  
-**GitHub：** https://github.com/death1024/goldlens-mvp
+**GoldLens 2.1** 是一个可运行的黄金购买决策应用：把国际金价、泰国 GTA 柜台价、工费、税费、回购折价和回本点，放进同一张账单。它不托管、不交易、不提供投资建议。
 
-GoldLens 是一个面向消费者黄金购买决策的 Web MVP：把国际金价、泰国 GTA 本地参考价、工费、税费、回购折价和回本点，放进同一张可交互的账单。
+- **v2.1 App**：Next.js 16 + React 19 + Postgres/PGlite + Auth.js + IndexedDB + Inngest + AI SDK 6
+- **v1.1 架构方案**：[PDF](docs/GoldLens_2.1_架构优化方案.pdf) · [Markdown](docs/ARCHITECTURE_UPGRADE_V1.1.md)
+- **v1.0 技术方案**：[PDF](docs/GoldLens_2.0_技术方案.pdf) · [Markdown](docs/TECHNICAL_PLAN.md)
+- **调研报告**：[PDF](docs/GoldLens_Google_Trends_应用机会调研与MVP报告.pdf)
+- **旧版静态 Demo**：https://death1024.github.io/goldlens-mvp/
 
-这个仓库同时包含：
-
-- **可运行的 MVP**：实时行情、四市场换算、真实成本计算器、回购/回本点、持仓、价格提醒。
-- **完整调研报告**：Google Trends 33 个地区 330 条热搜、10 个应用场景评分、9 款竞品对标、商业模式、90 天路线图。
-- **工程化配套**：PWA、离线快照、静态 Demo、Docker、CI、GitHub Pages 工作流。
-
-![GoldLens 首页](docs/screenshots/hero.png)
+![GoldLens 首页](docs/screenshots/v21-home.png)
 
 ---
 
 ## 快速开始
 
-要求：Node.js 24+，无需安装依赖。
+要求：Node.js 24+、pnpm 11+。
 
 ```bash
-npm start
-# 打开 http://127.0.0.1:5188
+pnpm install
+pnpm dev
+# http://localhost:3000
 ```
 
-或：
+本地开发默认使用 **PGlite**（WASM Postgres），首次启动自动建表并 seed，数据在 `.data/pglite/`。无需安装 Postgres、无需 API key。
+
+### 演示账号
+
+| 角色 | 邮箱 | 密码 |
+|---|---|---|
+| 消费者 | `demo@goldlens.app` | `goldlens` |
+| Dealer | `dealer@goldlens.app` | `goldlens` |
+| Admin | `admin@goldlens.app` | `goldlens` |
+
+登录页也支持任意新邮箱 + 密码 `goldlens` 创建演示消费者账户。生产环境替换为 Google / Apple / Passkeys。
+
+### 生产模式
 
 ```bash
-cd mvp
-node server.mjs
+pnpm build
+pnpm start
 ```
 
-健康检查：`GET /health`  
-市场数据：`GET /api/market`
-
-### 静态 Demo
-
-如果只部署 `mvp/public`（例如 GitHub Pages），没有 Node 后端也能运行：前端会请求 `./api/market`，失败后自动回退到 `./data/market.json` 快照。页面右上角显示 `DEMO`，所有计算、持仓、提醒仍可使用。
-
----
-
-## 已实现功能
-
-| 模块 | 内容 |
-|---|---|
-| 实时行情 | XAU/USD 现货 + COMEX 主力 1 年日线 + 汇率 |
-| 泰国本地价 | GTA 96.5% 金条/金饰的卖出与回购价 |
-| 四市场 | 泰国 THB/96.5%、阿联酋 AED/22K、印度 INR/22K、美国 USD/24K |
-| 四单位 | baht（15.244g）、克、tola（11.6638g）、盎司 |
-| 真实成本 | 金料、工费/溢价、税费、到手价、市场溢价 |
-| 回购/回本 | 即时回购、一买一卖隐形成本、金价需上涨多少才回本 |
-| 价格位置 | 30D/90D/1Y、52 周高/低、当前 vs 均价 |
-| 持仓 | 本地保存、按回购价估值、浮动盈亏 |
-| 提醒 | 浏览器内保存、页面打开时检查、系统通知 |
-| PWA | manifest、Service Worker、安装按钮、离线 shell |
-| 数据降级 | 单源失败显示“快照”；无后端显示“DEMO” |
-
-> 说明：账户体系、真实交易、KYC、托管、门店实时报价、后台推送不在 MVP 范围内。
-
----
-
-## 项目结构
-
-```
-goldlens/
-├── mvp/
-│   ├── server.mjs               # Node HTTP 服务、数据聚合、缓存、fallback
-│   ├── public/
-│   │   ├── index.html           # 页面结构
-│   │   ├── styles.css           # 深色黄金视觉与响应式布局
-│   │   ├── app.js               # 计算、图表、持仓、提醒、PWA 注册
-│   │   ├── sw.js                # Service Worker
-│   │   ├── manifest.webmanifest # PWA manifest
-│   │   ├── icons/               # 应用图标
-│   │   └── data/market.json     # 静态演示快照
-│   └── data/fallback.json       # 服务端降级快照
-├── tests/smoke.mjs              # 服务端 + PWA 冒烟测试
-├── docs/                        # 调研报告、图表、截图
-├── research/                    # Google Trends 采集、分析、图表脚本
-├── data/                        # 原始 Trends 数据
-├── .github/workflows/           # CI + GitHub Pages
-├── Dockerfile
-└── README.md
-```
-
----
-
-## 研究报告
-
-完整报告（32 页）：
-
-- [PDF](docs/GoldLens_Google_Trends_应用机会调研与MVP报告.pdf)
-- [DOCX](docs/GoldLens_Google_Trends_应用机会调研与MVP报告.docx)
-
-核心结论：
-
-- 日热搜被体育、天气、娱乐占据；黄金只有 5 条/4 个地区，但泰国单条 20,000+、阿联酋英文热度 95、印度 70。
-- 9 款竞品分成行情、持仓、交易、估价四个阵营；没有人把“到手价 + 回购价 + 回本点 + 跨市场单位”连起来。
-- GoldLens 选择“购买决策层”作为切口：先做泰国 96.5% / baht，再扩阿联酋 22K、印度 10 克/GST。
-
-## 技术方案（GoldLens 2.0 / 2.1）
-
-从当前 MVP 到生产级、可公开运营的现代程序。
-
-### v1.1 体验优先架构（当前推荐）
-
-- [架构优化 PDF（16 页）](docs/GoldLens_2.1_架构优化方案.pdf)
-- [架构优化 Markdown](docs/ARCHITECTURE_UPGRADE_V1.1.md)
-- 新架构图：[Experience-first 架构](docs/diagrams/architecture-v11.png) · [Local-first 读写](docs/diagrams/sync-flow.png)
-
-v1.1 在 v1.0 基础上做五件事：
-
-- **渲染**：Next.js 16 PPR / RSC / React Compiler / View Transitions。
-- **体验**：Tailwind v4 + Base UI + Motion；暗/亮主题、四语言/RTL、PWA、Expo 原生壳。
-- **数据**：ElectricSQL 读同步 + IndexedDB outbox；私有写入保持服务端权威。
-- **异步**：Inngest durable workflows 替代自建 worker + 队列。
-- **智能**：AI Gateway + 结构化工具调用，只做输入与解释，不做投资判断。
-
-所有“先进”技术先通过 2 周 spike 验证；不达标就回退，不把风险带进主路径。
-
-### v1.0 技术方案（基线）
-
-- [技术方案 PDF（36 页）](docs/GoldLens_2.0_技术方案.pdf)
-- [技术方案 Markdown](docs/TECHNICAL_PLAN.md)
-- 架构图：[目标架构](docs/diagrams/architecture.png) · [数据模型](docs/diagrams/data-model.png) · [报价流程](docs/diagrams/quote-flow.png) · [交付路线](docs/diagrams/roadmap-simple.png)
-
-方案要点：
-
-- **架构**：Next.js 16 模块化单体 + 独立数据 worker + PostgreSQL/Redis/Queue；先支撑 1–10 万 MAU，不提前拆微服务。
-- **领域**：把单位、纯度、税、工费、回购、回本点抽成 `@goldlens/core` 纯 TypeScript 包，前后端共用测试向量。
-- **数据**：价格快照 append-only，保留来源/时间/置信度；门店报价带有效期、验证等级和可解释排名。
-- **体验**：Next.js App Router + Tailwind v4 + shadcn/ui；暗/亮主题、四语言/RTL、PWA、Lighthouse ≥ 90、WCAG AA。
-- **交付**：18 周、3.5 FTE，P0 基础 → P1 消费端 → P2 Dealer 网络 → P3 规模化；每个阶段有验收门槛。
-
----
-
-## 数据来源
-
-| 数据 | 来源 |
-|---|---|
-| 国际现货金价 | [gold-api.com](https://gold-api.com/) |
-| 汇率 | [open.er-api.com](https://open.er-api.com/) |
-| 历史走势 | [Yahoo Finance GC=F](https://finance.yahoo.com/quote/GC=F/) |
-| 泰国本地价 | [GTA Thailand](https://www.goldtraders.or.th/) |
-| 需求结构 | [World Gold Council, Gold Demand Trends FY2025](https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-full-year-2025/jewellery) |
-
-任一来源失败时，服务端返回最近快照，并在 `degraded` 字段标注；前端不会假装实时。
-
----
-
-## 计算口径
-
-```
-金料价值 = 金价(USD/oz) ÷ 31.1034768 × 汇率 × 克重 × 纯度
-到手价   = 金料价值 + 工费/溢价 + 税费
-即时回购 = 本地回购价 × 重量（或 金料价值 × (1 − 回购折价)）
-回本涨幅 = 到手价 ÷ 即时回购 − 1
-```
-
-泰国 96.5% 金饰使用 GTA 金饰卖出价作为“到手价”锚，金条卖出价作为“金料”锚；回购使用 GTA 金饰回购价。阿联酋、印度、美国为国际金料价 + 可调工费 + 可调税费的估算，**不代表任何门店报价**。
-
----
-
-## 验证
+生产数据库：
 
 ```bash
-npm run check
-npm test
+DATABASE_URL=postgres://user:pass@host:5432/goldlens
 ```
 
-`npm test` 会启动一个临时服务，验证 `/health`、`/api/market`、首页、PWA manifest、静态快照。
-
-浏览器端到端测试（可选，需要 Playwright + Edge）：
-
-```bash
-cd research/e2e
-npm install
-node test.cjs
-```
-
-覆盖：默认泰国计算、阿联酋切换、印度 24K/10g、图表悬停、添加持仓、创建提醒、390px 无横向溢出、0 个 console/page error。
-
----
-
-## 部署
+启动时会自动执行 `BOOTSTRAP_SQL`（`CREATE TABLE IF NOT EXISTS`），并 seed 市场/Dealer/示例报价。正式环境建议改为 Drizzle migration + 审核流程。
 
 ### Docker
 
 ```bash
-docker build -t goldlens .
-docker run -p 5188:5188 goldlens
+docker compose up --build
+# http://localhost:3000
 ```
 
-### GitHub Pages（静态 Demo）
-
-仓库已包含 `.github/workflows/pages.yml`。在 GitHub 仓库 Settings → Pages 中选择 **GitHub Actions**，push 到 `main` 后会自动部署 `mvp/public`。
-
-静态 Demo 没有实时 API，使用 `mvp/public/data/market.json` 快照；页面显示 `DEMO`。
-
-### Render / Railway / Fly
-
-- Build command：`npm install --omit=dev`
-- Start command：`node mvp/server.mjs`
-- 环境变量：`HOST=0.0.0.0`、`PORT=10000`（平台注入的端口优先）
+`docker-compose.yml` 使用 Postgres 18；`apps/web/Dockerfile` 为 Next standalone 构建。
 
 ---
 
-## 上传到 GitHub
+## 已实现的功能
 
-当前仓库：
+| 模块 | 状态 | 说明 |
+|---|---|---|
+| 真实成本计算器 | ✅ | 金料、工费、税、到手价、回购、回本点；`@goldlens/core` 纯函数 + 测试向量 |
+| 四市场 | ✅ | 泰国 96.5%/THB、阿联酋 22K/AED、印度 22K/INR、美国 24K/USD |
+| 四单位 | ✅ | 克、baht（15.244g）、tola（11.6638g）、troy oz |
+| 实时行情 | ✅ | gold-api XAU/USD、open.er-api FX、Yahoo GC=F、GTA 抓取；逐源降级 |
+| 本地化 | ✅ | 中/英/泰/阿语导航与首页文案；RTL `dir`；locale cookie |
+| PWA | ✅ | manifest、Service Worker、离线 shell、安装元数据 |
+| 账户 | ✅ | Auth.js Credentials（演示）+ JWT session；Google OAuth 可选 |
+| 持仓 | ✅ | IndexedDB 本地优先 + 登录后 Postgres 同步；按回购价估值 |
+| 提醒 | ✅ | 本地 + 服务端存储；页面内校验；Inngest 定时检查函数已定义 |
+| Dealer 网络 | ✅ | Dealer 列表、报价表、询价表单、Dealer Portal 提交 |
+| Admin | ✅ | 统计、Dealer/报价/询价概览、RBAC |
+| 询价 | ✅ | `/api/quote-requests` 写入 Postgres，Dealer Portal 可见 |
+| AI 解析 | ✅ | AI SDK 6 + AI Gateway（配置 key 时）；无 key 时确定性规则解析 |
+| 订阅 | ✅ | Stripe Checkout（配置 key 时）；无 key 时 demo 升级，不扣款 |
+| Inngest | ✅ | 价格采集、报价分发、提醒检查、每日摘要函数；`/api/inngest` 服务端点 |
+| 可观测性 | ◐ | `/api/health`、`/status` 数据源健康；Sentry/OTel 需接 key |
+| ElectricSQL | ◐ | 当前以 IndexedDB + Server Action 实现 local-first；Electric shape 适配待接服务 |
+
+> ✅ 已实现并可在本地运行；◐ 代码/接口已就绪，生产需外部服务或凭据。
+
+### 页面
+
+`/` 首页 · `/calculate` 计算器 · `/compare` 四市场对比 · `/quotes` 询价 · `/dealers` Dealer 列表 · `/portfolio` 持仓 · `/alerts` 提醒 · `/learn` 知识库 · `/account` 账户 · `/login` 登录 · `/dealer` Dealer Portal · `/admin` Admin · `/status` 数据健康。
+
+### API
+
+`GET /api/market` · `GET /api/events/prices`（SSE）· `GET/POST/DELETE /api/holdings` · `GET/POST/DELETE /api/alerts` · `POST /api/quote-requests` · `POST /api/dealer/quotes` · `POST /api/ai/parse` · `POST /api/billing/checkout` · `ALL /api/inngest` · `GET /api/health`.
+
+---
+
+## 技术栈
+
+- **应用**：Next.js 16 App Router、React 19、TypeScript strict、React Compiler、Server Actions/Route Handlers
+- **样式**：Tailwind CSS v4（设计 token + 自定义组件层），深色黄金视觉，响应式 + RTL
+- **领域**：`packages/core`，Decimal.js，纯函数，Vitest 测试向量
+- **数据**：PostgreSQL 18 / PGlite、Drizzle ORM、`BOOTSTRAP_SQL` 自动建表、seed
+- **认证**：Auth.js v5（JWT）、Credentials 演示、Google OAuth 可选
+- **本地优先**：Dexie（IndexedDB）、本地持仓/提醒、登录后同步
+- **异步**：Inngest durable functions（cron + event），`/api/inngest`
+- **AI**：AI SDK 6 + AI Gateway（OpenAI-compatible）；规则解析兜底
+- **支付**：Stripe Checkout（可选）；demo 模式
+- **部署**：Vercel/Node standalone、Docker Compose、GitHub Actions
+
+---
+
+## 目录
+
+```
+apps/web/                    Next.js 应用
+  src/app/                   页面 + API routes
+  src/components/            AppShell、Calculator、Portfolio、Alerts、QuoteForm...
+  src/lib/                   market、db-data、local-db、inngest、format
+  public/                    manifest、sw.js、icons
+packages/core/               纯计算引擎 + 测试
+packages/db/                 Drizzle schema、PGlite/Postgres client、seed
+packages/i18n/               zh/en/th/ar 字典
+packages/ui/                 cn() 工具
+mvp/                         旧版静态 MVP（保留，不删）
+tests/smoke.mjs              旧版冒烟测试
+docs/                        调研报告、技术方案、图表
+.github/workflows/ci.yml     新 CI：pnpm + core/web tests + build + legacy smoke
+docker-compose.yml           Postgres 18 + app
+.env.example                 环境变量模板
+```
+
+---
+
+## 环境变量
+
+复制 `.env.example` 为 `apps/web/.env.local`（Next 从 app 目录加载）：
 
 ```bash
-git remote add origin https://github.com/death1024/goldlens-mvp.git
-git push -u origin main
+DATABASE_URL=                 # 留空则使用 PGlite
+AUTH_SECRET=                  # 生产必须设置
+DEMO_PASSWORD=goldlens
+AUTH_GOOGLE_ID=
+AUTH_GOOGLE_SECRET=
+AI_GATEWAY_API_KEY=           # 留空则规则解析
+AI_GATEWAY_URL=https://ai-gateway.vercel.sh/v1
+AI_MODEL=openai/gpt-4.1-mini
+STRIPE_SECRET_KEY=            # 留空则 demo 升级
+STRIPE_PRICE_ID=
+INNGEST_EVENT_KEY=
+INNGEST_SIGNING_KEY=
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
-首次推送需要 GitHub 认证（PAT 或 SSH）。
+---
+
+## 测试与质量
+
+```bash
+pnpm test          # core + web unit + legacy smoke
+pnpm --filter @goldlens/core test
+pnpm --filter @goldlens/web test
+pnpm build
+```
+
+CI：pnpm install → core tests → web tests → Next build → legacy smoke。
+
+本地已做冒烟：
+
+- 首页、计算器、对比、询价、持仓、提醒、Dealer、Admin、Learn、Login、Status 全部 200
+- 登录 / session / holdings POST/GET / quote-request 写入验证通过
+- 移动端 390px 无横向滚动
+- 真实行情与 GTA 抓取；失败逐源降级
 
 ---
 
-## 边界
+## 边界与未完成项
 
-- 不交易、不托管、不代购、不提供涨跌预测。
-- 不是行情终端，也不是投资建议。
-- 泰国以 GTA 公告为参考，门店实际价格可能不同；阿联酋/印度/美国为估算。
-- 公开接口无商业 SLA；生产化需要数据授权、缓存、监控与合规审查。
+- **不托管、不交易、不提供投资建议**；没有 KYC、资金账户、订单执行。
+- **ElectricSQL**：当前 local-first 由 IndexedDB + 服务端权威写实现；接 Electric 服务后可替换为 shape 同步。
+- **Expo 原生壳**：未创建；PWA 已验证。
+- **Passkeys/Turnstile/Web Push/LINE**：接口预留，生产需接服务。
+- **Sentry/OpenTelemetry/PostHog**：`/status` 已展示数据源健康，正式观测需接 key。
+- **Dealer 报价审核**：Admin 审核、签名、过期任务的生产流程待接。
+- 旧版 `mvp/` 与 GitHub Pages 静态 Demo 保留，作为回退基线。
 
 ---
 
-## License
+## 调研与技术方案
 
-代码使用 MIT License，见 [LICENSE](LICENSE)。调研报告与报告中的图表/截图版权归 GoldLens Research，保留所有权利。
+- [Google Trends 应用机会调研与 MVP 报告（32 页）](docs/GoldLens_Google_Trends_应用机会调研与MVP报告.pdf)
+- [GoldLens 2.0 技术方案（36 页）](docs/GoldLens_2.0_技术方案.pdf)
+- [GoldLens 2.1 体验优先架构（16 页）](docs/GoldLens_2.1_架构优化方案.pdf)
+- [架构优化 Markdown](docs/ARCHITECTURE_UPGRADE_V1.1.md)
+
+核心结论：日热搜被体育、天气、娱乐占据；黄金只有少量条目，但泰国、阿联酋、印度有明确的高意图搜索。竞品分成行情、持仓、交易、估价四类，没有人把“到手价 + 回购价 + 回本点 + 跨市场单位”连起来。GoldLens 从“购买决策层”切入，先做泰国 96.5% / baht，再扩阿联酋 22K、印度 10 克/GST。

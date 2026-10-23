@@ -1,0 +1,33 @@
+services:
+  db:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_USER: goldlens
+      POSTGRES_PASSWORD: goldlens
+      POSTGRES_DB: goldlens
+    ports:
+      - '5432:5432'
+    volumes:
+      - goldlens-pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U goldlens -d goldlens']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    environment:
+      DATABASE_URL: postgres://goldlens:goldlens@db:5432/goldlens
+      AUTH_SECRET: local-compose-secret-change-me
+      DEMO_PASSWORD: goldlens
+    ports:
+      - '3000:3000'
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  goldlens-pg:
