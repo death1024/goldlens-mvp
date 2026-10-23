@@ -104,6 +104,22 @@ goldlens/
 - 9 款竞品分成行情、持仓、交易、估价四个阵营；没有人把“到手价 + 回购价 + 回本点 + 跨市场单位”连起来。
 - GoldLens 选择“购买决策层”作为切口：先做泰国 96.5% / baht，再扩阿联酋 22K、印度 10 克/GST。
 
+## 技术方案（GoldLens 2.0）
+
+从当前 MVP 到生产级、可公开运营的现代程序：
+
+- [技术方案 PDF（36 页）](docs/GoldLens_2.0_技术方案.pdf)
+- [技术方案 Markdown](docs/TECHNICAL_PLAN.md)
+- 架构图：[目标架构](docs/diagrams/architecture.png) · [数据模型](docs/diagrams/data-model.png) · [报价流程](docs/diagrams/quote-flow.png) · [交付路线](docs/diagrams/roadmap-simple.png)
+
+方案要点：
+
+- **架构**：Next.js 16 模块化单体 + 独立数据 worker + PostgreSQL/Redis/Queue；先支撑 1–10 万 MAU，不提前拆微服务。
+- **领域**：把单位、纯度、税、工费、回购、回本点抽成 `@goldlens/core` 纯 TypeScript 包，前后端共用测试向量。
+- **数据**：价格快照 append-only，保留来源/时间/置信度；门店报价带有效期、验证等级和可解释排名。
+- **体验**：Next.js App Router + Tailwind v4 + shadcn/ui；暗/亮主题、四语言/RTL、PWA、Lighthouse ≥ 90、WCAG AA。
+- **交付**：18 周、3.5 FTE，P0 基础 → P1 消费端 → P2 Dealer 网络 → P3 规模化；每个阶段有验收门槛。
+
 ---
 
 ## 数据来源
