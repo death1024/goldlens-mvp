@@ -1,0 +1,4892 @@
+{
+  "fetched_at": "2026-10-23T05:21:45.732191+00:00",
+  "timeframe": "today 12-m",
+  "geo": "worldwide",
+  "series": {
+    "gold_price": {
+      "query": "gold price",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 65
+        },
+        {
+          "date": "2025-10-26",
+          "value": 51
+        },
+        {
+          "date": "2025-11-02",
+          "value": 37
+        },
+        {
+          "date": "2025-11-09",
+          "value": 35
+        },
+        {
+          "date": "2025-11-16",
+          "value": 33
+        },
+        {
+          "date": "2025-11-23",
+          "value": 33
+        },
+        {
+          "date": "2025-11-30",
+          "value": 35
+        },
+        {
+          "date": "2025-12-07",
+          "value": 34
+        },
+        {
+          "date": "2025-12-14",
+          "value": 32
+        },
+        {
+          "date": "2025-12-21",
+          "value": 34
+        },
+        {
+          "date": "2025-12-28",
+          "value": 39
+        },
+        {
+          "date": "2026-01-04",
+          "value": 33
+        },
+        {
+          "date": "2026-01-11",
+          "value": 35
+        },
+        {
+          "date": "2026-01-18",
+          "value": 51
+        },
+        {
+          "date": "2026-01-25",
+          "value": 100
+        },
+        {
+          "date": "2026-02-01",
+          "value": 96
+        },
+        {
+          "date": "2026-02-08",
+          "value": 46
+        },
+        {
+          "date": "2026-02-15",
+          "value": 39
+        },
+        {
+          "date": "2026-02-22",
+          "value": 39
+        },
+        {
+          "date": "2026-03-01",
+          "value": 54
+        },
+        {
+          "date": "2026-03-08",
+          "value": 48
+        },
+        {
+          "date": "2026-03-15",
+          "value": 55
+        },
+        {
+          "date": "2026-03-22",
+          "value": 83
+        },
+        {
+          "date": "2026-03-29",
+          "value": 53
+        },
+        {
+          "date": "2026-04-05",
+          "value": 43
+        },
+        {
+          "date": "2026-04-12",
+          "value": 35
+        },
+        {
+          "date": "2026-04-19",
+          "value": 31
+        },
+        {
+          "date": "2026-04-26",
+          "value": 32
+        },
+        {
+          "date": "2026-05-03",
+          "value": 28
+        },
+        {
+          "date": "2026-05-10",
+          "value": 38
+        },
+        {
+          "date": "2026-05-17",
+          "value": 32
+        },
+        {
+          "date": "2026-05-24",
+          "value": 31
+        },
+        {
+          "date": "2026-05-31",
+          "value": 34
+        },
+        {
+          "date": "2026-06-07",
+          "value": 41
+        },
+        {
+          "date": "2026-06-14",
+          "value": 36
+        },
+        {
+          "date": "2026-06-21",
+          "value": 40
+        },
+        {
+          "date": "2026-06-28",
+          "value": 37
+        },
+        {
+          "date": "2026-07-05",
+          "value": 32
+        },
+        {
+          "date": "2026-07-12",
+          "value": 30
+        },
+        {
+          "date": "2026-07-19",
+          "value": 29
+        },
+        {
+          "date": "2026-07-26",
+          "value": 29
+        },
+        {
+          "date": "2026-08-02",
+          "value": 29
+        },
+        {
+          "date": "2026-08-09",
+          "value": 35
+        },
+        {
+          "date": "2026-08-16",
+          "value": 34
+        },
+        {
+          "date": "2026-08-23",
+          "value": 32
+        },
+        {
+          "date": "2026-08-30",
+          "value": 37
+        },
+        {
+          "date": "2026-09-06",
+          "value": 32
+        },
+        {
+          "date": "2026-09-13",
+          "value": 24
+        },
+        {
+          "date": "2026-09-20",
+          "value": 22
+        },
+        {
+          "date": "2026-09-27",
+          "value": 24
+        },
+        {
+          "date": "2026-10-04",
+          "value": 19
+        },
+        {
+          "date": "2026-10-11",
+          "value": 19
+        },
+        {
+          "date": "2026-10-18",
+          "value": 18
+        }
+      ],
+      "top": [
+        {
+          "query": "gold today price",
+          "value": 100
+        },
+        {
+          "query": "price of gold",
+          "value": 44
+        },
+        {
+          "query": "silver price",
+          "value": 26
+        },
+        {
+          "query": "gold silver price",
+          "value": 25
+        },
+        {
+          "query": "gold price india",
+          "value": 24
+        },
+        {
+          "query": "gold rate",
+          "value": 19
+        },
+        {
+          "query": "gold price news",
+          "value": 14
+        },
+        {
+          "query": "silver price today",
+          "value": 14
+        },
+        {
+          "query": "gold price in india",
+          "value": 13
+        },
+        {
+          "query": "price of gold today",
+          "value": 13
+        },
+        {
+          "query": "gold rate today",
+          "value": 12
+        },
+        {
+          "query": "gold price per gram",
+          "value": 12
+        },
+        {
+          "query": "current gold price",
+          "value": 10
+        },
+        {
+          "query": "gold live price",
+          "value": 10
+        },
+        {
+          "query": "gold price usd",
+          "value": 9
+        }
+      ],
+      "rising": [
+        {
+          "query": "lidl near me",
+          "value": 14900
+        },
+        {
+          "query": "oil prices today",
+          "value": 350
+        },
+        {
+          "query": "oil prices",
+          "value": 250
+        },
+        {
+          "query": "crude oil price",
+          "value": 250
+        },
+        {
+          "query": "wikipedia",
+          "value": 250
+        },
+        {
+          "query": "gold price australia",
+          "value": 200
+        },
+        {
+          "query": "oil price today",
+          "value": 160
+        },
+        {
+          "query": "mcx gold price today",
+          "value": 140
+        },
+        {
+          "query": "silver rate today",
+          "value": 130
+        },
+        {
+          "query": "silver prices today",
+          "value": 120
+        },
+        {
+          "query": "oil price",
+          "value": 110
+        },
+        {
+          "query": "gold mcx live",
+          "value": 110
+        },
+        {
+          "query": "gold and silver price today",
+          "value": 110
+        },
+        {
+          "query": "gold price mcx",
+          "value": 110
+        },
+        {
+          "query": "gold price today per gram",
+          "value": 90
+        }
+      ]
+    },
+    "gold_rate": {
+      "query": "gold rate",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 25
+        },
+        {
+          "date": "2025-10-26",
+          "value": 24
+        },
+        {
+          "date": "2025-11-02",
+          "value": 16
+        },
+        {
+          "date": "2025-11-09",
+          "value": 13
+        },
+        {
+          "date": "2025-11-16",
+          "value": 12
+        },
+        {
+          "date": "2025-11-23",
+          "value": 11
+        },
+        {
+          "date": "2025-11-30",
+          "value": 12
+        },
+        {
+          "date": "2025-12-07",
+          "value": 11
+        },
+        {
+          "date": "2025-12-14",
+          "value": 12
+        },
+        {
+          "date": "2025-12-21",
+          "value": 14
+        },
+        {
+          "date": "2025-12-28",
+          "value": 17
+        },
+        {
+          "date": "2026-01-04",
+          "value": 14
+        },
+        {
+          "date": "2026-01-11",
+          "value": 13
+        },
+        {
+          "date": "2026-01-18",
+          "value": 21
+        },
+        {
+          "date": "2026-01-25",
+          "value": 41
+        },
+        {
+          "date": "2026-02-01",
+          "value": 48
+        },
+        {
+          "date": "2026-02-08",
+          "value": 21
+        },
+        {
+          "date": "2026-02-15",
+          "value": 22
+        },
+        {
+          "date": "2026-02-22",
+          "value": 41
+        },
+        {
+          "date": "2026-03-01",
+          "value": 54
+        },
+        {
+          "date": "2026-03-08",
+          "value": 43
+        },
+        {
+          "date": "2026-03-15",
+          "value": 54
+        },
+        {
+          "date": "2026-03-22",
+          "value": 100
+        },
+        {
+          "date": "2026-03-29",
+          "value": 59
+        },
+        {
+          "date": "2026-04-05",
+          "value": 21
+        },
+        {
+          "date": "2026-04-12",
+          "value": 14
+        },
+        {
+          "date": "2026-04-19",
+          "value": 13
+        },
+        {
+          "date": "2026-04-26",
+          "value": 12
+        },
+        {
+          "date": "2026-05-03",
+          "value": 11
+        },
+        {
+          "date": "2026-05-10",
+          "value": 18
+        },
+        {
+          "date": "2026-05-17",
+          "value": 13
+        },
+        {
+          "date": "2026-05-24",
+          "value": 11
+        },
+        {
+          "date": "2026-05-31",
+          "value": 11
+        },
+        {
+          "date": "2026-06-07",
+          "value": 16
+        },
+        {
+          "date": "2026-06-14",
+          "value": 13
+        },
+        {
+          "date": "2026-06-21",
+          "value": 15
+        },
+        {
+          "date": "2026-06-28",
+          "value": 15
+        },
+        {
+          "date": "2026-07-05",
+          "value": 11
+        },
+        {
+          "date": "2026-07-12",
+          "value": 11
+        },
+        {
+          "date": "2026-07-19",
+          "value": 9
+        },
+        {
+          "date": "2026-07-26",
+          "value": 10
+        },
+        {
+          "date": "2026-08-02",
+          "value": 10
+        },
+        {
+          "date": "2026-08-09",
+          "value": 11
+        },
+        {
+          "date": "2026-08-16",
+          "value": 11
+        },
+        {
+          "date": "2026-08-23",
+          "value": 11
+        },
+        {
+          "date": "2026-08-30",
+          "value": 13
+        },
+        {
+          "date": "2026-09-06",
+          "value": 11
+        },
+        {
+          "date": "2026-09-13",
+          "value": 9
+        },
+        {
+          "date": "2026-09-20",
+          "value": 8
+        },
+        {
+          "date": "2026-09-27",
+          "value": 10
+        },
+        {
+          "date": "2026-10-04",
+          "value": 9
+        },
+        {
+          "date": "2026-10-11",
+          "value": 9
+        },
+        {
+          "date": "2026-10-18",
+          "value": 10
+        }
+      ],
+      "top": [
+        {
+          "query": "gold rate today",
+          "value": 100
+        },
+        {
+          "query": "gold price",
+          "value": 10
+        },
+        {
+          "query": "silver rate",
+          "value": 7
+        },
+        {
+          "query": "gold rate india",
+          "value": 6
+        },
+        {
+          "query": "today gold price",
+          "value": 6
+        },
+        {
+          "query": "silver rate today",
+          "value": 5
+        },
+        {
+          "query": "22 carat gold rate",
+          "value": 4
+        },
+        {
+          "query": "gold rate today india",
+          "value": 3
+        },
+        {
+          "query": "gold rate today 22 carat",
+          "value": 3
+        },
+        {
+          "query": "gold rate in india",
+          "value": 3
+        },
+        {
+          "query": "24 carat gold rate",
+          "value": 3
+        },
+        {
+          "query": "rate of gold today",
+          "value": 3
+        },
+        {
+          "query": "chennai gold rate",
+          "value": 3
+        },
+        {
+          "query": "dubai gold rate",
+          "value": 2
+        },
+        {
+          "query": "22k gold rate today",
+          "value": 2
+        }
+      ],
+      "rising": [
+        {
+          "query": "mcx gold rate today",
+          "value": 120
+        },
+        {
+          "query": "gold and silver rate today",
+          "value": 120
+        },
+        {
+          "query": "silver price today",
+          "value": 80
+        },
+        {
+          "query": "mcx gold rate",
+          "value": 80
+        },
+        {
+          "query": "chandi rate today",
+          "value": 80
+        },
+        {
+          "query": "silver rate today delhi",
+          "value": 80
+        },
+        {
+          "query": "silver rate today",
+          "value": 70
+        },
+        {
+          "query": "silver rate",
+          "value": 70
+        },
+        {
+          "query": "silver rate today hyderabad",
+          "value": 60
+        },
+        {
+          "query": "silver rate today bangalore",
+          "value": 40
+        }
+      ]
+    },
+    "ai_outfit": {
+      "query": "ai outfit planner",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 34
+        },
+        {
+          "date": "2025-10-26",
+          "value": 0
+        },
+        {
+          "date": "2025-11-02",
+          "value": 32
+        },
+        {
+          "date": "2025-11-09",
+          "value": 32
+        },
+        {
+          "date": "2025-11-16",
+          "value": 0
+        },
+        {
+          "date": "2025-11-23",
+          "value": 28
+        },
+        {
+          "date": "2025-11-30",
+          "value": 49
+        },
+        {
+          "date": "2025-12-07",
+          "value": 43
+        },
+        {
+          "date": "2025-12-14",
+          "value": 56
+        },
+        {
+          "date": "2025-12-21",
+          "value": 42
+        },
+        {
+          "date": "2025-12-28",
+          "value": 60
+        },
+        {
+          "date": "2026-01-04",
+          "value": 44
+        },
+        {
+          "date": "2026-01-11",
+          "value": 30
+        },
+        {
+          "date": "2026-01-18",
+          "value": 51
+        },
+        {
+          "date": "2026-01-25",
+          "value": 45
+        },
+        {
+          "date": "2026-02-01",
+          "value": 25
+        },
+        {
+          "date": "2026-02-08",
+          "value": 31
+        },
+        {
+          "date": "2026-02-15",
+          "value": 37
+        },
+        {
+          "date": "2026-02-22",
+          "value": 58
+        },
+        {
+          "date": "2026-03-01",
+          "value": 47
+        },
+        {
+          "date": "2026-03-08",
+          "value": 70
+        },
+        {
+          "date": "2026-03-15",
+          "value": 57
+        },
+        {
+          "date": "2026-03-22",
+          "value": 79
+        },
+        {
+          "date": "2026-03-29",
+          "value": 51
+        },
+        {
+          "date": "2026-04-05",
+          "value": 64
+        },
+        {
+          "date": "2026-04-12",
+          "value": 69
+        },
+        {
+          "date": "2026-04-19",
+          "value": 45
+        },
+        {
+          "date": "2026-04-26",
+          "value": 100
+        },
+        {
+          "date": "2026-05-03",
+          "value": 53
+        },
+        {
+          "date": "2026-05-10",
+          "value": 56
+        },
+        {
+          "date": "2026-05-17",
+          "value": 46
+        },
+        {
+          "date": "2026-05-24",
+          "value": 65
+        },
+        {
+          "date": "2026-05-31",
+          "value": 53
+        },
+        {
+          "date": "2026-06-07",
+          "value": 53
+        },
+        {
+          "date": "2026-06-14",
+          "value": 54
+        },
+        {
+          "date": "2026-06-21",
+          "value": 30
+        },
+        {
+          "date": "2026-06-28",
+          "value": 43
+        },
+        {
+          "date": "2026-07-05",
+          "value": 49
+        },
+        {
+          "date": "2026-07-12",
+          "value": 59
+        },
+        {
+          "date": "2026-07-19",
+          "value": 31
+        },
+        {
+          "date": "2026-07-26",
+          "value": 33
+        },
+        {
+          "date": "2026-08-02",
+          "value": 0
+        },
+        {
+          "date": "2026-08-09",
+          "value": 0
+        },
+        {
+          "date": "2026-08-16",
+          "value": 0
+        },
+        {
+          "date": "2026-08-23",
+          "value": 0
+        },
+        {
+          "date": "2026-08-30",
+          "value": 37
+        },
+        {
+          "date": "2026-09-06",
+          "value": 26
+        },
+        {
+          "date": "2026-09-13",
+          "value": 39
+        },
+        {
+          "date": "2026-09-20",
+          "value": 0
+        },
+        {
+          "date": "2026-09-27",
+          "value": 0
+        },
+        {
+          "date": "2026-10-04",
+          "value": 2
+        },
+        {
+          "date": "2026-10-11",
+          "value": 4
+        },
+        {
+          "date": "2026-10-18",
+          "value": 4
+        }
+      ],
+      "top": [],
+      "rising": []
+    },
+    "virtual_try_on": {
+      "query": "virtual try on",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 63
+        },
+        {
+          "date": "2025-10-26",
+          "value": 61
+        },
+        {
+          "date": "2025-11-02",
+          "value": 60
+        },
+        {
+          "date": "2025-11-09",
+          "value": 63
+        },
+        {
+          "date": "2025-11-16",
+          "value": 54
+        },
+        {
+          "date": "2025-11-23",
+          "value": 73
+        },
+        {
+          "date": "2025-11-30",
+          "value": 83
+        },
+        {
+          "date": "2025-12-07",
+          "value": 70
+        },
+        {
+          "date": "2025-12-14",
+          "value": 67
+        },
+        {
+          "date": "2025-12-21",
+          "value": 56
+        },
+        {
+          "date": "2025-12-28",
+          "value": 54
+        },
+        {
+          "date": "2026-01-04",
+          "value": 60
+        },
+        {
+          "date": "2026-01-11",
+          "value": 62
+        },
+        {
+          "date": "2026-01-18",
+          "value": 64
+        },
+        {
+          "date": "2026-01-25",
+          "value": 69
+        },
+        {
+          "date": "2026-02-01",
+          "value": 68
+        },
+        {
+          "date": "2026-02-08",
+          "value": 67
+        },
+        {
+          "date": "2026-02-15",
+          "value": 66
+        },
+        {
+          "date": "2026-02-22",
+          "value": 83
+        },
+        {
+          "date": "2026-03-01",
+          "value": 87
+        },
+        {
+          "date": "2026-03-08",
+          "value": 81
+        },
+        {
+          "date": "2026-03-15",
+          "value": 71
+        },
+        {
+          "date": "2026-03-22",
+          "value": 71
+        },
+        {
+          "date": "2026-03-29",
+          "value": 71
+        },
+        {
+          "date": "2026-04-05",
+          "value": 73
+        },
+        {
+          "date": "2026-04-12",
+          "value": 73
+        },
+        {
+          "date": "2026-04-19",
+          "value": 70
+        },
+        {
+          "date": "2026-04-26",
+          "value": 86
+        },
+        {
+          "date": "2026-05-03",
+          "value": 99
+        },
+        {
+          "date": "2026-05-10",
+          "value": 100
+        },
+        {
+          "date": "2026-05-17",
+          "value": 73
+        },
+        {
+          "date": "2026-05-24",
+          "value": 73
+        },
+        {
+          "date": "2026-05-31",
+          "value": 88
+        },
+        {
+          "date": "2026-06-07",
+          "value": 77
+        },
+        {
+          "date": "2026-06-14",
+          "value": 79
+        },
+        {
+          "date": "2026-06-21",
+          "value": 81
+        },
+        {
+          "date": "2026-06-28",
+          "value": 66
+        },
+        {
+          "date": "2026-07-05",
+          "value": 68
+        },
+        {
+          "date": "2026-07-12",
+          "value": 63
+        },
+        {
+          "date": "2026-07-19",
+          "value": 57
+        },
+        {
+          "date": "2026-07-26",
+          "value": 56
+        },
+        {
+          "date": "2026-08-02",
+          "value": 49
+        },
+        {
+          "date": "2026-08-09",
+          "value": 48
+        },
+        {
+          "date": "2026-08-16",
+          "value": 47
+        },
+        {
+          "date": "2026-08-23",
+          "value": 46
+        },
+        {
+          "date": "2026-08-30",
+          "value": 58
+        },
+        {
+          "date": "2026-09-06",
+          "value": 58
+        },
+        {
+          "date": "2026-09-13",
+          "value": 72
+        },
+        {
+          "date": "2026-09-20",
+          "value": 76
+        },
+        {
+          "date": "2026-09-27",
+          "value": 51
+        },
+        {
+          "date": "2026-10-04",
+          "value": 42
+        },
+        {
+          "date": "2026-10-11",
+          "value": 34
+        },
+        {
+          "date": "2026-10-18",
+          "value": 30
+        }
+      ],
+      "top": [
+        {
+          "query": "virtual try on ai",
+          "value": 100
+        },
+        {
+          "query": "virtual glasses try on",
+          "value": 69
+        },
+        {
+          "query": "glasses",
+          "value": 67
+        },
+        {
+          "query": "virtual hair try on",
+          "value": 44
+        },
+        {
+          "query": "google virtual try on",
+          "value": 34
+        },
+        {
+          "query": "color virtual try on",
+          "value": 26
+        },
+        {
+          "query": "virtual try on clothes",
+          "value": 24
+        },
+        {
+          "query": "virtual sunglasses try on",
+          "value": 19
+        },
+        {
+          "query": "sunglasses",
+          "value": 19
+        },
+        {
+          "query": "hair color virtual try on",
+          "value": 18
+        },
+        {
+          "query": "virtual makeup try on",
+          "value": 17
+        },
+        {
+          "query": "warby parker virtual try on",
+          "value": 17
+        },
+        {
+          "query": "warby parker",
+          "value": 17
+        },
+        {
+          "query": "virtual hairstyle try on",
+          "value": 17
+        },
+        {
+          "query": "kolors virtual try on",
+          "value": 16
+        }
+      ],
+      "rising": [
+        {
+          "query": "virtual try on anywear",
+          "value": 17500
+        },
+        {
+          "query": "new york times",
+          "value": 550
+        },
+        {
+          "query": "warby parker virtual try on",
+          "value": 500
+        },
+        {
+          "query": "warby parker",
+          "value": 500
+        },
+        {
+          "query": "virtual try on glasses warby parker",
+          "value": 500
+        },
+        {
+          "query": "anywhere live virtual try on",
+          "value": 200
+        },
+        {
+          "query": "google virtual try on",
+          "value": 140
+        },
+        {
+          "query": "virtual try on ai",
+          "value": 110
+        },
+        {
+          "query": "virtual try on glasses uk",
+          "value": 100
+        },
+        {
+          "query": "virtual makeup try on",
+          "value": 90
+        },
+        {
+          "query": "virtual try on glasses online",
+          "value": 70
+        },
+        {
+          "query": "virtual hairstyle try on",
+          "value": 50
+        },
+        {
+          "query": "amazon virtual try on",
+          "value": 50
+        },
+        {
+          "query": "virtual glasses try on",
+          "value": 50
+        }
+      ]
+    },
+    "ai_interior": {
+      "query": "ai interior design",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 70
+        },
+        {
+          "date": "2025-10-26",
+          "value": 60
+        },
+        {
+          "date": "2025-11-02",
+          "value": 61
+        },
+        {
+          "date": "2025-11-09",
+          "value": 61
+        },
+        {
+          "date": "2025-11-16",
+          "value": 65
+        },
+        {
+          "date": "2025-11-23",
+          "value": 71
+        },
+        {
+          "date": "2025-11-30",
+          "value": 83
+        },
+        {
+          "date": "2025-12-07",
+          "value": 75
+        },
+        {
+          "date": "2025-12-14",
+          "value": 64
+        },
+        {
+          "date": "2025-12-21",
+          "value": 63
+        },
+        {
+          "date": "2025-12-28",
+          "value": 74
+        },
+        {
+          "date": "2026-01-04",
+          "value": 70
+        },
+        {
+          "date": "2026-01-11",
+          "value": 72
+        },
+        {
+          "date": "2026-01-18",
+          "value": 77
+        },
+        {
+          "date": "2026-01-25",
+          "value": 92
+        },
+        {
+          "date": "2026-02-01",
+          "value": 74
+        },
+        {
+          "date": "2026-02-08",
+          "value": 71
+        },
+        {
+          "date": "2026-02-15",
+          "value": 75
+        },
+        {
+          "date": "2026-02-22",
+          "value": 87
+        },
+        {
+          "date": "2026-03-01",
+          "value": 97
+        },
+        {
+          "date": "2026-03-08",
+          "value": 100
+        },
+        {
+          "date": "2026-03-15",
+          "value": 85
+        },
+        {
+          "date": "2026-03-22",
+          "value": 78
+        },
+        {
+          "date": "2026-03-29",
+          "value": 78
+        },
+        {
+          "date": "2026-04-05",
+          "value": 78
+        },
+        {
+          "date": "2026-04-12",
+          "value": 80
+        },
+        {
+          "date": "2026-04-19",
+          "value": 74
+        },
+        {
+          "date": "2026-04-26",
+          "value": 76
+        },
+        {
+          "date": "2026-05-03",
+          "value": 82
+        },
+        {
+          "date": "2026-05-10",
+          "value": 82
+        },
+        {
+          "date": "2026-05-17",
+          "value": 75
+        },
+        {
+          "date": "2026-05-24",
+          "value": 78
+        },
+        {
+          "date": "2026-05-31",
+          "value": 84
+        },
+        {
+          "date": "2026-06-07",
+          "value": 80
+        },
+        {
+          "date": "2026-06-14",
+          "value": 78
+        },
+        {
+          "date": "2026-06-21",
+          "value": 75
+        },
+        {
+          "date": "2026-06-28",
+          "value": 82
+        },
+        {
+          "date": "2026-07-05",
+          "value": 71
+        },
+        {
+          "date": "2026-07-12",
+          "value": 41
+        },
+        {
+          "date": "2026-07-19",
+          "value": 43
+        },
+        {
+          "date": "2026-07-26",
+          "value": 43
+        },
+        {
+          "date": "2026-08-02",
+          "value": 32
+        },
+        {
+          "date": "2026-08-09",
+          "value": 36
+        },
+        {
+          "date": "2026-08-16",
+          "value": 32
+        },
+        {
+          "date": "2026-08-23",
+          "value": 31
+        },
+        {
+          "date": "2026-08-30",
+          "value": 35
+        },
+        {
+          "date": "2026-09-06",
+          "value": 36
+        },
+        {
+          "date": "2026-09-13",
+          "value": 41
+        },
+        {
+          "date": "2026-09-20",
+          "value": 44
+        },
+        {
+          "date": "2026-09-27",
+          "value": 32
+        },
+        {
+          "date": "2026-10-04",
+          "value": 22
+        },
+        {
+          "date": "2026-10-11",
+          "value": 18
+        },
+        {
+          "date": "2026-10-18",
+          "value": 16
+        }
+      ],
+      "top": [
+        {
+          "query": "ai for interior design",
+          "value": 100
+        },
+        {
+          "query": "ai in interior design",
+          "value": 82
+        },
+        {
+          "query": "free ai interior design",
+          "value": 48
+        },
+        {
+          "query": "ai news",
+          "value": 39
+        },
+        {
+          "query": "ai interior design app",
+          "value": 39
+        },
+        {
+          "query": "interior design news",
+          "value": 38
+        },
+        {
+          "query": "best ai for interior design",
+          "value": 37
+        },
+        {
+          "query": "interior design with ai",
+          "value": 37
+        },
+        {
+          "query": "home design ai",
+          "value": 29
+        },
+        {
+          "query": "home interior design",
+          "value": 29
+        },
+        {
+          "query": "home ai interior design",
+          "value": 28
+        },
+        {
+          "query": "ai room interior design",
+          "value": 28
+        },
+        {
+          "query": "ai room design",
+          "value": 26
+        },
+        {
+          "query": "google ai",
+          "value": 23
+        },
+        {
+          "query": "ai interior design tools",
+          "value": 21
+        }
+      ],
+      "rising": [
+        {
+          "query": "interior design trends 2026",
+          "value": 1500
+        },
+        {
+          "query": "lidl near me",
+          "value": 1250
+        },
+        {
+          "query": "nano banana",
+          "value": 250
+        },
+        {
+          "query": "new york times",
+          "value": 200
+        },
+        {
+          "query": "homestyler",
+          "value": 200
+        },
+        {
+          "query": "google ai",
+          "value": 120
+        },
+        {
+          "query": "ai interior design tools",
+          "value": 80
+        },
+        {
+          "query": "ai interior design software",
+          "value": 60
+        },
+        {
+          "query": "ai tools for interior design",
+          "value": 60
+        },
+        {
+          "query": "ai in interior design",
+          "value": 60
+        },
+        {
+          "query": "best ai for interior design",
+          "value": 40
+        },
+        {
+          "query": "interior design by ai",
+          "value": 40
+        }
+      ]
+    },
+    "protein_tracker": {
+      "query": "protein tracker",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 18
+        },
+        {
+          "date": "2025-10-26",
+          "value": 16
+        },
+        {
+          "date": "2025-11-02",
+          "value": 17
+        },
+        {
+          "date": "2025-11-09",
+          "value": 17
+        },
+        {
+          "date": "2025-11-16",
+          "value": 17
+        },
+        {
+          "date": "2025-11-23",
+          "value": 18
+        },
+        {
+          "date": "2025-11-30",
+          "value": 21
+        },
+        {
+          "date": "2025-12-07",
+          "value": 17
+        },
+        {
+          "date": "2025-12-14",
+          "value": 14
+        },
+        {
+          "date": "2025-12-21",
+          "value": 11
+        },
+        {
+          "date": "2025-12-28",
+          "value": 15
+        },
+        {
+          "date": "2026-01-04",
+          "value": 19
+        },
+        {
+          "date": "2026-01-11",
+          "value": 20
+        },
+        {
+          "date": "2026-01-18",
+          "value": 21
+        },
+        {
+          "date": "2026-01-25",
+          "value": 22
+        },
+        {
+          "date": "2026-02-01",
+          "value": 21
+        },
+        {
+          "date": "2026-02-08",
+          "value": 18
+        },
+        {
+          "date": "2026-02-15",
+          "value": 20
+        },
+        {
+          "date": "2026-02-22",
+          "value": 22
+        },
+        {
+          "date": "2026-03-01",
+          "value": 27
+        },
+        {
+          "date": "2026-03-08",
+          "value": 27
+        },
+        {
+          "date": "2026-03-15",
+          "value": 28
+        },
+        {
+          "date": "2026-03-22",
+          "value": 55
+        },
+        {
+          "date": "2026-03-29",
+          "value": 91
+        },
+        {
+          "date": "2026-04-05",
+          "value": 100
+        },
+        {
+          "date": "2026-04-12",
+          "value": 98
+        },
+        {
+          "date": "2026-04-19",
+          "value": 84
+        },
+        {
+          "date": "2026-04-26",
+          "value": 71
+        },
+        {
+          "date": "2026-05-03",
+          "value": 76
+        },
+        {
+          "date": "2026-05-10",
+          "value": 96
+        },
+        {
+          "date": "2026-05-17",
+          "value": 84
+        },
+        {
+          "date": "2026-05-24",
+          "value": 69
+        },
+        {
+          "date": "2026-05-31",
+          "value": 75
+        },
+        {
+          "date": "2026-06-07",
+          "value": 58
+        },
+        {
+          "date": "2026-06-14",
+          "value": 51
+        },
+        {
+          "date": "2026-06-21",
+          "value": 51
+        },
+        {
+          "date": "2026-06-28",
+          "value": 32
+        },
+        {
+          "date": "2026-07-05",
+          "value": 31
+        },
+        {
+          "date": "2026-07-12",
+          "value": 19
+        },
+        {
+          "date": "2026-07-19",
+          "value": 22
+        },
+        {
+          "date": "2026-07-26",
+          "value": 18
+        },
+        {
+          "date": "2026-08-02",
+          "value": 16
+        },
+        {
+          "date": "2026-08-09",
+          "value": 16
+        },
+        {
+          "date": "2026-08-16",
+          "value": 17
+        },
+        {
+          "date": "2026-08-23",
+          "value": 18
+        },
+        {
+          "date": "2026-08-30",
+          "value": 25
+        },
+        {
+          "date": "2026-09-06",
+          "value": 26
+        },
+        {
+          "date": "2026-09-13",
+          "value": 24
+        },
+        {
+          "date": "2026-09-20",
+          "value": 36
+        },
+        {
+          "date": "2026-09-27",
+          "value": 25
+        },
+        {
+          "date": "2026-10-04",
+          "value": 8
+        },
+        {
+          "date": "2026-10-11",
+          "value": 7
+        },
+        {
+          "date": "2026-10-18",
+          "value": 5
+        }
+      ],
+      "top": [
+        {
+          "query": "fitness tracker",
+          "value": 100
+        },
+        {
+          "query": "protein tracker app",
+          "value": 68
+        },
+        {
+          "query": "protein powder",
+          "value": 68
+        },
+        {
+          "query": "food tracker",
+          "value": 43
+        },
+        {
+          "query": "calorie tracker",
+          "value": 21
+        },
+        {
+          "query": "best protein tracker app",
+          "value": 18
+        },
+        {
+          "query": "flight tracker",
+          "value": 17
+        },
+        {
+          "query": "smart watch fitness tracker",
+          "value": 14
+        },
+        {
+          "query": "fitbit charge 6 fitness tracker",
+          "value": 12
+        },
+        {
+          "query": "calorie and protein tracker",
+          "value": 10
+        },
+        {
+          "query": "protein calculator",
+          "value": 10
+        },
+        {
+          "query": "calorie tracker app",
+          "value": 9
+        },
+        {
+          "query": "stock portfolio tracker",
+          "value": 5
+        },
+        {
+          "query": "protein powder review",
+          "value": 5
+        },
+        {
+          "query": "macro tracker",
+          "value": 4
+        }
+      ],
+      "rising": [
+        {
+          "query": "under armour band fitness tracker",
+          "value": 75200
+        },
+        {
+          "query": "fitbit charge 4 activity tracker",
+          "value": 39450
+        },
+        {
+          "query": "pescience select protein",
+          "value": 23850
+        },
+        {
+          "query": "levels grass fed whey protein",
+          "value": 18900
+        },
+        {
+          "query": "stock portfolio tracker",
+          "value": 2650
+        },
+        {
+          "query": "100% whey protein optimum nutrition gold standard",
+          "value": 1600
+        },
+        {
+          "query": "fitbit charge 6 fitness tracker",
+          "value": 1600
+        },
+        {
+          "query": "smart watch fitness tracker",
+          "value": 1150
+        },
+        {
+          "query": "pure protein whey protein",
+          "value": 250
+        },
+        {
+          "query": "fitness tracker",
+          "value": 250
+        },
+        {
+          "query": "protein powder",
+          "value": 110
+        },
+        {
+          "query": "protein powder review",
+          "value": 40
+        }
+      ]
+    },
+    "sleep_cycle": {
+      "query": "sleep cycle",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 26
+        },
+        {
+          "date": "2025-10-26",
+          "value": 23
+        },
+        {
+          "date": "2025-11-02",
+          "value": 25
+        },
+        {
+          "date": "2025-11-09",
+          "value": 25
+        },
+        {
+          "date": "2025-11-16",
+          "value": 27
+        },
+        {
+          "date": "2025-11-23",
+          "value": 26
+        },
+        {
+          "date": "2025-11-30",
+          "value": 28
+        },
+        {
+          "date": "2025-12-07",
+          "value": 26
+        },
+        {
+          "date": "2025-12-14",
+          "value": 25
+        },
+        {
+          "date": "2025-12-21",
+          "value": 19
+        },
+        {
+          "date": "2025-12-28",
+          "value": 20
+        },
+        {
+          "date": "2026-01-04",
+          "value": 25
+        },
+        {
+          "date": "2026-01-11",
+          "value": 25
+        },
+        {
+          "date": "2026-01-18",
+          "value": 25
+        },
+        {
+          "date": "2026-01-25",
+          "value": 26
+        },
+        {
+          "date": "2026-02-01",
+          "value": 32
+        },
+        {
+          "date": "2026-02-08",
+          "value": 28
+        },
+        {
+          "date": "2026-02-15",
+          "value": 32
+        },
+        {
+          "date": "2026-02-22",
+          "value": 33
+        },
+        {
+          "date": "2026-03-01",
+          "value": 35
+        },
+        {
+          "date": "2026-03-08",
+          "value": 35
+        },
+        {
+          "date": "2026-03-15",
+          "value": 35
+        },
+        {
+          "date": "2026-03-22",
+          "value": 42
+        },
+        {
+          "date": "2026-03-29",
+          "value": 50
+        },
+        {
+          "date": "2026-04-05",
+          "value": 59
+        },
+        {
+          "date": "2026-04-12",
+          "value": 42
+        },
+        {
+          "date": "2026-04-19",
+          "value": 48
+        },
+        {
+          "date": "2026-04-26",
+          "value": 60
+        },
+        {
+          "date": "2026-05-03",
+          "value": 84
+        },
+        {
+          "date": "2026-05-10",
+          "value": 100
+        },
+        {
+          "date": "2026-05-17",
+          "value": 77
+        },
+        {
+          "date": "2026-05-24",
+          "value": 83
+        },
+        {
+          "date": "2026-05-31",
+          "value": 100
+        },
+        {
+          "date": "2026-06-07",
+          "value": 70
+        },
+        {
+          "date": "2026-06-14",
+          "value": 92
+        },
+        {
+          "date": "2026-06-21",
+          "value": 79
+        },
+        {
+          "date": "2026-06-28",
+          "value": 64
+        },
+        {
+          "date": "2026-07-05",
+          "value": 61
+        },
+        {
+          "date": "2026-07-12",
+          "value": 44
+        },
+        {
+          "date": "2026-07-19",
+          "value": 61
+        },
+        {
+          "date": "2026-07-26",
+          "value": 48
+        },
+        {
+          "date": "2026-08-02",
+          "value": 39
+        },
+        {
+          "date": "2026-08-09",
+          "value": 35
+        },
+        {
+          "date": "2026-08-16",
+          "value": 28
+        },
+        {
+          "date": "2026-08-23",
+          "value": 29
+        },
+        {
+          "date": "2026-08-30",
+          "value": 34
+        },
+        {
+          "date": "2026-09-06",
+          "value": 36
+        },
+        {
+          "date": "2026-09-13",
+          "value": 47
+        },
+        {
+          "date": "2026-09-20",
+          "value": 69
+        },
+        {
+          "date": "2026-09-27",
+          "value": 41
+        },
+        {
+          "date": "2026-10-04",
+          "value": 18
+        },
+        {
+          "date": "2026-10-11",
+          "value": 15
+        },
+        {
+          "date": "2026-10-18",
+          "value": 16
+        }
+      ],
+      "top": [
+        {
+          "query": "cycle of sleep",
+          "value": 100
+        },
+        {
+          "query": "the sleep cycle",
+          "value": 70
+        },
+        {
+          "query": "best sleep cycle",
+          "value": 32
+        },
+        {
+          "query": "what is sleep cycle",
+          "value": 25
+        },
+        {
+          "query": "sleep cycle time",
+          "value": 23
+        },
+        {
+          "query": "menstrual cycle",
+          "value": 23
+        },
+        {
+          "query": "sleep wake cycle",
+          "value": 16
+        },
+        {
+          "query": "sleep cycle app",
+          "value": 16
+        },
+        {
+          "query": "rem",
+          "value": 14
+        },
+        {
+          "query": "what is a sleep cycle",
+          "value": 14
+        },
+        {
+          "query": "sleep cycle length",
+          "value": 14
+        },
+        {
+          "query": "rem cycle",
+          "value": 14
+        },
+        {
+          "query": "rem sleep",
+          "value": 13
+        },
+        {
+          "query": "rem sleep cycle",
+          "value": 13
+        },
+        {
+          "query": "sleep cycle stages",
+          "value": 13
+        }
+      ],
+      "rising": [
+        {
+          "query": "eat sleep cycle nice",
+          "value": 5950
+        },
+        {
+          "query": "menstrual cycle",
+          "value": 350
+        },
+        {
+          "query": "sleep cycle name",
+          "value": 160
+        },
+        {
+          "query": "average sleep cycle",
+          "value": 140
+        },
+        {
+          "query": "adult sleep cycle",
+          "value": 130
+        },
+        {
+          "query": "sleep cycle length",
+          "value": 130
+        },
+        {
+          "query": "sleep cycle duration",
+          "value": 120
+        },
+        {
+          "query": "best sleep cycle",
+          "value": 120
+        },
+        {
+          "query": "sleep cycle meaning",
+          "value": 80
+        },
+        {
+          "query": "human sleep cycle",
+          "value": 70
+        },
+        {
+          "query": "cycle of sleep",
+          "value": 70
+        },
+        {
+          "query": "sleep cycles",
+          "value": 60
+        },
+        {
+          "query": "sleep cycle stages",
+          "value": 50
+        },
+        {
+          "query": "sleep cycle time",
+          "value": 40
+        }
+      ]
+    },
+    "whatsapp": {
+      "query": "whatsapp",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 84
+        },
+        {
+          "date": "2025-10-26",
+          "value": 88
+        },
+        {
+          "date": "2025-11-02",
+          "value": 90
+        },
+        {
+          "date": "2025-11-09",
+          "value": 91
+        },
+        {
+          "date": "2025-11-16",
+          "value": 92
+        },
+        {
+          "date": "2025-11-23",
+          "value": 88
+        },
+        {
+          "date": "2025-11-30",
+          "value": 87
+        },
+        {
+          "date": "2025-12-07",
+          "value": 89
+        },
+        {
+          "date": "2025-12-14",
+          "value": 93
+        },
+        {
+          "date": "2025-12-21",
+          "value": 74
+        },
+        {
+          "date": "2025-12-28",
+          "value": 69
+        },
+        {
+          "date": "2026-01-04",
+          "value": 82
+        },
+        {
+          "date": "2026-01-11",
+          "value": 81
+        },
+        {
+          "date": "2026-01-18",
+          "value": 82
+        },
+        {
+          "date": "2026-01-25",
+          "value": 84
+        },
+        {
+          "date": "2026-02-01",
+          "value": 84
+        },
+        {
+          "date": "2026-02-08",
+          "value": 84
+        },
+        {
+          "date": "2026-02-15",
+          "value": 78
+        },
+        {
+          "date": "2026-02-22",
+          "value": 81
+        },
+        {
+          "date": "2026-03-01",
+          "value": 84
+        },
+        {
+          "date": "2026-03-08",
+          "value": 91
+        },
+        {
+          "date": "2026-03-15",
+          "value": 80
+        },
+        {
+          "date": "2026-03-22",
+          "value": 86
+        },
+        {
+          "date": "2026-03-29",
+          "value": 79
+        },
+        {
+          "date": "2026-04-05",
+          "value": 87
+        },
+        {
+          "date": "2026-04-12",
+          "value": 88
+        },
+        {
+          "date": "2026-04-19",
+          "value": 85
+        },
+        {
+          "date": "2026-04-26",
+          "value": 84
+        },
+        {
+          "date": "2026-05-03",
+          "value": 90
+        },
+        {
+          "date": "2026-05-10",
+          "value": 94
+        },
+        {
+          "date": "2026-05-17",
+          "value": 94
+        },
+        {
+          "date": "2026-05-24",
+          "value": 88
+        },
+        {
+          "date": "2026-05-31",
+          "value": 84
+        },
+        {
+          "date": "2026-06-07",
+          "value": 94
+        },
+        {
+          "date": "2026-06-14",
+          "value": 89
+        },
+        {
+          "date": "2026-06-21",
+          "value": 87
+        },
+        {
+          "date": "2026-06-28",
+          "value": 87
+        },
+        {
+          "date": "2026-07-05",
+          "value": 89
+        },
+        {
+          "date": "2026-07-12",
+          "value": 85
+        },
+        {
+          "date": "2026-07-19",
+          "value": 88
+        },
+        {
+          "date": "2026-07-26",
+          "value": 88
+        },
+        {
+          "date": "2026-08-02",
+          "value": 89
+        },
+        {
+          "date": "2026-08-09",
+          "value": 90
+        },
+        {
+          "date": "2026-08-16",
+          "value": 84
+        },
+        {
+          "date": "2026-08-23",
+          "value": 82
+        },
+        {
+          "date": "2026-08-30",
+          "value": 84
+        },
+        {
+          "date": "2026-09-06",
+          "value": 75
+        },
+        {
+          "date": "2026-09-13",
+          "value": 43
+        },
+        {
+          "date": "2026-09-20",
+          "value": 45
+        },
+        {
+          "date": "2026-09-27",
+          "value": 74
+        },
+        {
+          "date": "2026-10-04",
+          "value": 100
+        },
+        {
+          "date": "2026-10-11",
+          "value": 100
+        },
+        {
+          "date": "2026-10-18",
+          "value": 95
+        }
+      ],
+      "top": [
+        {
+          "query": "whatsapp web",
+          "value": 100
+        },
+        {
+          "query": "whatsapp login",
+          "value": 4
+        },
+        {
+          "query": "download whatsapp",
+          "value": 3
+        },
+        {
+          "query": "whatsapp web login",
+          "value": 2
+        },
+        {
+          "query": "business whatsapp",
+          "value": 2
+        },
+        {
+          "query": "whatsapp app",
+          "value": 2
+        },
+        {
+          "query": "whatsapp online",
+          "value": 2
+        },
+        {
+          "query": "what",
+          "value": 1
+        },
+        {
+          "query": "link whatsapp",
+          "value": 1
+        },
+        {
+          "query": "whatsapp pc",
+          "value": 1
+        },
+        {
+          "query": "whatsapp web download",
+          "value": 1
+        },
+        {
+          "query": "whatsapp apk",
+          "value": 0
+        },
+        {
+          "query": "whatsapp business web",
+          "value": 0
+        },
+        {
+          "query": "whatsapp web app",
+          "value": 0
+        },
+        {
+          "query": "whatsapp plus",
+          "value": 0
+        }
+      ],
+      "rising": [
+        {
+          "query": "how to transfer whatsapp to new phone",
+          "value": 700
+        },
+        {
+          "query": "whatsapp webç",
+          "value": 300
+        },
+        {
+          "query": "whatsapp open",
+          "value": 90
+        },
+        {
+          "query": "what",
+          "value": 80
+        },
+        {
+          "query": "watsapp whatsapp web",
+          "value": 50
+        }
+      ]
+    },
+    "iphone_fold": {
+      "query": "foldable phone",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 11
+        },
+        {
+          "date": "2025-10-26",
+          "value": 10
+        },
+        {
+          "date": "2025-11-02",
+          "value": 10
+        },
+        {
+          "date": "2025-11-09",
+          "value": 10
+        },
+        {
+          "date": "2025-11-16",
+          "value": 9
+        },
+        {
+          "date": "2025-11-23",
+          "value": 13
+        },
+        {
+          "date": "2025-11-30",
+          "value": 14
+        },
+        {
+          "date": "2025-12-07",
+          "value": 12
+        },
+        {
+          "date": "2025-12-14",
+          "value": 12
+        },
+        {
+          "date": "2025-12-21",
+          "value": 10
+        },
+        {
+          "date": "2025-12-28",
+          "value": 11
+        },
+        {
+          "date": "2026-01-04",
+          "value": 11
+        },
+        {
+          "date": "2026-01-11",
+          "value": 12
+        },
+        {
+          "date": "2026-01-18",
+          "value": 13
+        },
+        {
+          "date": "2026-01-25",
+          "value": 13
+        },
+        {
+          "date": "2026-02-01",
+          "value": 17
+        },
+        {
+          "date": "2026-02-08",
+          "value": 24
+        },
+        {
+          "date": "2026-02-15",
+          "value": 24
+        },
+        {
+          "date": "2026-02-22",
+          "value": 16
+        },
+        {
+          "date": "2026-03-01",
+          "value": 12
+        },
+        {
+          "date": "2026-03-08",
+          "value": 13
+        },
+        {
+          "date": "2026-03-15",
+          "value": 14
+        },
+        {
+          "date": "2026-03-22",
+          "value": 27
+        },
+        {
+          "date": "2026-03-29",
+          "value": 39
+        },
+        {
+          "date": "2026-04-05",
+          "value": 42
+        },
+        {
+          "date": "2026-04-12",
+          "value": 46
+        },
+        {
+          "date": "2026-04-19",
+          "value": 37
+        },
+        {
+          "date": "2026-04-26",
+          "value": 40
+        },
+        {
+          "date": "2026-05-03",
+          "value": 50
+        },
+        {
+          "date": "2026-05-10",
+          "value": 46
+        },
+        {
+          "date": "2026-05-17",
+          "value": 25
+        },
+        {
+          "date": "2026-05-24",
+          "value": 24
+        },
+        {
+          "date": "2026-05-31",
+          "value": 23
+        },
+        {
+          "date": "2026-06-07",
+          "value": 23
+        },
+        {
+          "date": "2026-06-14",
+          "value": 23
+        },
+        {
+          "date": "2026-06-21",
+          "value": 24
+        },
+        {
+          "date": "2026-06-28",
+          "value": 14
+        },
+        {
+          "date": "2026-07-05",
+          "value": 14
+        },
+        {
+          "date": "2026-07-12",
+          "value": 12
+        },
+        {
+          "date": "2026-07-19",
+          "value": 19
+        },
+        {
+          "date": "2026-07-26",
+          "value": 17
+        },
+        {
+          "date": "2026-08-02",
+          "value": 16
+        },
+        {
+          "date": "2026-08-09",
+          "value": 19
+        },
+        {
+          "date": "2026-08-16",
+          "value": 19
+        },
+        {
+          "date": "2026-08-23",
+          "value": 25
+        },
+        {
+          "date": "2026-08-30",
+          "value": 29
+        },
+        {
+          "date": "2026-09-06",
+          "value": 100
+        },
+        {
+          "date": "2026-09-13",
+          "value": 41
+        },
+        {
+          "date": "2026-09-20",
+          "value": 39
+        },
+        {
+          "date": "2026-09-27",
+          "value": 22
+        },
+        {
+          "date": "2026-10-04",
+          "value": 12
+        },
+        {
+          "date": "2026-10-11",
+          "value": 11
+        },
+        {
+          "date": "2026-10-18",
+          "value": 12
+        }
+      ],
+      "top": [
+        {
+          "query": "foldable phone apple",
+          "value": 100
+        },
+        {
+          "query": "apple",
+          "value": 97
+        },
+        {
+          "query": "foldable iphone",
+          "value": 92
+        },
+        {
+          "query": "samsung foldable",
+          "value": 92
+        },
+        {
+          "query": "samsung",
+          "value": 92
+        },
+        {
+          "query": "foldable phone samsung",
+          "value": 92
+        },
+        {
+          "query": "iphone foldable phone",
+          "value": 91
+        },
+        {
+          "query": "best foldable phone",
+          "value": 85
+        },
+        {
+          "query": "foldable phone price",
+          "value": 63
+        },
+        {
+          "query": "foldable phone stand",
+          "value": 57
+        },
+        {
+          "query": "new foldable phone",
+          "value": 56
+        },
+        {
+          "query": "galaxy foldable phone",
+          "value": 48
+        },
+        {
+          "query": "foldable mobile phone",
+          "value": 39
+        },
+        {
+          "query": "foldable phone case",
+          "value": 37
+        },
+        {
+          "query": "best foldable phone 2026",
+          "value": 34
+        }
+      ],
+      "rising": [
+        {
+          "query": "iphone duo",
+          "value": 134200
+        },
+        {
+          "query": "apple iphone duo foldable phone",
+          "value": 75150
+        },
+        {
+          "query": "samsung foldable phone patent lawsuit",
+          "value": 46700
+        },
+        {
+          "query": "oppo find n6",
+          "value": 44800
+        },
+        {
+          "query": "gaiam foldable yoga mat",
+          "value": 14950
+        },
+        {
+          "query": "best foldable phone 2026",
+          "value": 1150
+        },
+        {
+          "query": "foldable phone stand",
+          "value": 130
+        },
+        {
+          "query": "foldable phone case",
+          "value": 100
+        },
+        {
+          "query": "foldable phone apple",
+          "value": 80
+        },
+        {
+          "query": "new foldable phone",
+          "value": 70
+        },
+        {
+          "query": "foldable iphone",
+          "value": 60
+        },
+        {
+          "query": "iphone foldable phone",
+          "value": 60
+        },
+        {
+          "query": "foldable cell phone",
+          "value": 60
+        },
+        {
+          "query": "apple",
+          "value": 50
+        },
+        {
+          "query": "galaxy foldable phone",
+          "value": 40
+        }
+      ]
+    },
+    "halloween_costume": {
+      "query": "halloween costume",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 75
+        },
+        {
+          "date": "2025-10-26",
+          "value": 100
+        },
+        {
+          "date": "2025-11-02",
+          "value": 14
+        },
+        {
+          "date": "2025-11-09",
+          "value": 4
+        },
+        {
+          "date": "2025-11-16",
+          "value": 2
+        },
+        {
+          "date": "2025-11-23",
+          "value": 2
+        },
+        {
+          "date": "2025-11-30",
+          "value": 2
+        },
+        {
+          "date": "2025-12-07",
+          "value": 2
+        },
+        {
+          "date": "2025-12-14",
+          "value": 1
+        },
+        {
+          "date": "2025-12-21",
+          "value": 1
+        },
+        {
+          "date": "2025-12-28",
+          "value": 2
+        },
+        {
+          "date": "2026-01-04",
+          "value": 2
+        },
+        {
+          "date": "2026-01-11",
+          "value": 2
+        },
+        {
+          "date": "2026-01-18",
+          "value": 2
+        },
+        {
+          "date": "2026-01-25",
+          "value": 2
+        },
+        {
+          "date": "2026-02-01",
+          "value": 2
+        },
+        {
+          "date": "2026-02-08",
+          "value": 10
+        },
+        {
+          "date": "2026-02-15",
+          "value": 13
+        },
+        {
+          "date": "2026-02-22",
+          "value": 7
+        },
+        {
+          "date": "2026-03-01",
+          "value": 2
+        },
+        {
+          "date": "2026-03-08",
+          "value": 2
+        },
+        {
+          "date": "2026-03-15",
+          "value": 2
+        },
+        {
+          "date": "2026-03-22",
+          "value": 3
+        },
+        {
+          "date": "2026-03-29",
+          "value": 4
+        },
+        {
+          "date": "2026-04-05",
+          "value": 5
+        },
+        {
+          "date": "2026-04-12",
+          "value": 4
+        },
+        {
+          "date": "2026-04-19",
+          "value": 4
+        },
+        {
+          "date": "2026-04-26",
+          "value": 5
+        },
+        {
+          "date": "2026-05-03",
+          "value": 6
+        },
+        {
+          "date": "2026-05-10",
+          "value": 6
+        },
+        {
+          "date": "2026-05-17",
+          "value": 4
+        },
+        {
+          "date": "2026-05-24",
+          "value": 3
+        },
+        {
+          "date": "2026-05-31",
+          "value": 4
+        },
+        {
+          "date": "2026-06-07",
+          "value": 3
+        },
+        {
+          "date": "2026-06-14",
+          "value": 4
+        },
+        {
+          "date": "2026-06-21",
+          "value": 3
+        },
+        {
+          "date": "2026-06-28",
+          "value": 3
+        },
+        {
+          "date": "2026-07-05",
+          "value": 4
+        },
+        {
+          "date": "2026-07-12",
+          "value": 4
+        },
+        {
+          "date": "2026-07-19",
+          "value": 5
+        },
+        {
+          "date": "2026-07-26",
+          "value": 6
+        },
+        {
+          "date": "2026-08-02",
+          "value": 7
+        },
+        {
+          "date": "2026-08-09",
+          "value": 8
+        },
+        {
+          "date": "2026-08-16",
+          "value": 10
+        },
+        {
+          "date": "2026-08-23",
+          "value": 22
+        },
+        {
+          "date": "2026-08-30",
+          "value": 17
+        },
+        {
+          "date": "2026-09-06",
+          "value": 20
+        },
+        {
+          "date": "2026-09-13",
+          "value": 23
+        },
+        {
+          "date": "2026-09-20",
+          "value": 30
+        },
+        {
+          "date": "2026-09-27",
+          "value": 40
+        },
+        {
+          "date": "2026-10-04",
+          "value": 49
+        },
+        {
+          "date": "2026-10-11",
+          "value": 56
+        },
+        {
+          "date": "2026-10-18",
+          "value": 67
+        }
+      ],
+      "top": [
+        {
+          "query": "costume for halloween",
+          "value": 100
+        },
+        {
+          "query": "halloween costumes",
+          "value": 64
+        },
+        {
+          "query": "costumes",
+          "value": 63
+        },
+        {
+          "query": "halloween costume ideas",
+          "value": 49
+        },
+        {
+          "query": "spirit halloween",
+          "value": 41
+        },
+        {
+          "query": "kids halloween costume",
+          "value": 29
+        },
+        {
+          "query": "women halloween costume",
+          "value": 23
+        },
+        {
+          "query": "costumes for halloween",
+          "value": 19
+        },
+        {
+          "query": "halloween costume men",
+          "value": 16
+        },
+        {
+          "query": "girls halloween costume",
+          "value": 15
+        },
+        {
+          "query": "baby halloween costume",
+          "value": 15
+        },
+        {
+          "query": "toddler halloween costume",
+          "value": 11
+        },
+        {
+          "query": "easy halloween costume",
+          "value": 11
+        },
+        {
+          "query": "cat halloween costume",
+          "value": 11
+        },
+        {
+          "query": "target halloween costume",
+          "value": 11
+        }
+      ],
+      "rising": [
+        {
+          "query": "target offensive halloween costume",
+          "value": 34800
+        },
+        {
+          "query": "target halloween costume controversy",
+          "value": 20250
+        },
+        {
+          "query": "target offensive halloween costume 2026",
+          "value": 9550
+        },
+        {
+          "query": "kids' glows under blacklight circus clown halloween costume",
+          "value": 6400
+        },
+        {
+          "query": "target halloween costume 2026",
+          "value": 4850
+        },
+        {
+          "query": "julia fox halloween costume",
+          "value": 3450
+        },
+        {
+          "query": "jd vance halloween costume",
+          "value": 1450
+        },
+        {
+          "query": "couple halloween costume ideas 2026",
+          "value": 1450
+        },
+        {
+          "query": "halloween costume ideas 2026",
+          "value": 1350
+        },
+        {
+          "query": "sydney sweeney halloween costume",
+          "value": 750
+        },
+        {
+          "query": "kayla nicole halloween costume",
+          "value": 400
+        },
+        {
+          "query": "target halloween costume",
+          "value": 300
+        },
+        {
+          "query": "michael jackson halloween costume",
+          "value": 200
+        },
+        {
+          "query": "eleven halloween costume",
+          "value": 180
+        },
+        {
+          "query": "spiderman costume",
+          "value": 70
+        }
+      ]
+    },
+    "ai_headshot": {
+      "query": "ai headshot",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 92
+        },
+        {
+          "date": "2025-10-26",
+          "value": 80
+        },
+        {
+          "date": "2025-11-02",
+          "value": 81
+        },
+        {
+          "date": "2025-11-09",
+          "value": 90
+        },
+        {
+          "date": "2025-11-16",
+          "value": 75
+        },
+        {
+          "date": "2025-11-23",
+          "value": 67
+        },
+        {
+          "date": "2025-11-30",
+          "value": 79
+        },
+        {
+          "date": "2025-12-07",
+          "value": 79
+        },
+        {
+          "date": "2025-12-14",
+          "value": 71
+        },
+        {
+          "date": "2025-12-21",
+          "value": 50
+        },
+        {
+          "date": "2025-12-28",
+          "value": 54
+        },
+        {
+          "date": "2026-01-04",
+          "value": 66
+        },
+        {
+          "date": "2026-01-11",
+          "value": 83
+        },
+        {
+          "date": "2026-01-18",
+          "value": 73
+        },
+        {
+          "date": "2026-01-25",
+          "value": 71
+        },
+        {
+          "date": "2026-02-01",
+          "value": 73
+        },
+        {
+          "date": "2026-02-08",
+          "value": 69
+        },
+        {
+          "date": "2026-02-15",
+          "value": 73
+        },
+        {
+          "date": "2026-02-22",
+          "value": 87
+        },
+        {
+          "date": "2026-03-01",
+          "value": 95
+        },
+        {
+          "date": "2026-03-08",
+          "value": 100
+        },
+        {
+          "date": "2026-03-15",
+          "value": 96
+        },
+        {
+          "date": "2026-03-22",
+          "value": 91
+        },
+        {
+          "date": "2026-03-29",
+          "value": 94
+        },
+        {
+          "date": "2026-04-05",
+          "value": 95
+        },
+        {
+          "date": "2026-04-12",
+          "value": 92
+        },
+        {
+          "date": "2026-04-19",
+          "value": 92
+        },
+        {
+          "date": "2026-04-26",
+          "value": 89
+        },
+        {
+          "date": "2026-05-03",
+          "value": 98
+        },
+        {
+          "date": "2026-05-10",
+          "value": 87
+        },
+        {
+          "date": "2026-05-17",
+          "value": 75
+        },
+        {
+          "date": "2026-05-24",
+          "value": 74
+        },
+        {
+          "date": "2026-05-31",
+          "value": 85
+        },
+        {
+          "date": "2026-06-07",
+          "value": 74
+        },
+        {
+          "date": "2026-06-14",
+          "value": 72
+        },
+        {
+          "date": "2026-06-21",
+          "value": 72
+        },
+        {
+          "date": "2026-06-28",
+          "value": 68
+        },
+        {
+          "date": "2026-07-05",
+          "value": 66
+        },
+        {
+          "date": "2026-07-12",
+          "value": 53
+        },
+        {
+          "date": "2026-07-19",
+          "value": 57
+        },
+        {
+          "date": "2026-07-26",
+          "value": 53
+        },
+        {
+          "date": "2026-08-02",
+          "value": 49
+        },
+        {
+          "date": "2026-08-09",
+          "value": 49
+        },
+        {
+          "date": "2026-08-16",
+          "value": 52
+        },
+        {
+          "date": "2026-08-23",
+          "value": 47
+        },
+        {
+          "date": "2026-08-30",
+          "value": 50
+        },
+        {
+          "date": "2026-09-06",
+          "value": 44
+        },
+        {
+          "date": "2026-09-13",
+          "value": 55
+        },
+        {
+          "date": "2026-09-20",
+          "value": 65
+        },
+        {
+          "date": "2026-09-27",
+          "value": 37
+        },
+        {
+          "date": "2026-10-04",
+          "value": 32
+        },
+        {
+          "date": "2026-10-11",
+          "value": 27
+        },
+        {
+          "date": "2026-10-18",
+          "value": 28
+        }
+      ],
+      "top": [
+        {
+          "query": "headshot ai generator",
+          "value": 100
+        },
+        {
+          "query": "headshot generator",
+          "value": 99
+        },
+        {
+          "query": "headshot ai free",
+          "value": 86
+        },
+        {
+          "query": "professional headshot ai",
+          "value": 59
+        },
+        {
+          "query": "professional headshot",
+          "value": 58
+        },
+        {
+          "query": "ai headshot generator free",
+          "value": 40
+        },
+        {
+          "query": "free headshot generator",
+          "value": 39
+        },
+        {
+          "query": "ai free headshot generator",
+          "value": 37
+        },
+        {
+          "query": "headshot photo",
+          "value": 33
+        },
+        {
+          "query": "headshot photo ai",
+          "value": 33
+        },
+        {
+          "query": "best ai headshot generator",
+          "value": 25
+        },
+        {
+          "query": "linkedin headshot",
+          "value": 23
+        },
+        {
+          "query": "linkedin ai headshot",
+          "value": 21
+        },
+        {
+          "query": "ai headshot app",
+          "value": 21
+        },
+        {
+          "query": "professional headshot ai free",
+          "value": 16
+        }
+      ],
+      "rising": [
+        {
+          "query": "eltima ai headshot generator",
+          "value": 800
+        },
+        {
+          "query": "diy professional headshot",
+          "value": 750
+        },
+        {
+          "query": "new york times",
+          "value": 450
+        },
+        {
+          "query": "nano banana",
+          "value": 400
+        },
+        {
+          "query": "headshotkiwi",
+          "value": 400
+        },
+        {
+          "query": "headshot photographer",
+          "value": 300
+        },
+        {
+          "query": "quickaiheadshots",
+          "value": 200
+        },
+        {
+          "query": "headshotpro",
+          "value": 120
+        },
+        {
+          "query": "google ai",
+          "value": 80
+        },
+        {
+          "query": "best ai headshot app",
+          "value": 70
+        },
+        {
+          "query": "ai headshot app",
+          "value": 60
+        },
+        {
+          "query": "linkedin headshot",
+          "value": 40
+        }
+      ]
+    },
+    "meal_planner": {
+      "query": "meal planner",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 40
+        },
+        {
+          "date": "2025-10-26",
+          "value": 39
+        },
+        {
+          "date": "2025-11-02",
+          "value": 41
+        },
+        {
+          "date": "2025-11-09",
+          "value": 43
+        },
+        {
+          "date": "2025-11-16",
+          "value": 37
+        },
+        {
+          "date": "2025-11-23",
+          "value": 39
+        },
+        {
+          "date": "2025-11-30",
+          "value": 40
+        },
+        {
+          "date": "2025-12-07",
+          "value": 39
+        },
+        {
+          "date": "2025-12-14",
+          "value": 37
+        },
+        {
+          "date": "2025-12-21",
+          "value": 44
+        },
+        {
+          "date": "2025-12-28",
+          "value": 87
+        },
+        {
+          "date": "2026-01-04",
+          "value": 65
+        },
+        {
+          "date": "2026-01-11",
+          "value": 51
+        },
+        {
+          "date": "2026-01-18",
+          "value": 47
+        },
+        {
+          "date": "2026-01-25",
+          "value": 45
+        },
+        {
+          "date": "2026-02-01",
+          "value": 51
+        },
+        {
+          "date": "2026-02-08",
+          "value": 53
+        },
+        {
+          "date": "2026-02-15",
+          "value": 65
+        },
+        {
+          "date": "2026-02-22",
+          "value": 57
+        },
+        {
+          "date": "2026-03-01",
+          "value": 61
+        },
+        {
+          "date": "2026-03-08",
+          "value": 59
+        },
+        {
+          "date": "2026-03-15",
+          "value": 59
+        },
+        {
+          "date": "2026-03-22",
+          "value": 61
+        },
+        {
+          "date": "2026-03-29",
+          "value": 72
+        },
+        {
+          "date": "2026-04-05",
+          "value": 78
+        },
+        {
+          "date": "2026-04-12",
+          "value": 80
+        },
+        {
+          "date": "2026-04-19",
+          "value": 71
+        },
+        {
+          "date": "2026-04-26",
+          "value": 91
+        },
+        {
+          "date": "2026-05-03",
+          "value": 100
+        },
+        {
+          "date": "2026-05-10",
+          "value": 94
+        },
+        {
+          "date": "2026-05-17",
+          "value": 72
+        },
+        {
+          "date": "2026-05-24",
+          "value": 72
+        },
+        {
+          "date": "2026-05-31",
+          "value": 78
+        },
+        {
+          "date": "2026-06-07",
+          "value": 64
+        },
+        {
+          "date": "2026-06-14",
+          "value": 75
+        },
+        {
+          "date": "2026-06-21",
+          "value": 73
+        },
+        {
+          "date": "2026-06-28",
+          "value": 59
+        },
+        {
+          "date": "2026-07-05",
+          "value": 58
+        },
+        {
+          "date": "2026-07-12",
+          "value": 50
+        },
+        {
+          "date": "2026-07-19",
+          "value": 60
+        },
+        {
+          "date": "2026-07-26",
+          "value": 59
+        },
+        {
+          "date": "2026-08-02",
+          "value": 53
+        },
+        {
+          "date": "2026-08-09",
+          "value": 59
+        },
+        {
+          "date": "2026-08-16",
+          "value": 60
+        },
+        {
+          "date": "2026-08-23",
+          "value": 52
+        },
+        {
+          "date": "2026-08-30",
+          "value": 77
+        },
+        {
+          "date": "2026-09-06",
+          "value": 73
+        },
+        {
+          "date": "2026-09-13",
+          "value": 88
+        },
+        {
+          "date": "2026-09-20",
+          "value": 86
+        },
+        {
+          "date": "2026-09-27",
+          "value": 62
+        },
+        {
+          "date": "2026-10-04",
+          "value": 43
+        },
+        {
+          "date": "2026-10-11",
+          "value": 36
+        },
+        {
+          "date": "2026-10-18",
+          "value": 36
+        }
+      ],
+      "top": [
+        {
+          "query": "meal planner app",
+          "value": 100
+        },
+        {
+          "query": "meal weekly planner",
+          "value": 84
+        },
+        {
+          "query": "weekly planner",
+          "value": 81
+        },
+        {
+          "query": "meal planner free",
+          "value": 76
+        },
+        {
+          "query": "meal planner ai",
+          "value": 53
+        },
+        {
+          "query": "meal planner template",
+          "value": 47
+        },
+        {
+          "query": "meal planner pdf",
+          "value": 44
+        },
+        {
+          "query": "meal planner online",
+          "value": 36
+        },
+        {
+          "query": "meal plan",
+          "value": 36
+        },
+        {
+          "query": "family meal planner",
+          "value": 35
+        },
+        {
+          "query": "digital meal planner",
+          "value": 26
+        },
+        {
+          "query": "meal prep planner",
+          "value": 24
+        },
+        {
+          "query": "meal prep",
+          "value": 24
+        },
+        {
+          "query": "meal planner printable",
+          "value": 22
+        },
+        {
+          "query": "best meal planner app",
+          "value": 21
+        }
+      ],
+      "rising": [
+        {
+          "query": "mise",
+          "value": 140900
+        },
+        {
+          "query": "mise meal planner",
+          "value": 138900
+        },
+        {
+          "query": "vegetarian meal prep ideas",
+          "value": 9750
+        },
+        {
+          "query": "bored of lunch meal planner",
+          "value": 3250
+        },
+        {
+          "query": "aldi meal planner app",
+          "value": 1750
+        },
+        {
+          "query": "mise meal planner app",
+          "value": 1200
+        },
+        {
+          "query": "best meal prep containers",
+          "value": 750
+        },
+        {
+          "query": "nhs meal planner",
+          "value": 400
+        },
+        {
+          "query": "cheap meal ideas",
+          "value": 250
+        },
+        {
+          "query": "family meal plans",
+          "value": 250
+        },
+        {
+          "query": "best meal delivery services",
+          "value": 250
+        },
+        {
+          "query": "weekly meal planner and shopping list",
+          "value": 190
+        },
+        {
+          "query": "digital meal planner",
+          "value": 180
+        },
+        {
+          "query": "meal planner pro",
+          "value": 150
+        },
+        {
+          "query": "meal planner online",
+          "value": 150
+        }
+      ]
+    },
+    "budget_planner": {
+      "query": "budget planner",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 25
+        },
+        {
+          "date": "2025-10-26",
+          "value": 28
+        },
+        {
+          "date": "2025-11-02",
+          "value": 25
+        },
+        {
+          "date": "2025-11-09",
+          "value": 26
+        },
+        {
+          "date": "2025-11-16",
+          "value": 25
+        },
+        {
+          "date": "2025-11-23",
+          "value": 28
+        },
+        {
+          "date": "2025-11-30",
+          "value": 30
+        },
+        {
+          "date": "2025-12-07",
+          "value": 28
+        },
+        {
+          "date": "2025-12-14",
+          "value": 28
+        },
+        {
+          "date": "2025-12-21",
+          "value": 32
+        },
+        {
+          "date": "2025-12-28",
+          "value": 53
+        },
+        {
+          "date": "2026-01-04",
+          "value": 37
+        },
+        {
+          "date": "2026-01-11",
+          "value": 32
+        },
+        {
+          "date": "2026-01-18",
+          "value": 30
+        },
+        {
+          "date": "2026-01-25",
+          "value": 32
+        },
+        {
+          "date": "2026-02-01",
+          "value": 33
+        },
+        {
+          "date": "2026-02-08",
+          "value": 37
+        },
+        {
+          "date": "2026-02-15",
+          "value": 42
+        },
+        {
+          "date": "2026-02-22",
+          "value": 41
+        },
+        {
+          "date": "2026-03-01",
+          "value": 34
+        },
+        {
+          "date": "2026-03-08",
+          "value": 33
+        },
+        {
+          "date": "2026-03-15",
+          "value": 35
+        },
+        {
+          "date": "2026-03-22",
+          "value": 50
+        },
+        {
+          "date": "2026-03-29",
+          "value": 79
+        },
+        {
+          "date": "2026-04-05",
+          "value": 100
+        },
+        {
+          "date": "2026-04-12",
+          "value": 91
+        },
+        {
+          "date": "2026-04-19",
+          "value": 93
+        },
+        {
+          "date": "2026-04-26",
+          "value": 97
+        },
+        {
+          "date": "2026-05-03",
+          "value": 78
+        },
+        {
+          "date": "2026-05-10",
+          "value": 76
+        },
+        {
+          "date": "2026-05-17",
+          "value": 54
+        },
+        {
+          "date": "2026-05-24",
+          "value": 52
+        },
+        {
+          "date": "2026-05-31",
+          "value": 54
+        },
+        {
+          "date": "2026-06-07",
+          "value": 46
+        },
+        {
+          "date": "2026-06-14",
+          "value": 47
+        },
+        {
+          "date": "2026-06-21",
+          "value": 45
+        },
+        {
+          "date": "2026-06-28",
+          "value": 37
+        },
+        {
+          "date": "2026-07-05",
+          "value": 36
+        },
+        {
+          "date": "2026-07-12",
+          "value": 24
+        },
+        {
+          "date": "2026-07-19",
+          "value": 29
+        },
+        {
+          "date": "2026-07-26",
+          "value": 29
+        },
+        {
+          "date": "2026-08-02",
+          "value": 24
+        },
+        {
+          "date": "2026-08-09",
+          "value": 29
+        },
+        {
+          "date": "2026-08-16",
+          "value": 36
+        },
+        {
+          "date": "2026-08-23",
+          "value": 41
+        },
+        {
+          "date": "2026-08-30",
+          "value": 42
+        },
+        {
+          "date": "2026-09-06",
+          "value": 35
+        },
+        {
+          "date": "2026-09-13",
+          "value": 38
+        },
+        {
+          "date": "2026-09-20",
+          "value": 43
+        },
+        {
+          "date": "2026-09-27",
+          "value": 24
+        },
+        {
+          "date": "2026-10-04",
+          "value": 18
+        },
+        {
+          "date": "2026-10-11",
+          "value": 15
+        },
+        {
+          "date": "2026-10-18",
+          "value": 14
+        }
+      ],
+      "top": [
+        {
+          "query": "best budget planner",
+          "value": 100
+        },
+        {
+          "query": "free budget planner",
+          "value": 71
+        },
+        {
+          "query": "budget book planner",
+          "value": 64
+        },
+        {
+          "query": "monthly budget planner",
+          "value": 59
+        },
+        {
+          "query": "financial budget planner",
+          "value": 56
+        },
+        {
+          "query": "budget template",
+          "value": 54
+        },
+        {
+          "query": "budget planner template",
+          "value": 54
+        },
+        {
+          "query": "budget planner app",
+          "value": 54
+        },
+        {
+          "query": "budget planner pdf",
+          "value": 46
+        },
+        {
+          "query": "travel budget planner",
+          "value": 36
+        },
+        {
+          "query": "wedding planner",
+          "value": 35
+        },
+        {
+          "query": "budget planner online",
+          "value": 34
+        },
+        {
+          "query": "money budget planner",
+          "value": 34
+        },
+        {
+          "query": "wedding budget planner",
+          "value": 33
+        },
+        {
+          "query": "digital budget planner",
+          "value": 33
+        }
+      ],
+      "rising": [
+        {
+          "query": "coffee near me",
+          "value": 50400
+        },
+        {
+          "query": "python tutorial",
+          "value": 49750
+        },
+        {
+          "query": "dog breeds",
+          "value": 45300
+        },
+        {
+          "query": "photo editor",
+          "value": 43500
+        },
+        {
+          "query": "tax refund calculator",
+          "value": 31650
+        },
+        {
+          "query": "currency exchange rate",
+          "value": 29100
+        },
+        {
+          "query": "best budget 3d printers",
+          "value": 8400
+        },
+        {
+          "query": "best budget microphones",
+          "value": 8100
+        },
+        {
+          "query": "best budget action cameras",
+          "value": 7300
+        },
+        {
+          "query": "budget planner notebook",
+          "value": 450
+        },
+        {
+          "query": "clever fox budget planner",
+          "value": 450
+        },
+        {
+          "query": "expense tracker",
+          "value": 200
+        },
+        {
+          "query": "budget planner near me",
+          "value": 160
+        },
+        {
+          "query": "travel budget planner",
+          "value": 130
+        },
+        {
+          "query": "budget book planner",
+          "value": 130
+        }
+      ]
+    },
+    "posture": {
+      "query": "posture",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 40
+        },
+        {
+          "date": "2025-10-26",
+          "value": 37
+        },
+        {
+          "date": "2025-11-02",
+          "value": 41
+        },
+        {
+          "date": "2025-11-09",
+          "value": 41
+        },
+        {
+          "date": "2025-11-16",
+          "value": 44
+        },
+        {
+          "date": "2025-11-23",
+          "value": 45
+        },
+        {
+          "date": "2025-11-30",
+          "value": 47
+        },
+        {
+          "date": "2025-12-07",
+          "value": 43
+        },
+        {
+          "date": "2025-12-14",
+          "value": 39
+        },
+        {
+          "date": "2025-12-21",
+          "value": 34
+        },
+        {
+          "date": "2025-12-28",
+          "value": 37
+        },
+        {
+          "date": "2026-01-04",
+          "value": 43
+        },
+        {
+          "date": "2026-01-11",
+          "value": 48
+        },
+        {
+          "date": "2026-01-18",
+          "value": 48
+        },
+        {
+          "date": "2026-01-25",
+          "value": 51
+        },
+        {
+          "date": "2026-02-01",
+          "value": 64
+        },
+        {
+          "date": "2026-02-08",
+          "value": 81
+        },
+        {
+          "date": "2026-02-15",
+          "value": 96
+        },
+        {
+          "date": "2026-02-22",
+          "value": 83
+        },
+        {
+          "date": "2026-03-01",
+          "value": 55
+        },
+        {
+          "date": "2026-03-08",
+          "value": 57
+        },
+        {
+          "date": "2026-03-15",
+          "value": 60
+        },
+        {
+          "date": "2026-03-22",
+          "value": 68
+        },
+        {
+          "date": "2026-03-29",
+          "value": 81
+        },
+        {
+          "date": "2026-04-05",
+          "value": 91
+        },
+        {
+          "date": "2026-04-12",
+          "value": 76
+        },
+        {
+          "date": "2026-04-19",
+          "value": 74
+        },
+        {
+          "date": "2026-04-26",
+          "value": 75
+        },
+        {
+          "date": "2026-05-03",
+          "value": 86
+        },
+        {
+          "date": "2026-05-10",
+          "value": 100
+        },
+        {
+          "date": "2026-05-17",
+          "value": 89
+        },
+        {
+          "date": "2026-05-24",
+          "value": 89
+        },
+        {
+          "date": "2026-05-31",
+          "value": 97
+        },
+        {
+          "date": "2026-06-07",
+          "value": 92
+        },
+        {
+          "date": "2026-06-14",
+          "value": 95
+        },
+        {
+          "date": "2026-06-21",
+          "value": 91
+        },
+        {
+          "date": "2026-06-28",
+          "value": 79
+        },
+        {
+          "date": "2026-07-05",
+          "value": 75
+        },
+        {
+          "date": "2026-07-12",
+          "value": 82
+        },
+        {
+          "date": "2026-07-19",
+          "value": 89
+        },
+        {
+          "date": "2026-07-26",
+          "value": 88
+        },
+        {
+          "date": "2026-08-02",
+          "value": 74
+        },
+        {
+          "date": "2026-08-09",
+          "value": 76
+        },
+        {
+          "date": "2026-08-16",
+          "value": 60
+        },
+        {
+          "date": "2026-08-23",
+          "value": 46
+        },
+        {
+          "date": "2026-08-30",
+          "value": 71
+        },
+        {
+          "date": "2026-09-06",
+          "value": 63
+        },
+        {
+          "date": "2026-09-13",
+          "value": 80
+        },
+        {
+          "date": "2026-09-20",
+          "value": 65
+        },
+        {
+          "date": "2026-09-27",
+          "value": 48
+        },
+        {
+          "date": "2026-10-04",
+          "value": 34
+        },
+        {
+          "date": "2026-10-11",
+          "value": 32
+        },
+        {
+          "date": "2026-10-18",
+          "value": 31
+        }
+      ],
+      "top": [
+        {
+          "query": "what is posture",
+          "value": 100
+        },
+        {
+          "query": "how to improve posture",
+          "value": 91
+        },
+        {
+          "query": "best posture correctors",
+          "value": 81
+        },
+        {
+          "query": "posture corrector",
+          "value": 75
+        },
+        {
+          "query": "posture support",
+          "value": 64
+        },
+        {
+          "query": "body posture",
+          "value": 61
+        },
+        {
+          "query": "security posture",
+          "value": 53
+        },
+        {
+          "query": "posture exercises",
+          "value": 50
+        },
+        {
+          "query": "good posture",
+          "value": 47
+        },
+        {
+          "query": "sitting posture",
+          "value": 45
+        },
+        {
+          "query": "bad posture",
+          "value": 41
+        },
+        {
+          "query": "posture meaning",
+          "value": 39
+        },
+        {
+          "query": "forward head posture",
+          "value": 37
+        },
+        {
+          "query": "poor posture",
+          "value": 35
+        },
+        {
+          "query": "posture definition",
+          "value": 33
+        }
+      ],
+      "rising": [
+        {
+          "query": "best posture correctors",
+          "value": 9550
+        },
+        {
+          "query": "vortalex posture corrector",
+          "value": 9300
+        },
+        {
+          "query": "lidl near me",
+          "value": 5800
+        },
+        {
+          "query": "blarney stone",
+          "value": 5300
+        },
+        {
+          "query": "walmart near me",
+          "value": 4100
+        },
+        {
+          "query": "victor wembanyama national anthem posture",
+          "value": 3700
+        },
+        {
+          "query": "persian gulf us military posture",
+          "value": 2350
+        },
+        {
+          "query": "how to improve posture",
+          "value": 600
+        },
+        {
+          "query": "posture definition",
+          "value": 150
+        },
+        {
+          "query": "posture support",
+          "value": 70
+        },
+        {
+          "query": "forward head posture",
+          "value": 60
+        },
+        {
+          "query": "upright posture",
+          "value": 60
+        },
+        {
+          "query": "security posture",
+          "value": 50
+        },
+        {
+          "query": "tongue posture",
+          "value": 40
+        }
+      ]
+    },
+    "language_learning": {
+      "query": "language learning",
+      "interest": [
+        {
+          "date": "2025-10-19",
+          "value": 41
+        },
+        {
+          "date": "2025-10-26",
+          "value": 38
+        },
+        {
+          "date": "2025-11-02",
+          "value": 39
+        },
+        {
+          "date": "2025-11-09",
+          "value": 41
+        },
+        {
+          "date": "2025-11-16",
+          "value": 47
+        },
+        {
+          "date": "2025-11-23",
+          "value": 50
+        },
+        {
+          "date": "2025-11-30",
+          "value": 55
+        },
+        {
+          "date": "2025-12-07",
+          "value": 50
+        },
+        {
+          "date": "2025-12-14",
+          "value": 51
+        },
+        {
+          "date": "2025-12-21",
+          "value": 37
+        },
+        {
+          "date": "2025-12-28",
+          "value": 38
+        },
+        {
+          "date": "2026-01-04",
+          "value": 41
+        },
+        {
+          "date": "2026-01-11",
+          "value": 46
+        },
+        {
+          "date": "2026-01-18",
+          "value": 53
+        },
+        {
+          "date": "2026-01-25",
+          "value": 57
+        },
+        {
+          "date": "2026-02-01",
+          "value": 67
+        },
+        {
+          "date": "2026-02-08",
+          "value": 76
+        },
+        {
+          "date": "2026-02-15",
+          "value": 95
+        },
+        {
+          "date": "2026-02-22",
+          "value": 84
+        },
+        {
+          "date": "2026-03-01",
+          "value": 56
+        },
+        {
+          "date": "2026-03-08",
+          "value": 54
+        },
+        {
+          "date": "2026-03-15",
+          "value": 62
+        },
+        {
+          "date": "2026-03-22",
+          "value": 64
+        },
+        {
+          "date": "2026-03-29",
+          "value": 73
+        },
+        {
+          "date": "2026-04-05",
+          "value": 78
+        },
+        {
+          "date": "2026-04-12",
+          "value": 68
+        },
+        {
+          "date": "2026-04-19",
+          "value": 71
+        },
+        {
+          "date": "2026-04-26",
+          "value": 85
+        },
+        {
+          "date": "2026-05-03",
+          "value": 95
+        },
+        {
+          "date": "2026-05-10",
+          "value": 100
+        },
+        {
+          "date": "2026-05-17",
+          "value": 92
+        },
+        {
+          "date": "2026-05-24",
+          "value": 91
+        },
+        {
+          "date": "2026-05-31",
+          "value": 98
+        },
+        {
+          "date": "2026-06-07",
+          "value": 91
+        },
+        {
+          "date": "2026-06-14",
+          "value": 98
+        },
+        {
+          "date": "2026-06-21",
+          "value": 88
+        },
+        {
+          "date": "2026-06-28",
+          "value": 82
+        },
+        {
+          "date": "2026-07-05",
+          "value": 73
+        },
+        {
+          "date": "2026-07-12",
+          "value": 62
+        },
+        {
+          "date": "2026-07-19",
+          "value": 64
+        },
+        {
+          "date": "2026-07-26",
+          "value": 72
+        },
+        {
+          "date": "2026-08-02",
+          "value": 56
+        },
+        {
+          "date": "2026-08-09",
+          "value": 51
+        },
+        {
+          "date": "2026-08-16",
+          "value": 37
+        },
+        {
+          "date": "2026-08-23",
+          "value": 36
+        },
+        {
+          "date": "2026-08-30",
+          "value": 55
+        },
+        {
+          "date": "2026-09-06",
+          "value": 54
+        },
+        {
+          "date": "2026-09-13",
+          "value": 68
+        },
+        {
+          "date": "2026-09-20",
+          "value": 62
+        },
+        {
+          "date": "2026-09-27",
+          "value": 48
+        },
+        {
+          "date": "2026-10-04",
+          "value": 23
+        },
+        {
+          "date": "2026-10-11",
+          "value": 24
+        },
+        {
+          "date": "2026-10-18",
+          "value": 19
+        }
+      ],
+      "top": [
+        {
+          "query": "language learning ai",
+          "value": 100
+        },
+        {
+          "query": "language learning apps",
+          "value": 98
+        },
+        {
+          "query": "best language learning apps",
+          "value": 80
+        },
+        {
+          "query": "english language learning",
+          "value": 80
+        },
+        {
+          "query": "machine learning",
+          "value": 70
+        },
+        {
+          "query": "machine learning language",
+          "value": 69
+        },
+        {
+          "query": "google language learning",
+          "value": 46
+        },
+        {
+          "query": "learning a new language",
+          "value": 30
+        },
+        {
+          "query": "best language learning app",
+          "value": 23
+        },
+        {
+          "query": "french language learning",
+          "value": 19
+        },
+        {
+          "query": "best apps for language learning",
+          "value": 18
+        },
+        {
+          "query": "spanish language learning",
+          "value": 18
+        },
+        {
+          "query": "japanese language learning",
+          "value": 17
+        },
+        {
+          "query": "ai language learning app",
+          "value": 16
+        },
+        {
+          "query": "machine learning models",
+          "value": 16
+        }
+      ],
+      "rising": [
+        {
+          "query": "lidl near me",
+          "value": 24200
+        },
+        {
+          "query": "walmart near me",
+          "value": 10150
+        },
+        {
+          "query": "deep learning tutorials",
+          "value": 5200
+        },
+        {
+          "query": "standing desk review",
+          "value": 2750
+        },
+        {
+          "query": "healthy meal prep",
+          "value": 2650
+        },
+        {
+          "query": "web hosting comparison",
+          "value": 2500
+        },
+        {
+          "query": "diy home renovation",
+          "value": 2250
+        },
+        {
+          "query": "software testing strategies",
+          "value": 1100
+        },
+        {
+          "query": "api design principles",
+          "value": 900
+        },
+        {
+          "query": "protein powder review",
+          "value": 800
+        },
+        {
+          "query": "organic skincare products",
+          "value": 750
+        },
+        {
+          "query": "wikipedia",
+          "value": 300
+        },
+        {
+          "query": "best language learning apps",
+          "value": 200
+        },
+        {
+          "query": "best apps for language learning",
+          "value": 100
+        },
+        {
+          "query": "language learning apps",
+          "value": 90
+        }
+      ]
+    }
+  }
+}

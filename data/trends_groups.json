@@ -1,0 +1,2090 @@
+{
+  "fetched_at": "2026-10-23T05:27:56.066297+00:00",
+  "timeframe": "today 12-m",
+  "geo": "worldwide",
+  "groups": {
+    "consumer_ai": {
+      "queries": [
+        "gold price",
+        "ai headshot",
+        "virtual try on",
+        "meal planner",
+        "protein tracker"
+      ],
+      "series": [
+        {
+          "date": "2025-10-19",
+          "gold price": 65,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2025-10-26",
+          "gold price": 51,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2025-11-02",
+          "gold price": 37,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2025-11-09",
+          "gold price": 35,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2025-11-16",
+          "gold price": 33,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2025-11-23",
+          "gold price": 33,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2025-11-30",
+          "gold price": 35,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2025-12-07",
+          "gold price": 34,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2025-12-14",
+          "gold price": 32,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2025-12-21",
+          "gold price": 34,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2025-12-28",
+          "gold price": 39,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-01-04",
+          "gold price": 33,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-01-11",
+          "gold price": 35,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-01-18",
+          "gold price": 51,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-01-25",
+          "gold price": 100,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-02-01",
+          "gold price": 96,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-02-08",
+          "gold price": 46,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-02-15",
+          "gold price": 39,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-02-22",
+          "gold price": 39,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-03-01",
+          "gold price": 54,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-03-08",
+          "gold price": 48,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-03-15",
+          "gold price": 55,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-03-22",
+          "gold price": 83,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-03-29",
+          "gold price": 53,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-04-05",
+          "gold price": 43,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-04-12",
+          "gold price": 35,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-04-19",
+          "gold price": 31,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-04-26",
+          "gold price": 32,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-05-03",
+          "gold price": 28,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-05-10",
+          "gold price": 38,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-05-17",
+          "gold price": 32,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-05-24",
+          "gold price": 31,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-05-31",
+          "gold price": 34,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-06-07",
+          "gold price": 41,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-06-14",
+          "gold price": 36,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-06-21",
+          "gold price": 40,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-06-28",
+          "gold price": 37,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-07-05",
+          "gold price": 32,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-07-12",
+          "gold price": 30,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-07-19",
+          "gold price": 29,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-07-26",
+          "gold price": 29,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-08-02",
+          "gold price": 29,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-08-09",
+          "gold price": 35,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-08-16",
+          "gold price": 34,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-08-23",
+          "gold price": 32,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-08-30",
+          "gold price": 37,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-09-06",
+          "gold price": 32,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-09-13",
+          "gold price": 24,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-09-20",
+          "gold price": 22,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-09-27",
+          "gold price": 24,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-10-04",
+          "gold price": 19,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-10-11",
+          "gold price": 19,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        },
+        {
+          "date": "2026-10-18",
+          "gold price": 18,
+          "ai headshot": 0,
+          "virtual try on": 0,
+          "meal planner": 0,
+          "protein tracker": 0
+        }
+      ]
+    },
+    "lifestyle": {
+      "queries": [
+        "ai interior design",
+        "sleep cycle",
+        "budget planner",
+        "posture",
+        "language learning"
+      ],
+      "series": [
+        {
+          "date": "2025-10-19",
+          "ai interior design": 6,
+          "sleep cycle": 6,
+          "budget planner": 2,
+          "posture": 40,
+          "language learning": 33
+        },
+        {
+          "date": "2025-10-26",
+          "ai interior design": 5,
+          "sleep cycle": 5,
+          "budget planner": 2,
+          "posture": 37,
+          "language learning": 30
+        },
+        {
+          "date": "2025-11-02",
+          "ai interior design": 5,
+          "sleep cycle": 6,
+          "budget planner": 2,
+          "posture": 41,
+          "language learning": 31
+        },
+        {
+          "date": "2025-11-09",
+          "ai interior design": 5,
+          "sleep cycle": 6,
+          "budget planner": 2,
+          "posture": 41,
+          "language learning": 32
+        },
+        {
+          "date": "2025-11-16",
+          "ai interior design": 5,
+          "sleep cycle": 6,
+          "budget planner": 2,
+          "posture": 44,
+          "language learning": 37
+        },
+        {
+          "date": "2025-11-23",
+          "ai interior design": 6,
+          "sleep cycle": 6,
+          "budget planner": 2,
+          "posture": 45,
+          "language learning": 40
+        },
+        {
+          "date": "2025-11-30",
+          "ai interior design": 7,
+          "sleep cycle": 6,
+          "budget planner": 2,
+          "posture": 47,
+          "language learning": 44
+        },
+        {
+          "date": "2025-12-07",
+          "ai interior design": 6,
+          "sleep cycle": 6,
+          "budget planner": 2,
+          "posture": 43,
+          "language learning": 40
+        },
+        {
+          "date": "2025-12-14",
+          "ai interior design": 5,
+          "sleep cycle": 6,
+          "budget planner": 2,
+          "posture": 39,
+          "language learning": 40
+        },
+        {
+          "date": "2025-12-21",
+          "ai interior design": 5,
+          "sleep cycle": 4,
+          "budget planner": 3,
+          "posture": 34,
+          "language learning": 29
+        },
+        {
+          "date": "2025-12-28",
+          "ai interior design": 6,
+          "sleep cycle": 5,
+          "budget planner": 4,
+          "posture": 37,
+          "language learning": 30
+        },
+        {
+          "date": "2026-01-04",
+          "ai interior design": 6,
+          "sleep cycle": 6,
+          "budget planner": 3,
+          "posture": 43,
+          "language learning": 33
+        },
+        {
+          "date": "2026-01-11",
+          "ai interior design": 6,
+          "sleep cycle": 6,
+          "budget planner": 3,
+          "posture": 48,
+          "language learning": 36
+        },
+        {
+          "date": "2026-01-18",
+          "ai interior design": 6,
+          "sleep cycle": 6,
+          "budget planner": 3,
+          "posture": 48,
+          "language learning": 42
+        },
+        {
+          "date": "2026-01-25",
+          "ai interior design": 7,
+          "sleep cycle": 6,
+          "budget planner": 3,
+          "posture": 51,
+          "language learning": 45
+        },
+        {
+          "date": "2026-02-01",
+          "ai interior design": 6,
+          "sleep cycle": 7,
+          "budget planner": 3,
+          "posture": 64,
+          "language learning": 53
+        },
+        {
+          "date": "2026-02-08",
+          "ai interior design": 6,
+          "sleep cycle": 6,
+          "budget planner": 3,
+          "posture": 81,
+          "language learning": 60
+        },
+        {
+          "date": "2026-02-15",
+          "ai interior design": 6,
+          "sleep cycle": 7,
+          "budget planner": 3,
+          "posture": 96,
+          "language learning": 75
+        },
+        {
+          "date": "2026-02-22",
+          "ai interior design": 7,
+          "sleep cycle": 8,
+          "budget planner": 3,
+          "posture": 83,
+          "language learning": 66
+        },
+        {
+          "date": "2026-03-01",
+          "ai interior design": 8,
+          "sleep cycle": 8,
+          "budget planner": 3,
+          "posture": 55,
+          "language learning": 44
+        },
+        {
+          "date": "2026-03-08",
+          "ai interior design": 8,
+          "sleep cycle": 8,
+          "budget planner": 3,
+          "posture": 57,
+          "language learning": 43
+        },
+        {
+          "date": "2026-03-15",
+          "ai interior design": 7,
+          "sleep cycle": 8,
+          "budget planner": 3,
+          "posture": 60,
+          "language learning": 49
+        },
+        {
+          "date": "2026-03-22",
+          "ai interior design": 6,
+          "sleep cycle": 10,
+          "budget planner": 4,
+          "posture": 68,
+          "language learning": 51
+        },
+        {
+          "date": "2026-03-29",
+          "ai interior design": 6,
+          "sleep cycle": 11,
+          "budget planner": 7,
+          "posture": 81,
+          "language learning": 58
+        },
+        {
+          "date": "2026-04-05",
+          "ai interior design": 6,
+          "sleep cycle": 13,
+          "budget planner": 8,
+          "posture": 91,
+          "language learning": 62
+        },
+        {
+          "date": "2026-04-12",
+          "ai interior design": 6,
+          "sleep cycle": 10,
+          "budget planner": 8,
+          "posture": 76,
+          "language learning": 54
+        },
+        {
+          "date": "2026-04-19",
+          "ai interior design": 6,
+          "sleep cycle": 11,
+          "budget planner": 8,
+          "posture": 74,
+          "language learning": 57
+        },
+        {
+          "date": "2026-04-26",
+          "ai interior design": 6,
+          "sleep cycle": 14,
+          "budget planner": 8,
+          "posture": 75,
+          "language learning": 67
+        },
+        {
+          "date": "2026-05-03",
+          "ai interior design": 7,
+          "sleep cycle": 19,
+          "budget planner": 6,
+          "posture": 86,
+          "language learning": 75
+        },
+        {
+          "date": "2026-05-10",
+          "ai interior design": 7,
+          "sleep cycle": 23,
+          "budget planner": 6,
+          "posture": 100,
+          "language learning": 79
+        },
+        {
+          "date": "2026-05-17",
+          "ai interior design": 6,
+          "sleep cycle": 18,
+          "budget planner": 4,
+          "posture": 89,
+          "language learning": 73
+        },
+        {
+          "date": "2026-05-24",
+          "ai interior design": 6,
+          "sleep cycle": 19,
+          "budget planner": 4,
+          "posture": 89,
+          "language learning": 72
+        },
+        {
+          "date": "2026-05-31",
+          "ai interior design": 7,
+          "sleep cycle": 23,
+          "budget planner": 5,
+          "posture": 97,
+          "language learning": 77
+        },
+        {
+          "date": "2026-06-07",
+          "ai interior design": 6,
+          "sleep cycle": 16,
+          "budget planner": 4,
+          "posture": 92,
+          "language learning": 72
+        },
+        {
+          "date": "2026-06-14",
+          "ai interior design": 6,
+          "sleep cycle": 21,
+          "budget planner": 4,
+          "posture": 95,
+          "language learning": 78
+        },
+        {
+          "date": "2026-06-21",
+          "ai interior design": 6,
+          "sleep cycle": 18,
+          "budget planner": 4,
+          "posture": 91,
+          "language learning": 70
+        },
+        {
+          "date": "2026-06-28",
+          "ai interior design": 7,
+          "sleep cycle": 15,
+          "budget planner": 3,
+          "posture": 79,
+          "language learning": 65
+        },
+        {
+          "date": "2026-07-05",
+          "ai interior design": 6,
+          "sleep cycle": 14,
+          "budget planner": 3,
+          "posture": 75,
+          "language learning": 58
+        },
+        {
+          "date": "2026-07-12",
+          "ai interior design": 3,
+          "sleep cycle": 10,
+          "budget planner": 2,
+          "posture": 82,
+          "language learning": 49
+        },
+        {
+          "date": "2026-07-19",
+          "ai interior design": 4,
+          "sleep cycle": 14,
+          "budget planner": 2,
+          "posture": 89,
+          "language learning": 51
+        },
+        {
+          "date": "2026-07-26",
+          "ai interior design": 3,
+          "sleep cycle": 11,
+          "budget planner": 2,
+          "posture": 88,
+          "language learning": 57
+        },
+        {
+          "date": "2026-08-02",
+          "ai interior design": 3,
+          "sleep cycle": 9,
+          "budget planner": 2,
+          "posture": 74,
+          "language learning": 44
+        },
+        {
+          "date": "2026-08-09",
+          "ai interior design": 3,
+          "sleep cycle": 8,
+          "budget planner": 2,
+          "posture": 76,
+          "language learning": 40
+        },
+        {
+          "date": "2026-08-16",
+          "ai interior design": 3,
+          "sleep cycle": 6,
+          "budget planner": 3,
+          "posture": 60,
+          "language learning": 29
+        },
+        {
+          "date": "2026-08-23",
+          "ai interior design": 3,
+          "sleep cycle": 7,
+          "budget planner": 3,
+          "posture": 46,
+          "language learning": 28
+        },
+        {
+          "date": "2026-08-30",
+          "ai interior design": 3,
+          "sleep cycle": 8,
+          "budget planner": 3,
+          "posture": 71,
+          "language learning": 44
+        },
+        {
+          "date": "2026-09-06",
+          "ai interior design": 3,
+          "sleep cycle": 8,
+          "budget planner": 3,
+          "posture": 63,
+          "language learning": 43
+        },
+        {
+          "date": "2026-09-13",
+          "ai interior design": 3,
+          "sleep cycle": 11,
+          "budget planner": 3,
+          "posture": 80,
+          "language learning": 54
+        },
+        {
+          "date": "2026-09-20",
+          "ai interior design": 4,
+          "sleep cycle": 16,
+          "budget planner": 4,
+          "posture": 65,
+          "language learning": 50
+        },
+        {
+          "date": "2026-09-27",
+          "ai interior design": 3,
+          "sleep cycle": 9,
+          "budget planner": 2,
+          "posture": 48,
+          "language learning": 38
+        },
+        {
+          "date": "2026-10-04",
+          "ai interior design": 2,
+          "sleep cycle": 4,
+          "budget planner": 2,
+          "posture": 34,
+          "language learning": 18
+        },
+        {
+          "date": "2026-10-11",
+          "ai interior design": 1,
+          "sleep cycle": 3,
+          "budget planner": 1,
+          "posture": 32,
+          "language learning": 19
+        },
+        {
+          "date": "2026-10-18",
+          "ai interior design": 1,
+          "sleep cycle": 4,
+          "budget planner": 1,
+          "posture": 31,
+          "language learning": 15
+        }
+      ]
+    },
+    "emerging": {
+      "queries": [
+        "foldable phone",
+        "whatsapp",
+        "halloween costume",
+        "gold rate",
+        "daylight saving time"
+      ],
+      "series": [
+        {
+          "date": "2025-10-19",
+          "foldable phone": 0,
+          "whatsapp": 84,
+          "halloween costume": 4,
+          "gold rate": 12,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2025-10-26",
+          "foldable phone": 0,
+          "whatsapp": 88,
+          "halloween costume": 5,
+          "gold rate": 11,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2025-11-02",
+          "foldable phone": 0,
+          "whatsapp": 90,
+          "halloween costume": 1,
+          "gold rate": 7,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2025-11-09",
+          "foldable phone": 0,
+          "whatsapp": 91,
+          "halloween costume": 0,
+          "gold rate": 6,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2025-11-16",
+          "foldable phone": 0,
+          "whatsapp": 92,
+          "halloween costume": 0,
+          "gold rate": 6,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2025-11-23",
+          "foldable phone": 0,
+          "whatsapp": 88,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2025-11-30",
+          "foldable phone": 0,
+          "whatsapp": 87,
+          "halloween costume": 0,
+          "gold rate": 6,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2025-12-07",
+          "foldable phone": 0,
+          "whatsapp": 89,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2025-12-14",
+          "foldable phone": 0,
+          "whatsapp": 93,
+          "halloween costume": 0,
+          "gold rate": 6,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2025-12-21",
+          "foldable phone": 0,
+          "whatsapp": 74,
+          "halloween costume": 0,
+          "gold rate": 7,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2025-12-28",
+          "foldable phone": 0,
+          "whatsapp": 69,
+          "halloween costume": 0,
+          "gold rate": 8,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-01-04",
+          "foldable phone": 0,
+          "whatsapp": 82,
+          "halloween costume": 0,
+          "gold rate": 7,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-01-11",
+          "foldable phone": 0,
+          "whatsapp": 81,
+          "halloween costume": 0,
+          "gold rate": 6,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-01-18",
+          "foldable phone": 0,
+          "whatsapp": 82,
+          "halloween costume": 0,
+          "gold rate": 10,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-01-25",
+          "foldable phone": 0,
+          "whatsapp": 84,
+          "halloween costume": 0,
+          "gold rate": 19,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-02-01",
+          "foldable phone": 0,
+          "whatsapp": 84,
+          "halloween costume": 0,
+          "gold rate": 22,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-02-08",
+          "foldable phone": 0,
+          "whatsapp": 84,
+          "halloween costume": 0,
+          "gold rate": 10,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-02-15",
+          "foldable phone": 0,
+          "whatsapp": 78,
+          "halloween costume": 1,
+          "gold rate": 10,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-02-22",
+          "foldable phone": 0,
+          "whatsapp": 81,
+          "halloween costume": 0,
+          "gold rate": 19,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-03-01",
+          "foldable phone": 0,
+          "whatsapp": 84,
+          "halloween costume": 0,
+          "gold rate": 25,
+          "daylight saving time": 1
+        },
+        {
+          "date": "2026-03-08",
+          "foldable phone": 0,
+          "whatsapp": 91,
+          "halloween costume": 0,
+          "gold rate": 20,
+          "daylight saving time": 1
+        },
+        {
+          "date": "2026-03-15",
+          "foldable phone": 0,
+          "whatsapp": 80,
+          "halloween costume": 0,
+          "gold rate": 25,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-03-22",
+          "foldable phone": 0,
+          "whatsapp": 86,
+          "halloween costume": 0,
+          "gold rate": 46,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-03-29",
+          "foldable phone": 0,
+          "whatsapp": 79,
+          "halloween costume": 0,
+          "gold rate": 27,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-04-05",
+          "foldable phone": 0,
+          "whatsapp": 87,
+          "halloween costume": 0,
+          "gold rate": 10,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-04-12",
+          "foldable phone": 0,
+          "whatsapp": 88,
+          "halloween costume": 0,
+          "gold rate": 6,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-04-19",
+          "foldable phone": 0,
+          "whatsapp": 85,
+          "halloween costume": 0,
+          "gold rate": 6,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-04-26",
+          "foldable phone": 0,
+          "whatsapp": 84,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-05-03",
+          "foldable phone": 0,
+          "whatsapp": 90,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-05-10",
+          "foldable phone": 0,
+          "whatsapp": 94,
+          "halloween costume": 0,
+          "gold rate": 8,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-05-17",
+          "foldable phone": 0,
+          "whatsapp": 94,
+          "halloween costume": 0,
+          "gold rate": 6,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-05-24",
+          "foldable phone": 0,
+          "whatsapp": 88,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-05-31",
+          "foldable phone": 0,
+          "whatsapp": 84,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-06-07",
+          "foldable phone": 0,
+          "whatsapp": 94,
+          "halloween costume": 0,
+          "gold rate": 7,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-06-14",
+          "foldable phone": 0,
+          "whatsapp": 89,
+          "halloween costume": 0,
+          "gold rate": 6,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-06-21",
+          "foldable phone": 0,
+          "whatsapp": 87,
+          "halloween costume": 0,
+          "gold rate": 7,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-06-28",
+          "foldable phone": 0,
+          "whatsapp": 87,
+          "halloween costume": 0,
+          "gold rate": 7,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-07-05",
+          "foldable phone": 0,
+          "whatsapp": 89,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-07-12",
+          "foldable phone": 0,
+          "whatsapp": 85,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 1
+        },
+        {
+          "date": "2026-07-19",
+          "foldable phone": 0,
+          "whatsapp": 88,
+          "halloween costume": 0,
+          "gold rate": 4,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-07-26",
+          "foldable phone": 0,
+          "whatsapp": 88,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-08-02",
+          "foldable phone": 0,
+          "whatsapp": 89,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-08-09",
+          "foldable phone": 0,
+          "whatsapp": 90,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-08-16",
+          "foldable phone": 0,
+          "whatsapp": 84,
+          "halloween costume": 0,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-08-23",
+          "foldable phone": 0,
+          "whatsapp": 82,
+          "halloween costume": 1,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-08-30",
+          "foldable phone": 0,
+          "whatsapp": 84,
+          "halloween costume": 1,
+          "gold rate": 6,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-09-06",
+          "foldable phone": 0,
+          "whatsapp": 75,
+          "halloween costume": 1,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-09-13",
+          "foldable phone": 0,
+          "whatsapp": 43,
+          "halloween costume": 1,
+          "gold rate": 4,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-09-20",
+          "foldable phone": 0,
+          "whatsapp": 45,
+          "halloween costume": 1,
+          "gold rate": 4,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-09-27",
+          "foldable phone": 0,
+          "whatsapp": 74,
+          "halloween costume": 2,
+          "gold rate": 5,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-10-04",
+          "foldable phone": 0,
+          "whatsapp": 100,
+          "halloween costume": 2,
+          "gold rate": 4,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-10-11",
+          "foldable phone": 0,
+          "whatsapp": 100,
+          "halloween costume": 3,
+          "gold rate": 4,
+          "daylight saving time": 0
+        },
+        {
+          "date": "2026-10-18",
+          "foldable phone": 0,
+          "whatsapp": 95,
+          "halloween costume": 3,
+          "gold rate": 5,
+          "daylight saving time": 0
+        }
+      ]
+    }
+  },
+  "regional": {
+    "gold_price": [
+      {
+        "country": "Eritrea",
+        "score": 100
+      },
+      {
+        "country": "United Arab Emirates",
+        "score": 95
+      },
+      {
+        "country": "Qatar",
+        "score": 90
+      },
+      {
+        "country": "Lebanon",
+        "score": 85
+      },
+      {
+        "country": "Nepal",
+        "score": 76
+      },
+      {
+        "country": "Singapore",
+        "score": 75
+      },
+      {
+        "country": "Ethiopia",
+        "score": 71
+      },
+      {
+        "country": "India",
+        "score": 70
+      },
+      {
+        "country": "Pakistan",
+        "score": 68
+      },
+      {
+        "country": "American Samoa",
+        "score": 55
+      },
+      {
+        "country": "Papua New Guinea",
+        "score": 54
+      },
+      {
+        "country": "Sri Lanka",
+        "score": 53
+      },
+      {
+        "country": "Bahrain",
+        "score": 53
+      },
+      {
+        "country": "Kuwait",
+        "score": 51
+      },
+      {
+        "country": "South Sudan",
+        "score": 48
+      },
+      {
+        "country": "Bhutan",
+        "score": 45
+      },
+      {
+        "country": "Liberia",
+        "score": 41
+      },
+      {
+        "country": "Oman",
+        "score": 40
+      },
+      {
+        "country": "Cambodia",
+        "score": 39
+      },
+      {
+        "country": "Bangladesh",
+        "score": 38
+      },
+      {
+        "country": "Saudi Arabia",
+        "score": 37
+      },
+      {
+        "country": "Sierra Leone",
+        "score": 35
+      },
+      {
+        "country": "Myanmar (Burma)",
+        "score": 34
+      },
+      {
+        "country": "Afghanistan",
+        "score": 33
+      },
+      {
+        "country": "Guyana",
+        "score": 31
+      },
+      {
+        "country": "Malaysia",
+        "score": 31
+      },
+      {
+        "country": "Somalia",
+        "score": 31
+      },
+      {
+        "country": "Kosovo",
+        "score": 24
+      },
+      {
+        "country": "South Korea",
+        "score": 24
+      },
+      {
+        "country": "Australia",
+        "score": 23
+      },
+      {
+        "country": "Maldives",
+        "score": 23
+      },
+      {
+        "country": "Canada",
+        "score": 22
+      },
+      {
+        "country": "Brunei",
+        "score": 22
+      },
+      {
+        "country": "Cayman Islands",
+        "score": 22
+      },
+      {
+        "country": "Ghana",
+        "score": 21
+      },
+      {
+        "country": "United States",
+        "score": 21
+      },
+      {
+        "country": "St. Kitts & Nevis",
+        "score": 19
+      },
+      {
+        "country": "Zimbabwe",
+        "score": 19
+      },
+      {
+        "country": "Malta",
+        "score": 19
+      },
+      {
+        "country": "U.S. Virgin Islands",
+        "score": 19
+      }
+    ]
+  },
+  "local_queries": {
+    "TH": {
+      "top": [
+        {
+          "query": "gold price today",
+          "value": 100
+        },
+        {
+          "query": "price of gold",
+          "value": 64
+        },
+        {
+          "query": "gold price india",
+          "value": 60
+        },
+        {
+          "query": "gold price thailand",
+          "value": 58
+        },
+        {
+          "query": "gold price news",
+          "value": 33
+        },
+        {
+          "query": "gold price today india",
+          "value": 29
+        },
+        {
+          "query": "gold usd",
+          "value": 28
+        },
+        {
+          "query": "gold price usd",
+          "value": 26
+        },
+        {
+          "query": "gold price in india",
+          "value": 26
+        },
+        {
+          "query": "gold price per gram",
+          "value": 23
+        },
+        {
+          "query": "gold price in thailand",
+          "value": 22
+        },
+        {
+          "query": "price of gold today",
+          "value": 22
+        }
+      ],
+      "rising": [
+        {
+          "query": "backend development",
+          "value": 7500
+        },
+        {
+          "query": "blockchain technology",
+          "value": 7200
+        },
+        {
+          "query": "devops practices",
+          "value": 6050
+        },
+        {
+          "query": "world gold price today",
+          "value": 650
+        },
+        {
+          "query": "gold price today india",
+          "value": 600
+        },
+        {
+          "query": "oil price today",
+          "value": 600
+        },
+        {
+          "query": "xauusd",
+          "value": 550
+        },
+        {
+          "query": "gold price news",
+          "value": 550
+        },
+        {
+          "query": "gold price usa",
+          "value": 500
+        },
+        {
+          "query": "gold price india",
+          "value": 450
+        },
+        {
+          "query": "price of gold today",
+          "value": 450
+        },
+        {
+          "query": "current gold price",
+          "value": 400
+        }
+      ]
+    },
+    "AE": {
+      "top": [
+        {
+          "query": "gold price today",
+          "value": 100
+        },
+        {
+          "query": "dubai gold price",
+          "value": 87
+        },
+        {
+          "query": "uae gold price",
+          "value": 70
+        },
+        {
+          "query": "gold price in dubai",
+          "value": 51
+        },
+        {
+          "query": "gold price in uae",
+          "value": 36
+        },
+        {
+          "query": "dubai gold price today",
+          "value": 26
+        },
+        {
+          "query": "gold price india",
+          "value": 24
+        },
+        {
+          "query": "today gold price uae",
+          "value": 22
+        },
+        {
+          "query": "uae gold price today",
+          "value": 21
+        },
+        {
+          "query": "price of gold",
+          "value": 19
+        },
+        {
+          "query": "gold price today in dubai",
+          "value": 17
+        },
+        {
+          "query": "gold price in india",
+          "value": 16
+        }
+      ],
+      "rising": [
+        {
+          "query": "lidl near me",
+          "value": 16350
+        },
+        {
+          "query": "crude oil price today",
+          "value": 450
+        },
+        {
+          "query": "crude oil price",
+          "value": 400
+        },
+        {
+          "query": "oil price today",
+          "value": 350
+        },
+        {
+          "query": "oil price",
+          "value": 250
+        },
+        {
+          "query": "silver price today",
+          "value": 140
+        },
+        {
+          "query": "live price of gold",
+          "value": 110
+        },
+        {
+          "query": "gold spot price",
+          "value": 110
+        },
+        {
+          "query": "silver price",
+          "value": 100
+        },
+        {
+          "query": "price of gold today",
+          "value": 100
+        },
+        {
+          "query": "gold price live chart",
+          "value": 90
+        },
+        {
+          "query": "gold price now",
+          "value": 80
+        }
+      ]
+    },
+    "IN": {
+      "top": [
+        {
+          "query": "today gold price",
+          "value": 100
+        },
+        {
+          "query": "silver price gold price",
+          "value": 20
+        },
+        {
+          "query": "gold rate",
+          "value": 20
+        },
+        {
+          "query": "silver price",
+          "value": 19
+        },
+        {
+          "query": "gold silver price",
+          "value": 18
+        },
+        {
+          "query": "gold price india",
+          "value": 16
+        },
+        {
+          "query": "silver price today",
+          "value": 13
+        },
+        {
+          "query": "gold share price",
+          "value": 11
+        },
+        {
+          "query": "price of gold",
+          "value": 11
+        },
+        {
+          "query": "gold price in india",
+          "value": 10
+        },
+        {
+          "query": "22 carat gold price",
+          "value": 6
+        },
+        {
+          "query": "live gold price",
+          "value": 6
+        }
+      ],
+      "rising": [
+        {
+          "query": "hindustan copper share price",
+          "value": 700
+        },
+        {
+          "query": "silver mcx live",
+          "value": 400
+        },
+        {
+          "query": "silver mcx price",
+          "value": 350
+        },
+        {
+          "query": "brent crude price",
+          "value": 350
+        },
+        {
+          "query": "crude oil price",
+          "value": 300
+        },
+        {
+          "query": "comex gold price",
+          "value": 300
+        },
+        {
+          "query": "tata silver etf share price",
+          "value": 300
+        },
+        {
+          "query": "gold and silver price today",
+          "value": 200
+        },
+        {
+          "query": "gold mcx price today",
+          "value": 180
+        },
+        {
+          "query": "xxxx gold price",
+          "value": 170
+        },
+        {
+          "query": "gold spot price",
+          "value": 160
+        },
+        {
+          "query": "silver rate today",
+          "value": 150
+        }
+      ]
+    },
+    "SA": {
+      "top": [
+        {
+          "query": "today gold price",
+          "value": 100
+        },
+        {
+          "query": "gold price ksa",
+          "value": 78
+        },
+        {
+          "query": "gold price in ksa",
+          "value": 67
+        },
+        {
+          "query": "gold price in saudi",
+          "value": 58
+        },
+        {
+          "query": "saudi arabia gold price",
+          "value": 55
+        },
+        {
+          "query": "india gold price",
+          "value": 48
+        },
+        {
+          "query": "gold price in saudi arabia",
+          "value": 37
+        },
+        {
+          "query": "saudi gold price today",
+          "value": 34
+        },
+        {
+          "query": "gold price in india",
+          "value": 33
+        },
+        {
+          "query": "price of gold",
+          "value": 23
+        },
+        {
+          "query": "gold price live",
+          "value": 21
+        },
+        {
+          "query": "gold price today saudi arabia",
+          "value": 18
+        }
+      ],
+      "rising": [
+        {
+          "query": "lidl near me",
+          "value": 30000
+        },
+        {
+          "query": "wikipedia",
+          "value": 3950
+        },
+        {
+          "query": "oil price",
+          "value": 300
+        },
+        {
+          "query": "live price of gold",
+          "value": 190
+        },
+        {
+          "query": "price of gold",
+          "value": 150
+        },
+        {
+          "query": "silver price today",
+          "value": 130
+        },
+        {
+          "query": "silver price in india",
+          "value": 100
+        },
+        {
+          "query": "silver price",
+          "value": 100
+        },
+        {
+          "query": "gold price now",
+          "value": 100
+        },
+        {
+          "query": "gold price live chart",
+          "value": 90
+        },
+        {
+          "query": "gold ounce price",
+          "value": 60
+        },
+        {
+          "query": "gold price usd",
+          "value": 50
+        }
+      ]
+    },
+    "VN": {
+      "top": [
+        {
+          "query": "price gold today",
+          "value": 100
+        },
+        {
+          "query": "price of gold",
+          "value": 78
+        },
+        {
+          "query": "gold price vietnam",
+          "value": 40
+        },
+        {
+          "query": "gold price news",
+          "value": 37
+        },
+        {
+          "query": "gold price today india",
+          "value": 33
+        },
+        {
+          "query": "price of gold today",
+          "value": 29
+        },
+        {
+          "query": "gold price forecast",
+          "value": 25
+        },
+        {
+          "query": "gold usd price",
+          "value": 22
+        },
+        {
+          "query": "gold price live",
+          "value": 20
+        },
+        {
+          "query": "gold price news today",
+          "value": 19
+        },
+        {
+          "query": "silver price",
+          "value": 18
+        },
+        {
+          "query": "gold price in vietnam",
+          "value": 14
+        }
+      ],
+      "rising": [
+        {
+          "query": "artificial intelligence news",
+          "value": 19750
+        },
+        {
+          "query": "new york times",
+          "value": 17450
+        },
+        {
+          "query": "backend development",
+          "value": 14100
+        },
+        {
+          "query": "cybersecurity tips",
+          "value": 12200
+        },
+        {
+          "query": "kubernetes orchestration",
+          "value": 12050
+        },
+        {
+          "query": "python data analysis",
+          "value": 11650
+        },
+        {
+          "query": "software testing strategies",
+          "value": 11200
+        },
+        {
+          "query": "mobile app development",
+          "value": 11200
+        },
+        {
+          "query": "web development best practices",
+          "value": 11150
+        },
+        {
+          "query": "python programming tutorial",
+          "value": 10900
+        },
+        {
+          "query": "deep learning tutorials",
+          "value": 10750
+        },
+        {
+          "query": "blockchain technology",
+          "value": 10450
+        }
+      ]
+    },
+    "US": {
+      "top": [
+        {
+          "query": "today gold price",
+          "value": 100
+        },
+        {
+          "query": "price of gold",
+          "value": 54
+        },
+        {
+          "query": "silver price",
+          "value": 46
+        },
+        {
+          "query": "silver",
+          "value": 45
+        },
+        {
+          "query": "silver price today",
+          "value": 27
+        },
+        {
+          "query": "gold stock price",
+          "value": 17
+        },
+        {
+          "query": "price of gold today",
+          "value": 17
+        },
+        {
+          "query": "gold stock",
+          "value": 17
+        },
+        {
+          "query": "gold price india",
+          "value": 13
+        },
+        {
+          "query": "price of silver",
+          "value": 11
+        },
+        {
+          "query": "gold price per gram",
+          "value": 10
+        },
+        {
+          "query": "gold spot price",
+          "value": 10
+        }
+      ],
+      "rising": [
+        {
+          "query": "lidl near me",
+          "value": 6850
+        },
+        {
+          "query": "spacex stock",
+          "value": 2500
+        },
+        {
+          "query": "brent crude oil price",
+          "value": 1400
+        },
+        {
+          "query": "oil prices",
+          "value": 400
+        },
+        {
+          "query": "oil prices today",
+          "value": 400
+        },
+        {
+          "query": "oil futures",
+          "value": 350
+        },
+        {
+          "query": "oil price",
+          "value": 250
+        },
+        {
+          "query": "price of oil",
+          "value": 250
+        },
+        {
+          "query": "oil price today",
+          "value": 250
+        },
+        {
+          "query": "crude oil prices",
+          "value": 200
+        },
+        {
+          "query": "24k gold price per gram",
+          "value": 140
+        },
+        {
+          "query": "silver rate today",
+          "value": 140
+        }
+      ]
+    }
+  }
+}

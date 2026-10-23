@@ -1,0 +1,9 @@
+{
+  "name": "goldlens-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GoldLens 金价透视：黄金购买决策 MVP",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "fetched_at": "2026-10-23T05:29:10.446798+00:00",
+  "terms": {
+    "th_gold": {
+      "query": "ราคาทองวันนี้",
+      "geo": "TH",
+      "error": "The request failed: Google returned a response with code 429"
+    },
+    "ar_gold": {
+      "query": "سعر الذهب اليوم",
+      "geo": "AE",
+      "error": "The request failed: Google returned a response with code 429"
+    },
+    "vi_gold": {
+      "query": "giá vàng hôm nay",
+      "geo": "VN",
+      "error": "The request failed: Google returned a response with code 429"
+    },
+    "hi_gold": {
+      "query": "सोने का भाव",
+      "geo": "IN",
+      "error": "The request failed: Google returned a response with code 429"
+    },
+    "zh_gold": {
+      "query": "黄金价格",
+      "geo": "HK",
+      "error": "The request failed: Google returned a response with code 429"
+    },
+    "ms_gold": {
+      "query": "harga emas hari ini",
+      "geo": "MY",
+      "error": "The request failed: Google returned a response with code 429"
+    },
+    "id_gold": {
+      "query": "harga emas hari ini",
+      "geo": "ID",
+      "error": "The request failed: Google returned a response with code 429"
+    }
+  }
+}

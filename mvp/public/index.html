@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0d0c" />
+  <meta name="description" content="GoldLens 金价透视：把国际金价、本地柜台价、工费、税费与回购折价放进同一张账单。" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="GoldLens" />
+  <title>GoldLens 金价透视 · 买金之前，先看清真实成本</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0d0c'/%3E%3Cpath d='M32 10 48 26 32 54 16 26Z' fill='none' stroke='%23e5c46b' stroke-width='3'/%3E%3Cpath d='M16 26h32M32 10v44' stroke='%23e5c46b' stroke-width='1.5' opacity='.7'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="GoldLens 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none"><path d="M20 3 34 15 20 37 6 15Z" stroke="currentColor" stroke-width="1.6"/><path d="M6 15h28M20 3v34" stroke="currentColor" stroke-width="1" opacity=".7"/></svg>
+      </span>
+      <span class="brand-word">GoldLens</span>
+      <span class="brand-cn">金价透视</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#calculator">买金计算</a>
+      <a href="#trend">走势</a>
+      <a href="#portfolio">持仓</a>
+      <a href="#alerts">提醒</a>
+    </nav>
+    <div class="live-pill" id="livePill">
+      <span class="live-dot"></span>
+      <span id="liveText">连接中</span>
+    </div>
+    <button class="install-btn" id="installBtn" type="button" hidden>安装</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> XAU / USD · 国际现货黄金</p>
+        <div class="hero-price">
+          <span class="currency">$</span><span id="spotPrice" class="price">—</span><span class="per">/ oz</span>
+        </div>
+        <div class="delta-row">
+          <span id="spotDelta" class="delta neutral">—</span>
+          <span class="delta-label">日内参考 · COMEX 主力</span>
+        </div>
+        <h1>买金之前，<br /><em>先看清真实成本。</em></h1>
+        <p class="lede">把国际金价、本地柜台价、工费、税费和回购折价，放进同一张账单。你付的，远不止金价。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#calculator">
+            算一笔真实成本
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn ghost" href="#how">数据从哪里来</a>
+        </div>
+        <div class="hero-meta">
+          <span class="meta-dot"></span>
+          <span id="updatedAt">正在同步市场数据</span>
+          <span class="meta-sep">/</span>
+          <span id="sourceCount">4 个数据源</span>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="泰国黄金参考价">
+        <div class="panel-head">
+          <div>
+            <p class="panel-kicker">BANGKOK · TODAY</p>
+            <h2>泰国金价</h2>
+          </div>
+          <span class="tag">GTA 官方参考</span>
+        </div>
+        <div class="thai-grid">
+          <div class="thai-cell">
+            <span class="cell-label">金条 96.5% · 卖出</span>
+            <strong id="thaiBarSell">฿—</strong>
+            <span class="cell-unit">/ บาท</span>
+          </div>
+          <div class="thai-cell">
+            <span class="cell-label">金饰 96.5% · 卖出</span>
+            <strong id="thaiOrnamentSell">฿—</strong>
+            <span class="cell-unit">/ บาท</span>
+          </div>
+          <div class="thai-cell">
+            <span class="cell-label">金条 · 回购</span>
+            <strong id="thaiBarBuy">฿—</strong>
+            <span class="cell-unit">/ บาท</span>
+          </div>
+          <div class="thai-cell">
+            <span class="cell-label">金饰 · 回购</span>
+            <strong id="thaiOrnamentBuy">฿—</strong>
+            <span class="cell-unit">/ บาท</span>
+          </div>
+        </div>
+        <div class="spread-note">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2v16M5 6l5-4 5 4M5 14l5 4 5-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>金饰一买一卖，价差 <b id="thaiSpread">฿—</b>，约 <b id="thaiSpreadPct">—</b></span>
+        </div>
+        <div class="mini-chart-wrap">
+          <div class="mini-chart-head"><span>国际金价 · 近 30 天</span><span id="miniRange">—</span></div>
+          <svg id="miniChart" class="mini-chart" viewBox="0 0 420 120" preserveAspectRatio="none" role="img" aria-label="近30天国际金价走势"></svg>
+        </div>
+        <p class="panel-foot" id="thaiAsOf">数据加载中</p>
+      </aside>
+    </section>
+
+    <section class="ticker" aria-label="主要市场即时折算价">
+      <div class="ticker-inner">
+        <div class="ticker-item"><span class="ticker-label">迪拜 22K</span><strong id="tickerAe">—</strong><span class="ticker-unit">AED / g</span></div>
+        <div class="ticker-item"><span class="ticker-label">印度 22K</span><strong id="tickerIn">—</strong><span class="ticker-unit">INR / g</span></div>
+        <div class="ticker-item"><span class="ticker-label">泰国金条</span><strong id="tickerTh">—</strong><span class="ticker-unit">THB / บาท</span></div>
+        <div class="ticker-item"><span class="ticker-label">国际金料</span><strong id="tickerSpotG">—</strong><span class="ticker-unit">USD / g</span></div>
+        <div class="ticker-note"><span class="pulse"></span> 每 60 秒刷新 · 本地价按今日汇率折算</div>
+      </div>
+    </section>
+
+    <section id="calculator" class="section calc-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> TRUE COST CALCULATOR</p>
+          <h2>一块金，到底值多少？</h2>
+        </div>
+        <p class="section-sub">选市场、纯度和重量，把柜台报价拆成金料、工费、税费与回购损失。不是估价，是把账算清楚。</p>
+      </div>
+
+      <div class="calc-grid">
+        <div class="calc-card">
+          <div class="field-block">
+            <div class="field-label"><span>01 · 购买市场</span><span class="field-hint" id="marketHint">泰国本地参考价</span></div>
+            <div class="chips" id="marketChips" role="group" aria-label="购买市场">
+              <button class="chip active" data-market="TH"><span class="chip-flag">TH</span> 泰国</button>
+              <button class="chip" data-market="AE"><span class="chip-flag">AE</span> 阿联酋</button>
+              <button class="chip" data-market="IN"><span class="chip-flag">IN</span> 印度</button>
+              <button class="chip" data-market="US"><span class="chip-flag">US</span> 美国</button>
+            </div>
+          </div>
+
+          <div class="field-block two-col">
+            <div>
+              <div class="field-label"><span>02 · 纯度</span></div>
+              <div class="chips compact" id="purityChips" role="group" aria-label="纯度">
+                <button class="chip active" data-purity="0.965">96.5%</button>
+                <button class="chip" data-purity="0.999">24K</button>
+                <button class="chip" data-purity="0.9167">22K</button>
+                <button class="chip" data-purity="0.75">18K</button>
+              </div>
+            </div>
+            <div>
+              <div class="field-label"><span>03 · 重量</span></div>
+              <div class="weight-row">
+                <input id="weight" type="number" min="0.01" step="0.01" value="1" inputmode="decimal" aria-label="重量" />
+                <select id="unit" aria-label="重量单位">
+                  <option value="baht">บาท（泰国）</option>
+                  <option value="g">克 g</option>
+                  <option value="tola">托拉 tola</option>
+                  <option value="oz">盎司 oz</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field-block">
+            <div class="field-label"><span>04 · 工费 / 设计溢价</span><span class="field-hint"><b id="makingPctLabel">0</b>%</span></div>
+            <input id="making" class="range" type="range" min="0" max="40" step="0.5" value="0" aria-label="工费百分比" />
+            <div class="range-scale"><span>0%</span><span>20%</span><span>40%</span></div>
+          </div>
+
+          <div class="field-block">
+            <div class="field-label"><span>05 · 税费</span><span class="field-hint"><b id="taxPctLabel">0</b>%</span></div>
+            <input id="tax" class="range" type="range" min="0" max="20" step="0.5" value="0" aria-label="税费百分比" />
+            <div class="range-scale"><span>0%</span><span>10%</span><span>20%</span></div>
+          </div>
+
+          <div class="calc-actions">
+            <button class="btn primary wide" id="calcBtn">更新账单</button>
+            <button class="btn icon-btn" id="resetBtn" title="恢复市场默认值" aria-label="恢复市场默认值">
+              <svg viewBox="0 0 20 20" fill="none"><path d="M4 7a7 7 0 1 1-.4 5M4 3v4h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <p class="calc-disclaimer">本地金价与税费因门店、品类、政策而异。本工具用于建立价格锚点，不替代门店报价。</p>
+        </div>
+
+        <div class="result-card" id="resultCard">
+          <div class="result-top">
+            <div>
+              <p class="eyebrow">ESTIMATED LANDED COST</p>
+              <h3>预计到手价</h3>
+            </div>
+            <span class="fair-badge" id="fairBadge">—</span>
+          </div>
+          <div class="result-price" id="totalPrice">฿—</div>
+          <p class="result-sub" id="priceSub">正在计算</p>
+
+          <div class="stack-wrap">
+            <div class="stack-bar" id="stackBar" aria-hidden="true">
+              <span class="seg seg-metal"></span><span class="seg seg-making"></span><span class="seg seg-tax"></span>
+            </div>
+            <div class="legend">
+              <span><i class="dot metal"></i>金料 <b id="metalValue">—</b></span>
+              <span><i class="dot making"></i>工费/溢价 <b id="makingValue">—</b></span>
+              <span><i class="dot tax"></i>税费 <b id="taxValue">—</b></span>
+            </div>
+          </div>
+
+          <div class="result-grid">
+            <div class="result-metric">
+              <span>对比国际金料价</span>
+              <strong id="premiumPct">—</strong>
+              <small id="premiumHint">含工费与税费</small>
+            </div>
+            <div class="result-metric">
+              <span>即时回购约</span>
+              <strong id="buyback">—</strong>
+              <small id="buybackHint">按今日回购价</small>
+            </div>
+            <div class="result-metric">
+              <span>每克成本</span>
+              <strong id="perGram">—</strong>
+              <small id="perGramHint">按毛重计</small>
+            </div>
+            <div class="result-metric">
+              <span>回本需上涨</span>
+              <strong id="breakEven">—</strong>
+              <small>金价至少走到这里</small>
+            </div>
+          </div>
+
+          <div class="loss-callout">
+            <div class="loss-icon">!</div>
+            <div>
+              <span>一买一卖的隐形成本</span>
+              <strong id="instantLoss">—</strong>
+            </div>
+            <span class="loss-pct" id="lossPct">—</span>
+          </div>
+          <p class="insight" id="insight">选择参数后，这里会给出你最容易忽略的那笔钱。</p>
+        </div>
+      </div>
+
+      <div class="negotiation" id="negotiation">
+        <div class="neg-label">谈判参考</div>
+        <p id="negText">正在生成议价提示…</p>
+        <div class="neg-chips" id="negChips"></div>
+      </div>
+    </section>
+
+    <section id="trend" class="section trend-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> PRICE CONTEXT</p>
+          <h2>现在贵不贵？</h2>
+        </div>
+        <p class="section-sub">单看今天的价格没有意义。把它放回 30 天、90 天和一年的区间里，才知道自己在周期的哪个位置。</p>
+      </div>
+
+      <div class="trend-grid">
+        <div class="chart-card">
+          <div class="chart-head">
+            <div>
+              <div class="chart-price" id="chartPrice">$—</div>
+              <div class="chart-meta" id="chartMeta">COMEX 黄金主力 · USD / oz</div>
+            </div>
+            <div class="range-tabs" id="rangeTabs" role="group" aria-label="图表时间范围">
+              <button class="range-tab active" data-range="30">30D</button>
+              <button class="range-tab" data-range="90">90D</button>
+              <button class="range-tab" data-range="365">1Y</button>
+            </div>
+          </div>
+          <div class="chart-stage">
+            <svg id="priceChart" viewBox="0 0 800 300" preserveAspectRatio="none" role="img" aria-label="黄金价格走势图"></svg>
+            <div class="chart-tooltip" id="chartTooltip" hidden>
+              <span class="tt-date"></span>
+              <strong class="tt-price"></strong>
+            </div>
+          </div>
+          <div class="chart-stats">
+            <div><span>区间涨跌</span><strong id="rangeChange">—</strong></div>
+            <div><span>区间均价</span><strong id="rangeAvg">—</strong></div>
+            <div><span>区间高 / 低</span><strong id="rangeHighLow">—</strong></div>
+            <div><span>当前 vs 均价</span><strong id="vsAvg">—</strong></div>
+          </div>
+        </div>
+
+        <div class="read-card">
+          <p class="eyebrow">READ THE MARKET</p>
+          <h3 id="marketReadTitle">正在读市场</h3>
+          <p id="marketReadBody">把今天的价格放进区间里，才能判断该等、该买，还是该先算清楚。</p>
+          <div class="read-list">
+            <div><span>52 周高</span><b id="high52">—</b></div>
+            <div><span>52 周低</span><b id="low52">—</b></div>
+            <div><span>距高点</span><b id="fromHigh">—</b></div>
+            <div><span>距低点</span><b id="fromLow">—</b></div>
+          </div>
+          <div class="read-note">
+            <span class="note-mark">i</span>
+            <p>这不是预测。只是一个提醒：当你看到“今天金价”时，先问它处在什么位置。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR POSITION</p>
+          <h2>你的金，今天值多少？</h2>
+        </div>
+        <button class="btn primary small" id="addHoldingBtn">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          添加持仓
+        </button>
+      </div>
+
+      <div class="portfolio-summary">
+        <div class="summary-main">
+          <span>按即时回购价估值</span>
+          <strong id="portfolioValue">$0.00</strong>
+          <small id="portfolioLocal">—</small>
+        </div>
+        <div class="summary-stat">
+          <span>总成本</span>
+          <strong id="portfolioCost">$0.00</strong>
+        </div>
+        <div class="summary-stat">
+          <span>浮动盈亏</span>
+          <strong id="portfolioPnl">$0.00</strong>
+          <small id="portfolioPnlPct">—</small>
+        </div>
+        <div class="summary-stat">
+          <span>持有克重</span>
+          <strong id="portfolioGrams">0 g</strong>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="holdings-table">
+          <thead>
+            <tr>
+              <th>资产</th>
+              <th>市场 / 纯度</th>
+              <th>重量</th>
+              <th>买入成本</th>
+              <th>当前估值</th>
+              <th>盈亏</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="holdingsBody"></tbody>
+        </table>
+        <div class="empty-state" id="emptyState">
+          <div class="empty-mark">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M32 6 54 24 32 58 10 24Z" stroke="currentColor" stroke-width="1.2"/><path d="M10 24h44M32 6v52" stroke="currentColor" stroke-width=".8" opacity=".6"/></svg>
+          </div>
+          <h3>还没有持仓</h3>
+          <p>把已经买下的金饰或金条记进来，看看它今天按回购价值多少。</p>
+          <div class="empty-actions">
+            <button class="btn ghost small" id="sampleHoldingBtn">载入一条示例</button>
+            <button class="btn primary small" id="emptyAddBtn">添加第一笔</button>
+          </div>
+        </div>
+      </div>
+      <p class="table-note">估值口径：泰国 96.5% 按 GTA 金条/金饰回购价；其他市场按国际金料价减默认回购折价。未计运费、保险与收藏溢价。</p>
+    </section>
+
+    <section id="alerts" class="section alerts-section">
+      <div class="alerts-card">
+        <div class="alerts-copy">
+          <p class="eyebrow">PRICE ALERT</p>
+          <h2>别一直刷价格。</h2>
+          <p>设一个目标价，到了再看。提醒只存在你的浏览器里，不上传、不打扰。</p>
+          <div class="alert-current">
+            <span>当前国际金价</span>
+            <strong id="alertCurrent">$—</strong>
+            <small>USD / oz</small>
+          </div>
+        </div>
+        <form class="alert-form" id="alertForm">
+          <label for="alertTarget">目标价（USD / oz）</label>
+          <div class="alert-input-row">
+            <span class="input-prefix">$</span>
+            <input id="alertTarget" type="number" min="1" step="0.01" placeholder="例如 3900" required />
+            <select id="alertDirection" aria-label="触发方向">
+              <option value="below">跌到或低于</option>
+              <option value="above">涨到或高于</option>
+            </select>
+          </div>
+          <button class="btn primary wide" type="submit">保存提醒</button>
+          <button class="btn ghost wide" type="button" id="notifyBtn">开启浏览器通知</button>
+          <p class="form-note" id="alertNote">提醒在页面打开时检查；关闭页面后不会后台推送。</p>
+        </form>
+        <div class="alert-list-wrap">
+          <div class="alert-list-head"><span>我的提醒</span><span id="alertCount">0</span></div>
+          <div id="alertList" class="alert-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section how-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> DATA & METHOD</p>
+          <h2>这些数字，从哪里来？</h2>
+        </div>
+        <p class="section-sub">一个价格工具最重要的不是界面，而是你敢不敢把每个数字的来源写在脸上。</p>
+      </div>
+      <div class="source-grid">
+        <div class="source-card">
+          <span class="source-index">01</span>
+          <h3>国际现货金价</h3>
+          <p>gold-api.com 的 XAU/USD 即时报价，作为所有市场折算的锚。</p>
+          <span class="source-status" id="sourceSpot">连接中</span>
+        </div>
+        <div class="source-card">
+          <span class="source-index">02</span>
+          <h3>泰国本地参考价</h3>
+          <p>泰国黄金交易协会（GTA）96.5% 金条与金饰的卖出/回购价。</p>
+          <span class="source-status" id="sourceGta">连接中</span>
+        </div>
+        <div class="source-card">
+          <span class="source-index">03</span>
+          <h3>汇率</h3>
+          <p>open.er-api.com 的每日中间价，用于把美元金价折算成 THB、AED、INR。</p>
+          <span class="source-status" id="sourceFx">连接中</span>
+        </div>
+        <div class="source-card">
+          <span class="source-index">04</span>
+          <h3>走势与区间</h3>
+          <p>Yahoo Finance 的 COMEX 黄金主力连续合约，用于 30D / 90D / 1Y 区间。</p>
+          <span class="source-status" id="sourceHistory">连接中</span>
+        </div>
+      </div>
+      <div class="method-note">
+        <div>
+          <h3>口径说明</h3>
+          <p>泰国 96.5% 金饰的“到手价”以 GTA 金饰卖出价为锚，额外工费由你调节；回购按 GTA 金饰回购价，未计佩戴损耗。阿联酋、印度、美国为国际金料价 + 可调工费 + 可调税费的估算，不代表任何门店报价。</p>
+        </div>
+        <div>
+          <h3>不构成投资建议</h3>
+          <p>金价会波动，回购政策因店而异。这个工具帮你建立价格锚点和谈判区间，不预测涨跌，也不代替专业鉴定。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">THE POINT</p>
+      <h2>黄金很诚实。<br /><em>不诚实的是那张账单。</em></h2>
+      <p>GoldLens 想做的，是把买金这件事从“感觉不亏”变成“算得清楚”。</p>
+      <a class="btn primary" href="#calculator">回到计算器</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <span class="brand-mark small" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none"><path d="M20 3 34 15 20 37 6 15Z" stroke="currentColor" stroke-width="1.6"/><path d="M6 15h28M20 3v34" stroke="currentColor" stroke-width="1" opacity=".7"/></svg>
+      </span>
+      <div><strong>GoldLens</strong><span>金价透视 · MVP</span></div>
+    </div>
+    <p>数据仅作信息参考，不构成投资、税务或法律建议。GoldLens 不持有资金、不撮合交易。</p>
+    <div class="footer-links"><a href="#how">数据来源</a><a href="#calculator">计算器</a><a href="#top">回到顶部</a></div>
+  </footer>
+
+  <dialog id="holdingDialog" class="dialog">
+    <form method="dialog" id="holdingForm">
+      <div class="dialog-head">
+        <div><p class="eyebrow">ADD POSITION</p><h2>添加一笔持仓</h2></div>
+        <button class="dialog-close" value="cancel" aria-label="关闭" type="submit">×</button>
+      </div>
+      <div class="dialog-grid">
+        <label class="input-label wide">名称<input id="holdingName" type="text" maxlength="40" placeholder="例如：曼谷金饰" required /></label>
+        <label class="input-label">市场
+          <select id="holdingMarket"><option value="TH">泰国</option><option value="AE">阿联酋</option><option value="IN">印度</option><option value="US">美国</option></select>
+        </label>
+        <label class="input-label">纯度
+          <select id="holdingPurity"><option value="0.965">96.5%</option><option value="0.999">24K</option><option value="0.9167">22K</option><option value="0.75">18K</option></select>
+        </label>
+        <label class="input-label">类型
+          <select id="holdingAssetType"><option value="bar">金条 / 金料</option><option value="jewelry">金饰</option></select>
+        </label>
+        <label class="input-label">重量<input id="holdingWeight" type="number" min="0.01" step="0.01" value="1" required /></label>
+        <label class="input-label">单位
+          <select id="holdingUnit"><option value="baht">บาท</option><option value="g">克 g</option><option value="tola">托拉 tola</option><option value="oz">盎司 oz</option></select>
+        </label>
+        <label class="input-label wide">买入总价（当地货币）<input id="holdingCost" type="number" min="0" step="0.01" placeholder="例如：65000" required /></label>
+      </div>
+      <p class="dialog-note" id="holdingNote">估值会按当前回购价自动更新。</p>
+      <div class="dialog-actions">
+        <button class="btn ghost" value="cancel" type="submit">取消</button>
+        <button class="btn primary" value="default" type="submit" id="saveHoldingBtn">保存持仓</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast-mark">✓</span><span id="toastText"></span>
+  </div>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
