@@ -1,6 +1,12 @@
 # GoldLens 金价透视
 
+[![CI](https://github.com/death1024/goldlens-mvp/actions/workflows/ci.yml/badge.svg)](https://github.com/death1024/goldlens-mvp/actions/workflows/ci.yml)
+[![Pages](https://github.com/death1024/goldlens-mvp/actions/workflows/pages.yml/badge.svg)](https://github.com/death1024/goldlens-mvp/actions/workflows/pages.yml)
+
 > 买金之前，先看清真实成本。
+
+**在线 Demo：** https://death1024.github.io/goldlens-mvp/  
+**GitHub：** https://github.com/death1024/goldlens-mvp
 
 GoldLens 是一个面向消费者黄金购买决策的 Web MVP：把国际金价、泰国 GTA 本地参考价、工费、税费、回购折价和回本点，放进同一张可交互的账单。
 
@@ -173,14 +179,14 @@ docker run -p 5188:5188 goldlens
 
 ## 上传到 GitHub
 
-如果仓库已经创建：
+当前仓库：
 
 ```bash
-git remote add origin https://github.com/<your-name>/goldlens-mvp.git
+git remote add origin https://github.com/death1024/goldlens-mvp.git
 git push -u origin main
 ```
 
-首次推送需要 GitHub 认证（PAT 或 SSH）。没有现成仓库时，在 GitHub 新建空仓库 `goldlens-mvp`，不要勾选 README，然后执行上面的命令。
+首次推送需要 GitHub 认证（PAT 或 SSH）。
 
 ---
 
