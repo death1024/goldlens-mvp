@@ -73,6 +73,15 @@ def set_font(run, name=BODY_FONT, size=None, bold=None, color=None):
         run.font.color.rgb = color
 
 
+def add_inline(paragraph, text, size, color=INK):
+    parts = str(text).split('**')
+    for idx, part in enumerate(parts):
+        if not part:
+            continue
+        run = paragraph.add_run(part)
+        set_font(run, size=size, color=color, bold=(idx % 2 == 1))
+
+
 def shade(cell, color):
     tcPr = cell._tc.get_or_add_tcPr()
     shd = OxmlElement('w:shd')
@@ -130,13 +139,13 @@ def add_page_number(paragraph):
     run._r.append(end)
 
 
-def add_header_footer(section):
+def add_header_footer(section, header_text='GOLDLENS 2.0  /  TECHNICAL PLAN  /  2026.10'):
     section.header.is_linked_to_previous = False
     section.footer.is_linked_to_previous = False
     hp = section.header.paragraphs[0]
     hp.text = ''
     hp.paragraph_format.space_after = Pt(0)
-    r = hp.add_run('GOLDLENS 2.0  /  TECHNICAL PLAN  /  2026.10')
+    r = hp.add_run(header_text)
     set_font(r, size=7.2, bold=True, color=GOLD)
 
     fp = section.footer.paragraphs[0]
@@ -156,7 +165,7 @@ def page_number_start(section, start=1):
     pgNumType.set(qn('w:start'), str(start))
 
 
-def render_docx(plan, output, page_map=None):
+def render_docx(plan, output, page_map=None, cover='tech-cover.png', header_text='GOLDLENS 2.0  /  TECHNICAL PLAN  /  2026.10', toc_title='技术方案 · 目录', doc_title='GoldLens 2.0 技术方案'):
     page_map = page_map or {}
     doc = Document()
     sec = doc.sections[0]
@@ -180,7 +189,7 @@ def render_docx(plan, output, page_map=None):
     p.paragraph_format.space_before = Pt(0)
     p.paragraph_format.space_after = Pt(0)
     p.paragraph_format.line_spacing = 1
-    p.add_run().add_picture(os.path.join(DIAGRAMS, 'tech-cover.png'), width=Cm(21.0), height=Cm(29.65))
+    p.add_run().add_picture(os.path.join(DIAGRAMS, cover), width=Cm(21.0), height=Cm(29.65))
 
     body = doc.add_section(WD_SECTION.NEW_PAGE)
     body.page_width, body.page_height = Cm(21), Cm(29.7)
@@ -189,7 +198,7 @@ def render_docx(plan, output, page_map=None):
     body.bottom_margin = Cm(1.9)
     body.header_distance = Cm(0.8)
     body.footer_distance = Cm(0.8)
-    add_header_footer(body)
+    add_header_footer(body, header_text)
     page_number_start(body, 1)
 
     # TOC
@@ -199,7 +208,7 @@ def render_docx(plan, output, page_map=None):
     set_font(r, size=8.5, bold=True, color=GOLD)
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(16)
-    r = p.add_run('技术方案 · 目录')
+    r = p.add_run(toc_title)
     set_font(r, name=SERIF_FONT, size=27, bold=True, color=INK)
     for num, title in plan.sections:
         p = doc.add_paragraph()
@@ -223,7 +232,7 @@ def render_docx(plan, output, page_map=None):
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(2)
     p.paragraph_format.line_spacing = 1.5
-    r = p.add_run('本方案面向创始人、工程与设计团队，描述从当前 MVP 到生产级 GoldLens 2.0 的目标架构、数据模型、体验规范与 18 周交付路线。所有时间与成本为显式假设，不是承诺；上线前需完成数据授权、隐私与本地合规审查。')
+    r = p.add_run('本方案面向创始人、工程与设计团队，描述从当前 MVP 到生产级 GoldLens 的目标架构、数据模型、体验规范与交付路线。所有时间与成本为显式假设，不是承诺；上线前需完成数据授权、隐私与本地合规审查。')
     set_font(r, size=8.8, color=MUT)
 
     doc.add_page_break()
@@ -284,8 +293,7 @@ def render_docx(plan, output, page_map=None):
             if lead:
                 r = p.add_run(lead)
                 set_font(r, size=10.2, bold=True, color=INK)
-            r = p.add_run(text)
-            set_font(r, size=10.2, color=INK)
+            add_inline(p, text, 10.2, INK)
             continue
         if kind == 'bullets':
             _, items, numbered = block
@@ -301,8 +309,7 @@ def render_docx(plan, output, page_map=None):
                 else:
                     r = p.add_run('·  ')
                     set_font(r, size=9.5, bold=True, color=GOLD)
-                r = p.add_run(str(item).replace('`', ''))
-                set_font(r, size=9.9, color=INK)
+                add_inline(p, str(item).replace('`', ''), 9.9, INK)
             continue
         if kind == 'table':
             _, caption, headers, rows, widths, font_size, align_center = block
@@ -418,7 +425,7 @@ def render_docx(plan, output, page_map=None):
             set_font(r, name=SERIF_FONT, size=18, bold=True, color=GOLD)
             continue
 
-    doc.core_properties.title = 'GoldLens 2.0 技术方案'
+    doc.core_properties.title = doc_title
     doc.core_properties.author = 'GoldLens Research'
     doc.core_properties.subject = '从 MVP 到生产级黄金决策平台的技术方案'
     doc.core_properties.keywords = 'GoldLens, architecture, Next.js, Postgres, technical plan'
@@ -430,13 +437,13 @@ def _md_escape(text):
     return str(text).replace('|', '\\|').replace('\n', ' ')
 
 
-def render_markdown(plan, output):
+def render_markdown(plan, output, title='GoldLens 2.0 技术方案', subtitle='从 MVP 到可用的现代黄金决策平台。', version='Version 1.0 · Proposed · 2026-10-23'):
     lines = [
-        '# GoldLens 2.0 技术方案',
+        f'# {title}',
         '',
-        '> 从 MVP 到可用的现代黄金决策平台。',
+        f'> {subtitle}',
         '',
-        '**Version 1.0 · Proposed · 2026-10-23**',
+        f'**{version}**',
         '',
         '---',
         '',

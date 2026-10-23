@@ -4,6 +4,8 @@
 
 **Version 1.0 · Proposed · 2026-10-23**
 
+> **架构优化 v1.1（当前推荐）**：PPR/React Compiler、Base UI、ElectricSQL、Inngest、AI Gateway 与 20 周路线，见 [ARCHITECTURE_UPGRADE_V1.1.md](ARCHITECTURE_UPGRADE_V1.1.md)。
+
 ---
 
 ## 文档地图

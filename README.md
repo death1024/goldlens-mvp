@@ -104,9 +104,27 @@ goldlens/
 - 9 款竞品分成行情、持仓、交易、估价四个阵营；没有人把“到手价 + 回购价 + 回本点 + 跨市场单位”连起来。
 - GoldLens 选择“购买决策层”作为切口：先做泰国 96.5% / baht，再扩阿联酋 22K、印度 10 克/GST。
 
-## 技术方案（GoldLens 2.0）
+## 技术方案（GoldLens 2.0 / 2.1）
 
-从当前 MVP 到生产级、可公开运营的现代程序：
+从当前 MVP 到生产级、可公开运营的现代程序。
+
+### v1.1 体验优先架构（当前推荐）
+
+- [架构优化 PDF（16 页）](docs/GoldLens_2.1_架构优化方案.pdf)
+- [架构优化 Markdown](docs/ARCHITECTURE_UPGRADE_V1.1.md)
+- 新架构图：[Experience-first 架构](docs/diagrams/architecture-v11.png) · [Local-first 读写](docs/diagrams/sync-flow.png)
+
+v1.1 在 v1.0 基础上做五件事：
+
+- **渲染**：Next.js 16 PPR / RSC / React Compiler / View Transitions。
+- **体验**：Tailwind v4 + Base UI + Motion；暗/亮主题、四语言/RTL、PWA、Expo 原生壳。
+- **数据**：ElectricSQL 读同步 + IndexedDB outbox；私有写入保持服务端权威。
+- **异步**：Inngest durable workflows 替代自建 worker + 队列。
+- **智能**：AI Gateway + 结构化工具调用，只做输入与解释，不做投资判断。
+
+所有“先进”技术先通过 2 周 spike 验证；不达标就回退，不把风险带进主路径。
+
+### v1.0 技术方案（基线）
 
 - [技术方案 PDF（36 页）](docs/GoldLens_2.0_技术方案.pdf)
 - [技术方案 Markdown](docs/TECHNICAL_PLAN.md)
