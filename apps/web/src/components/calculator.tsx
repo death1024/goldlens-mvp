@@ -118,7 +118,7 @@ export function Calculator({ compact = false }: { compact?: boolean }) {
         </div>
 
         <div className="row">
-          <button type="button" className="btn primary" style={{ flex: 1 }} onClick={() => undefined}>{t('calc.updated')}</button>
+          <span className="badge green" style={{ flex: 1, minHeight: 42, display: 'flex', justifyContent: 'center' }}>{t('calc.updated')}</span>
           <button type="button" className="icon-btn" onClick={reset} title={t('calc.reset')}><RotateCcw size={15} /></button>
         </div>
         <p className="note" style={{ marginTop: 10 }}>{t('calc.localNote')}</p>

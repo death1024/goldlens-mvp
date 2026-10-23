@@ -12,7 +12,7 @@
 - **调研报告**：[PDF](docs/GoldLens_Google_Trends_应用机会调研与MVP报告.pdf)
 - **旧版静态 Demo**：https://death1024.github.io/goldlens-mvp/
 
-![GoldLens 首页](docs/screenshots/v21-home.png)
+![GoldLens 首页](docs/screenshots/v21-zh.png)
 
 ---
 
@@ -109,6 +109,8 @@ docker compose up --build
 ![العربية](docs/screenshots/v21-ar.png)
 
 完整实现/需求审计：[docs/IMPLEMENTATION_AUDIT.md](docs/IMPLEMENTATION_AUDIT.md)。
+
+UI 文案与界面规范：[docs/UI_COPY_GUIDE.md](docs/UI_COPY_GUIDE.md)。
 
 ### API
 

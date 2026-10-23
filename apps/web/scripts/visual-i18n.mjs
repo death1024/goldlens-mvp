@@ -5,7 +5,7 @@ const base = process.env.BASE_URL ?? 'http://localhost:3000';
 const out = process.env.OUT ?? 'docs/screenshots';
 const browser = await chromium.launch({ executablePath: edge, headless: true });
 
-for (const locale of ['en', 'th', 'ar']) {
+for (const locale of ['zh', 'en', 'th', 'ar']) {
   const context = await browser.newContext({ viewport: { width: 1440, height: 1100 }, deviceScaleFactor: 1 });
   await context.addCookies([{ name: 'gl_locale', value: locale, domain: 'localhost', path: '/' }]);
   const page = await context.newPage();
