@@ -1,15 +1,23 @@
 'use client';
 
 import { createContext, useContext, useMemo, useState } from 'react';
-import { getDictionary, type Locale } from '@goldlens/i18n';
+import { createTranslator, getDictionary, type Locale, type Translator } from '@goldlens/i18n';
 
-const LocaleContext = createContext<{ locale: Locale; setLocale: (locale: Locale) => void; dict: ReturnType<typeof getDictionary> } | null>(null);
+type LocaleContextValue = {
+  locale: Locale;
+  setLocale: (locale: Locale) => void;
+  dict: ReturnType<typeof getDictionary>;
+  t: Translator;
+};
+
+const LocaleContext = createContext<LocaleContextValue | null>(null);
 
 export function LocaleProvider({ children, initialLocale }: { children: React.ReactNode; initialLocale: Locale }) {
   const [locale, setLocaleState] = useState<Locale>(initialLocale);
-  const value = useMemo(() => ({
+  const value = useMemo<LocaleContextValue>(() => ({
     locale,
     dict: getDictionary(locale),
+    t: createTranslator(locale),
     setLocale: (next: Locale) => {
       document.cookie = `gl_locale=${next};path=/;max-age=31536000;samesite=lax`;
       setLocaleState(next);

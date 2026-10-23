@@ -48,23 +48,22 @@ export interface QuoteResult {
   buybackMinor: number;
   isThaiReference: boolean;
   fairness: {
-    label: string;
+    labelKey: 'fairOk' | 'fairWarn' | 'fairBad';
     state: 'ok' | 'warn' | 'bad';
   };
 }
 
-export const UNITS: Record<WeightUnit, { label: string; grams: number }> = {
-  g: { label: '克', grams: 1 },
-  baht: { label: 'บาท', grams: 15.244 },
-  tola: { label: '托拉', grams: 11.6638125 },
-  oz: { label: '盎司', grams: 31.1034768 }
+export const UNITS: Record<WeightUnit, { grams: number }> = {
+  g: { grams: 1 },
+  baht: { grams: 15.244 },
+  tola: { grams: 11.6638125 },
+  oz: { grams: 31.1034768 }
 };
 
 export const OZ_GRAMS = 31.1034768;
 export const BAHT_GRAMS = 15.244;
 
 export const MARKETS: Record<MarketCode, {
-  name: string;
   currency: string;
   symbol: string;
   locale: string;
@@ -74,10 +73,8 @@ export const MARKETS: Record<MarketCode, {
   taxPct: number;
   buybackSpreadPct: number;
   fairness: [number, number, number];
-  fairnessLabels: [string, string, string, string];
 }> = {
   TH: {
-    name: '泰国',
     currency: 'THB',
     symbol: '฿',
     locale: 'th-TH',
@@ -86,11 +83,9 @@ export const MARKETS: Record<MarketCode, {
     makingPct: 0,
     taxPct: 0,
     buybackSpreadPct: 0,
-    fairness: [2, 5, 10],
-    fairnessLabels: ['接近金条价', '正常金饰溢价', '溢价偏高', '明显偏高']
+    fairness: [2, 5, 10]
   },
   AE: {
-    name: '阿联酋',
     currency: 'AED',
     symbol: 'د.إ',
     locale: 'en-AE',
@@ -99,11 +94,9 @@ export const MARKETS: Record<MarketCode, {
     makingPct: 12,
     taxPct: 5,
     buybackSpreadPct: 3,
-    fairness: [10, 20, 30],
-    fairnessLabels: ['接近金料价', '正常零售区间', '溢价偏高', '明显偏高']
+    fairness: [10, 20, 30]
   },
   IN: {
-    name: '印度',
     currency: 'INR',
     symbol: '₹',
     locale: 'en-IN',
@@ -112,11 +105,9 @@ export const MARKETS: Record<MarketCode, {
     makingPct: 12,
     taxPct: 3,
     buybackSpreadPct: 4,
-    fairness: [10, 20, 30],
-    fairnessLabels: ['接近金料价', '正常零售区间', '溢价偏高', '明显偏高']
+    fairness: [10, 20, 30]
   },
   US: {
-    name: '美国',
     currency: 'USD',
     symbol: '$',
     locale: 'en-US',
@@ -125,8 +116,7 @@ export const MARKETS: Record<MarketCode, {
     makingPct: 8,
     taxPct: 0,
     buybackSpreadPct: 2,
-    fairness: [8, 15, 25],
-    fairnessLabels: ['接近金料价', '正常零售区间', '溢价偏高', '明显偏高']
+    fairness: [8, 15, 25]
   }
 };
 
@@ -230,7 +220,7 @@ export function calcQuote(input: QuoteInput, snapshot: MarketSnapshot): QuoteRes
     buybackMinor: minor(buyback),
     isThaiReference,
     fairness: {
-      label: market.fairnessLabels[idx] ?? market.fairnessLabels[3],
+      labelKey: state === 'ok' ? 'fairOk' : state === 'warn' ? 'fairWarn' : 'fairBad',
       state
     }
   };
@@ -271,9 +261,9 @@ export function rankQuotes(quotes: DealerQuoteForRanking[]): RankedQuote[] {
       const freshnessScore = quote.freshnessMinutes === undefined ? 70 : Math.max(0, 100 - quote.freshnessMinutes / 6);
       const score = 0.4 * priceScore + 0.25 * buybackScore + 0.15 * proximityScore + 0.1 * verificationScore + 0.1 * freshnessScore;
       const reasons = [
-        `到手价 ${priceScore >= 80 ? '较优' : priceScore >= 50 ? '中等' : '偏高'}`,
-        `回购价 ${buybackScore >= 80 ? '较优' : buybackScore >= 50 ? '中等' : '偏低'}`,
-        quote.verification === 'audited' ? '已审计' : quote.verification === 'verified' ? '已验证' : '待验证'
+        priceScore >= 80 ? 'price_strong' : priceScore >= 50 ? 'price_mid' : 'price_high',
+        buybackScore >= 80 ? 'buyback_strong' : buybackScore >= 50 ? 'buyback_mid' : 'buyback_low',
+        quote.verification === 'audited' ? 'audited' : quote.verification === 'verified' ? 'verified' : 'self_reported'
       ];
       return { ...quote, score: Math.round(score * 10) / 10, reasons };
     })

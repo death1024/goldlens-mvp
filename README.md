@@ -74,7 +74,7 @@ docker compose up --build
 | 四市场 | ✅ | 泰国 96.5%/THB、阿联酋 22K/AED、印度 22K/INR、美国 24K/USD |
 | 四单位 | ✅ | 克、baht（15.244g）、tola（11.6638g）、troy oz |
 | 实时行情 | ✅ | gold-api XAU/USD、open.er-api FX、Yahoo GC=F、GTA 抓取；逐源降级 |
-| 本地化 | ✅ | 中/英/泰/阿语导航与首页文案；RTL `dir`；locale cookie |
+| 本地化 | ✅ | 中/英/泰/阿语全站文案、表单、错误与 6 篇知识库；RTL `dir`；locale cookie |
 | PWA | ✅ | manifest、Service Worker、离线 shell、安装元数据 |
 | 账户 | ✅ | Auth.js Credentials（演示）+ JWT session；Google OAuth 可选 |
 | 持仓 | ✅ | IndexedDB 本地优先 + 登录后 Postgres 同步；按回购价估值 |
@@ -93,6 +93,22 @@ docker compose up --build
 ### 页面
 
 `/` 首页 · `/calculate` 计算器 · `/compare` 四市场对比 · `/quotes` 询价 · `/dealers` Dealer 列表 · `/portfolio` 持仓 · `/alerts` 提醒 · `/learn` 知识库 · `/account` 账户 · `/login` 登录 · `/dealer` Dealer Portal · `/admin` Admin · `/status` 数据健康。
+
+### 多语言 / RTL
+
+顶部语言切换器支持 **中文 / English / ไทย / العربية**，通过 cookie `gl_locale` 持久化，服务端设置 `<html lang dir>`。
+
+- 全部页面、表单、空状态、错误、表格和 6 篇知识库文章均已翻译。
+- 阿拉伯语 `dir="rtl"`：侧边栏在右侧、range 刻度 LTR、价格数字 LTR 隔离。
+- 货币/数字/百分比/日期按 locale 格式化。
+- `apps/web/src/lib/i18n.test.ts` 校验四语言 key tree 一致、无空翻译、文章齐全。
+- 当前是 **cookie 式 locale**，不是路径式 `/en`、`/th`、`/ar`；hreflang 与路径式 SEO 仍列在审计缺口里。
+
+![English](docs/screenshots/v21-en.png)
+
+![العربية](docs/screenshots/v21-ar.png)
+
+完整实现/需求审计：[docs/IMPLEMENTATION_AUDIT.md](docs/IMPLEMENTATION_AUDIT.md)。
 
 ### API
 

@@ -24,7 +24,8 @@ describe('GoldLens core', () => {
     expect(quote.buyback).toBe(62716.92);
     expect(quote.instantLoss).toBeCloseTo(2283.08, 2);
     expect(quote.breakEvenPct).toBeCloseTo(3.64, 2);
-    expect(quote.fairness.label).toBe('接近金条价');
+    expect(quote.fairness.state).toBe('ok');
+    expect(quote.fairness.labelKey).toBe('fairOk');
     expect(quote.totalMinor).toBe(6500000);
   });
 

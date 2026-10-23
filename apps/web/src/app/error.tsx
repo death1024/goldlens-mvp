@@ -1,17 +1,19 @@
 'use client';
 
 import Link from 'next/link';
+import { useI18n } from '@/components/locale-provider';
 
 export default function Error({ reset }: { error: Error & { digest?: string }; reset: () => void }) {
+  const { t } = useI18n();
   return (
     <div className="auth">
       <div className="auth-card">
-        <p className="eyebrow">SOMETHING BROKE</p>
-        <h1>这一笔没算成。</h1>
-        <p>页面遇到临时错误。价格与持仓不会因此丢失；可以重试或回到首页。</p>
+        <p className="eyebrow">{t('errors.error')}</p>
+        <h1>{t('common.errorTitle')}</h1>
+        <p>{t('common.errorBody')}</p>
         <div className="row">
-          <button className="btn primary" onClick={reset}>重试</button>
-          <Link href="/" className="btn ghost">返回首页</Link>
+          <button className="btn primary" onClick={reset}>{t('errors.retry')}</button>
+          <Link href="/" className="btn ghost">{t('errors.backHome')}</Link>
         </div>
       </div>
     </div>

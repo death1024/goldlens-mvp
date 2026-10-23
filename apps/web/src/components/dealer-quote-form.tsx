@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Send } from 'lucide-react';
+import { useI18n } from './locale-provider';
 
 const DEALERS = [
   { id: 'd-siam', name: 'Siam Gold House', currency: 'THB', market: 'TH' },
@@ -12,10 +13,12 @@ const DEALERS = [
 
 export function DealerQuoteForm() {
   const router = useRouter();
+  const { t } = useI18n();
   const [dealerId, setDealerId] = useState('d-siam');
   const [sell, setSell] = useState(65000);
   const [buyback, setBuyback] = useState(62716);
   const [message, setMessage] = useState('');
+  const [ok, setOk] = useState(false);
   const [busy, setBusy] = useState(false);
   const dealer = DEALERS.find((item) => item.id === dealerId) ?? DEALERS[0]!;
 
@@ -33,10 +36,12 @@ export function DealerQuoteForm() {
         })
       });
       if (!response.ok) throw new Error('failed');
-      setMessage('报价已提交，等待 Admin 审核');
+      setMessage(t('dealer.submitted'));
+      setOk(true);
       router.refresh();
     } catch {
-      setMessage('提交失败：需要 Dealer/Admin 账户');
+      setMessage(t('dealer.failed'));
+      setOk(false);
     } finally {
       setBusy(false);
     }
@@ -44,20 +49,20 @@ export function DealerQuoteForm() {
 
   return (
     <form className="form card card-pad" onSubmit={submit}>
-      <div className="between"><h2 style={{ fontSize: 22 }}>提交今日报价</h2><span className="badge warn">待审核</span></div>
-      <label className="label">Dealer
+      <div className="between"><h2 style={{ fontSize: 22 }}>{t('dealer.formTitle')}</h2><span className="badge warn">{t('dealer.pending')}</span></div>
+      <label className="label">{t('dealer.dealerLabel')}
         <select className="select" value={dealerId} onChange={(event) => setDealerId(event.target.value)}>
           {DEALERS.map((item) => <option key={item.id} value={item.id}>{item.name}</option>)}
         </select>
       </label>
       <div className="form-row">
-        <label className="label">卖出价 / baht<input className="input" type="number" value={sell} onChange={(event) => setSell(Number(event.target.value) || 0)} /></label>
-        <label className="label">回购价 / baht<input className="input" type="number" value={buyback} onChange={(event) => setBuyback(Number(event.target.value) || 0)} /></label>
+        <label className="label">{t('dealer.sell')}<input className="input" type="number" value={sell} onChange={(event) => setSell(Number(event.target.value) || 0)} /></label>
+        <label className="label">{t('dealer.buyback')}<input className="input" type="number" value={buyback} onChange={(event) => setBuyback(Number(event.target.value) || 0)} /></label>
       </div>
-      <div className="badge">有效期 24h · 币种 {dealer.currency}</div>
-      <button className="btn primary" type="submit" disabled={busy}><Send size={14} />{busy ? '提交中' : '提交报价'}</button>
-      {message ? <p className={`note ${message.startsWith('报价') ? 'positive' : 'negative'}`}>{message}</p> : null}
-      <p className="note">生产环境需要 Dealer 身份审核、报价签名与 Admin 二次确认。</p>
+      <div className="badge">{t('dealer.validity', { currency: dealer.currency })}</div>
+      <button className="btn primary" type="submit" disabled={busy}><Send size={14} />{busy ? t('dealer.submitting') : t('dealer.submit')}</button>
+      {message ? <p className={`note ${ok ? 'positive' : 'negative'}`}>{message}</p> : null}
+      <p className="note">{t('dealer.note')}</p>
     </form>
   );
 }

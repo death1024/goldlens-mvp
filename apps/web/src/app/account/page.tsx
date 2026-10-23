@@ -3,19 +3,21 @@ import { auth } from '@/auth';
 import { AccountClient } from '@/components/account-client';
 import { getDb, schema } from '@goldlens/db';
 import { eq } from 'drizzle-orm';
+import { getI18n } from '@/lib/i18n-server';
 
 export const dynamic = 'force-dynamic';
 
 export default async function AccountPage() {
+  const { t } = await getI18n();
   const session = await auth();
   if (!session?.user) {
     return (
       <div className="auth">
         <div className="auth-card">
-          <p className="eyebrow">ACCOUNT</p>
-          <h1>先登录。</h1>
-          <p>登录后同步持仓、提醒与订阅。</p>
-          <Link href="/login" className="btn primary">登录 / 创建演示账户</Link>
+          <p className="eyebrow">{t('account.eyebrow')}</p>
+          <h1>{t('account.loginTitle')}</h1>
+          <p>{t('account.loginBody')}</p>
+          <Link href="/login" className="btn primary">{t('account.loginCta')}</Link>
         </div>
       </div>
     );

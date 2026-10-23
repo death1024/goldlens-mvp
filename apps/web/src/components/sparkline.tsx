@@ -1,10 +1,12 @@
 'use client';
 
 import { useId } from 'react';
+import { useI18n } from './locale-provider';
 
 export function Sparkline({ points, height = 74 }: { points: { date: string; close: number }[]; height?: number }) {
   const id = useId().replace(/:/g, '');
-  if (points.length < 2) return <div className="tiny" style={{ height }}>暂无走势</div>;
+  const { t } = useI18n();
+  if (points.length < 2) return <div className="tiny" style={{ height }}>{t('common.noTrend')}</div>;
   const values = points.map((point) => point.close);
   const min = Math.min(...values);
   const max = Math.max(...values);
@@ -26,7 +28,7 @@ export function Sparkline({ points, height = 74 }: { points: { date: string; clo
   const last = coords[coords.length - 1]!;
   const area = `${path} L ${width - pad} ${height} L ${pad} ${height} Z`;
   return (
-    <svg className="sparkline" viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none" role="img" aria-label="价格走势">
+    <svg className="sparkline" viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none" role="img" aria-label={t('common.priceTrend')}>
       <defs>
         <linearGradient id={`fill-${id}`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#e5c46b" stopOpacity=".32" />

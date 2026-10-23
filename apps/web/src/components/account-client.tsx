@@ -3,8 +3,10 @@
 import { useState } from 'react';
 import { signOut } from 'next-auth/react';
 import { ArrowUpRight, Download, LogOut, ShieldCheck } from 'lucide-react';
+import { useI18n } from './locale-provider';
 
 export function AccountClient({ email, role, plan }: { email: string; role: string; plan: string }) {
+  const { t, locale } = useI18n();
   const [currentPlan, setCurrentPlan] = useState(plan);
   const [message, setMessage] = useState('');
   const [busy, setBusy] = useState(false);
@@ -20,9 +22,9 @@ export function AccountClient({ email, role, plan }: { email: string; role: stri
         return;
       }
       setCurrentPlan('pro');
-      setMessage(data.mode === 'demo' ? '演示环境：已模拟升级到 Pro（未扣款）' : '已升级');
+      setMessage(data.mode === 'demo' ? t('account.demoUpgrade') : t('account.upgraded'));
     } catch {
-      setMessage('暂时无法创建订阅，请稍后重试');
+      setMessage(t('account.billingError'));
     } finally {
       setBusy(false);
     }
@@ -32,52 +34,52 @@ export function AccountClient({ email, role, plan }: { email: string; role: stri
     <>
       <div className="page-head">
         <div>
-          <p className="eyebrow"><span className="eyebrow-line" />ACCOUNT</p>
-          <h1>你的账户。</h1>
-          <p>偏好、订阅、数据。没有暗黑模式套餐，也没有“猜你喜欢”的贷款。</p>
+          <p className="eyebrow"><span className="eyebrow-line" />{t('account.eyebrow')}</p>
+          <h1>{t('account.title')}</h1>
+          <p>{t('account.subtitle')}</p>
         </div>
-        <span className="badge gold">{currentPlan.toUpperCase()}</span>
+        <span className="badge gold">{currentPlan === 'pro' ? t('common.pro') : t('common.free')}</span>
       </div>
 
       <div className="grid-2" style={{ alignItems: 'start' }}>
         <div className="card card-pad">
-          <p className="panel-title">PROFILE</p>
+          <p className="panel-title">{t('account.profile')}</p>
           <div className="divider" />
-          <div className="between"><span className="muted">邮箱</span><strong style={{ fontSize: 12 }}>{email}</strong></div>
-          <div className="between" style={{ marginTop: 10 }}><span className="muted">角色</span><span className="badge">{role}</span></div>
-          <div className="between" style={{ marginTop: 10 }}><span className="muted">默认市场</span><span className="badge">泰国 · THB</span></div>
-          <div className="between" style={{ marginTop: 10 }}><span className="muted">语言</span><span className="badge">中文 / EN / ไทย / العربية</span></div>
+          <div className="between"><span className="muted">{t('account.email')}</span><strong style={{ fontSize: 12 }}>{email}</strong></div>
+          <div className="between" style={{ marginTop: 10 }}><span className="muted">{t('account.role')}</span><span className="badge">{role}</span></div>
+          <div className="between" style={{ marginTop: 10 }}><span className="muted">{t('account.defaultMarket')}</span><span className="badge">{t('markets.TH')} · THB</span></div>
+          <div className="between" style={{ marginTop: 10 }}><span className="muted">{t('account.language')}</span><span className="badge">{locale.toUpperCase()}</span></div>
           <div className="divider" />
-          <button className="btn ghost" onClick={() => signOut({ callbackUrl: '/' })}><LogOut size={14} />退出登录</button>
+          <button className="btn ghost" onClick={() => signOut({ callbackUrl: '/' })}><LogOut size={14} />{t('account.signOut')}</button>
         </div>
 
         <div className="card card-pad">
-          <p className="panel-title">PLAN</p>
+          <p className="panel-title">{t('account.plan')}</p>
           <div className="divider" />
-          <h2 style={{ fontSize: 26 }}>{currentPlan === 'pro' ? 'GoldLens Pro' : 'GoldLens Free'}</h2>
-          <p className="note" style={{ marginTop: 5 }}>{currentPlan === 'pro' ? '多市场提醒、Dealer 优先询价、导出与 API。' : '计算器、价格看板、本地持仓与 3 条提醒。'}</p>
+          <h2 style={{ fontSize: 26 }}>{currentPlan === 'pro' ? t('account.proTitle') : t('account.freeTitle')}</h2>
+          <p className="note" style={{ marginTop: 5 }}>{currentPlan === 'pro' ? t('account.proBody') : t('account.freeBody')}</p>
           <div className="divider" />
           <button className="btn primary" onClick={upgrade} disabled={busy || currentPlan === 'pro'}>
-            {currentPlan === 'pro' ? '已是最新' : busy ? '创建中…' : '升级到 Pro'} <ArrowUpRight size={14} />
+            {currentPlan === 'pro' ? t('account.latest') : busy ? t('account.creating') : t('account.upgrade')} <ArrowUpRight size={14} />
           </button>
           {message ? <p className="note positive" style={{ marginTop: 8 }}>{message}</p> : null}
-          <p className="note" style={{ marginTop: 8 }}>演示环境不扣款；生产环境使用 Stripe / Omise Checkout。</p>
+          <p className="note" style={{ marginTop: 8 }}>{t('account.demoNote')}</p>
         </div>
 
         <div className="card card-pad">
-          <p className="panel-title">DATA & PRIVACY</p>
+          <p className="panel-title">{t('account.dataTitle')}</p>
           <div className="divider" />
-          <p className="note">持仓与提醒优先存本机；登录后同步到 Postgres。收据原图不长期缓存，AI 抽取前脱敏。</p>
+          <p className="note">{t('account.dataBody')}</p>
           <div className="row" style={{ marginTop: 12 }}>
-            <button className="btn ghost" onClick={() => window.open('/api/holdings', '_blank')}><Download size={14} />导出持仓 JSON</button>
-            <span className="badge"><ShieldCheck size={11} />本地优先</span>
+            <button className="btn ghost" onClick={() => window.open('/api/holdings', '_blank')}><Download size={14} />{t('account.export')}</button>
+            <span className="badge"><ShieldCheck size={11} />{t('account.privacy')}</span>
           </div>
         </div>
 
         <div className="card card-pad">
-          <p className="panel-title">SECURITY</p>
+          <p className="panel-title">{t('account.securityTitle')}</p>
           <div className="divider" />
-          <p className="note">当前演示使用邮箱 + 演示密码。生产接入 Auth.js + Passkeys/WebAuthn、Turnstile 与速率限制。</p>
+          <p className="note">{t('account.securityBody')}</p>
           <div className="row" style={{ marginTop: 12 }}><span className="badge green">Session JWT</span><span className="badge">HTTPS only</span></div>
         </div>
       </div>
